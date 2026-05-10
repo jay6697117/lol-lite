@@ -1,0 +1,36 @@
+{
+  "reference": {
+    "source_type": "file",
+    "source": "/Users/zhangjinhui/Desktop/lol-lite/moba_25d_interface.png",
+    "used_for_generation": true,
+    "identity_notes": [
+      "原创秘源守卫英雄，不复制任何现有商业游戏角色",
+      "2.5D 等距斜俯视角 MOBA 风格",
+      "64x64 像素精灵，轮廓清晰，蓝绿秘源能量配色",
+      "短披风、轻甲、单手符文剑，适合中路对线原型"
+    ]
+  },
+  "scope": {
+    "sizes": [64],
+    "actions": ["idle", "move", "attack", "hit", "death"],
+    "directions": ["south", "south-east", "east", "north-east", "north", "north-west", "west", "south-west"],
+    "frames": {
+      "idle": 4,
+      "move": 6,
+      "attack": 6,
+      "hit": 4,
+      "death": 6
+    }
+  },
+  "generation": {
+    "method": "codex-gateway-imagegen",
+    "imagegen_output_path": "source/64-base-south.png",
+    "procedural": false,
+    "text_only": false,
+    "imported_contact_sheet": false
+  },
+  "strips": [],
+  "visual_review": {
+    "path": "64/qa/visual-review.json"
+  }
+}
