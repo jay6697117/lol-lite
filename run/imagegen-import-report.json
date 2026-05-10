@@ -1,0 +1,26 @@
+{
+  "input": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-south-west.png",
+  "source_copy": null,
+  "action": "death",
+  "direction": "south-west",
+  "sizes": [
+    64
+  ],
+  "columns": 6,
+  "row_bounds": [
+    [
+      0,
+      1024
+    ]
+  ],
+  "outputs": [
+    {
+      "cell": 64,
+      "path": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-south-west.png",
+      "row_bounds": [
+        0,
+        1024
+      ]
+    }
+  ]
+}

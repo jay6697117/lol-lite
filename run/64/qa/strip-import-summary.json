@@ -1,0 +1,244 @@
+{
+  "imported_fixed_cell_strips": [
+    {
+      "action": "idle",
+      "direction": "south",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-south.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-south.png"
+    },
+    {
+      "action": "idle",
+      "direction": "south-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-south-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-south-east.png"
+    },
+    {
+      "action": "idle",
+      "direction": "east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-east.png"
+    },
+    {
+      "action": "idle",
+      "direction": "north-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-north-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-north-east.png"
+    },
+    {
+      "action": "idle",
+      "direction": "north",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-north.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-north.png"
+    },
+    {
+      "action": "idle",
+      "direction": "north-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-north-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-north-west.png"
+    },
+    {
+      "action": "idle",
+      "direction": "west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-west.png"
+    },
+    {
+      "action": "idle",
+      "direction": "south-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-idle-south-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/idle-south-west.png"
+    },
+    {
+      "action": "move",
+      "direction": "south",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-south.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-south.png"
+    },
+    {
+      "action": "move",
+      "direction": "south-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-south-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-south-east.png"
+    },
+    {
+      "action": "move",
+      "direction": "east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-east.png"
+    },
+    {
+      "action": "move",
+      "direction": "north-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-north-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-north-east.png"
+    },
+    {
+      "action": "move",
+      "direction": "north",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-north.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-north.png"
+    },
+    {
+      "action": "move",
+      "direction": "north-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-north-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-north-west.png"
+    },
+    {
+      "action": "move",
+      "direction": "west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-west.png"
+    },
+    {
+      "action": "move",
+      "direction": "south-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-move-south-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/move-south-west.png"
+    },
+    {
+      "action": "attack",
+      "direction": "south",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-south.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-south.png"
+    },
+    {
+      "action": "attack",
+      "direction": "south-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-south-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-south-east.png"
+    },
+    {
+      "action": "attack",
+      "direction": "east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-east.png"
+    },
+    {
+      "action": "attack",
+      "direction": "north-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-north-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-north-east.png"
+    },
+    {
+      "action": "attack",
+      "direction": "north",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-north.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-north.png"
+    },
+    {
+      "action": "attack",
+      "direction": "north-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-north-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-north-west.png"
+    },
+    {
+      "action": "attack",
+      "direction": "west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-west.png"
+    },
+    {
+      "action": "attack",
+      "direction": "south-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-attack-south-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/attack-south-west.png"
+    },
+    {
+      "action": "hit",
+      "direction": "south",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-south.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-south.png"
+    },
+    {
+      "action": "hit",
+      "direction": "south-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-south-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-south-east.png"
+    },
+    {
+      "action": "hit",
+      "direction": "east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-east.png"
+    },
+    {
+      "action": "hit",
+      "direction": "north-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-north-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-north-east.png"
+    },
+    {
+      "action": "hit",
+      "direction": "north",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-north.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-north.png"
+    },
+    {
+      "action": "hit",
+      "direction": "north-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-north-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-north-west.png"
+    },
+    {
+      "action": "hit",
+      "direction": "west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-west.png"
+    },
+    {
+      "action": "hit",
+      "direction": "south-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-hit-south-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/hit-south-west.png"
+    },
+    {
+      "action": "death",
+      "direction": "south",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-south.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-south.png"
+    },
+    {
+      "action": "death",
+      "direction": "south-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-south-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-south-east.png"
+    },
+    {
+      "action": "death",
+      "direction": "east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-east.png"
+    },
+    {
+      "action": "death",
+      "direction": "north-east",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-north-east.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-north-east.png"
+    },
+    {
+      "action": "death",
+      "direction": "north",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-north.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-north.png"
+    },
+    {
+      "action": "death",
+      "direction": "north-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-north-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-north-west.png"
+    },
+    {
+      "action": "death",
+      "direction": "west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-west.png"
+    },
+    {
+      "action": "death",
+      "direction": "south-west",
+      "source": "/Users/zhangjinhui/Desktop/lol-lite/run/source/64-death-south-west.png",
+      "generated": "/Users/zhangjinhui/Desktop/lol-lite/run/64/generated/death-south-west.png"
+    }
+  ]
+}

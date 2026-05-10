@@ -1,0 +1,16 @@
+Create a 64x64 pixel-art game sprite animation strip for an original 2.5D MOBA hero.
+Character identity to preserve exactly: 原创英雄“秘源守卫”：适合 2.5D 等距斜俯视 MOBA 的 64x64 像素精灵。年轻中性战士，银白短发，深海蓝轻甲，青蓝秘源能量边缘光，短披风，单手符文剑。轮廓清晰，头身比例略 Q 版但不是幼稚卡通，适合俯视 MOBA 战斗。不能像任何现有商业 MOBA 英雄。
+Visual style: 像素艺术，64x64 game-ready sprite，2.5D 等距斜俯视角，硬边像素，有限调色板，颜色和轮廓清晰，适合草地石板路幻想 MOBA 战场。无 UI、无文字、无数字、无边框、无阴影地板、无场景背景。
+Action: walk/move animation loop: six frames contact, down, passing, up, contact, passing; clear alternating feet, 1-2 pixel head bob, cape lags one frame.
+Direction: south-west: diagonal front-left, face and body turned halfway between south and west.
+
+Strict strip requirements:
+- One horizontal row of exactly 6 separated frames.
+- Each frame is intended for one 64x64 sprite cell.
+- Pure flat solid chroma-key background #00ff00 only.
+- No gradient background, no floor, no cast shadow, no UI, no text, no frame numbers, no labels, no frame borders.
+- Full body and weapon visible in every frame, centered with 2-4 px margin.
+- Same character design, palette, head size, armor, cape, and sword across all frames.
+- Direction must stay locked for all six frames; do not drift into another direction.
+- Pixel-art hard edges, limited palette, crisp silhouette, readable at 64x64.
+- Original art only, do not copy any existing commercial game character.

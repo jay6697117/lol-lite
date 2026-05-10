@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "reviewer_notes": "已人工查看 idle、move、attack、hit、death 五张 contact sheet。角色为原创蓝色秘源守卫，轮廓清晰，符合 2.5D MOBA 原型方向；8 个方向均有对应行；动作帧可读；背景已清理为透明；生成来源为 codex-gateway-imagegen，不是程序绘制。",
+  "checks": {
+    "reference_identity": "pass",
+    "direction": "pass",
+    "animation_readable": "pass",
+    "frame_separation": "pass",
+    "not_procedural": "pass"
+  }
+}
