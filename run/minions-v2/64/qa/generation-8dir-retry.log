@@ -189,3 +189,18 @@ OK blue-siege-attack-south-west
 {"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-south-west.png", "bytes": 976899}
 OK red-melee-move-south-west
 [92/96] attempt 1 generate 64-red-melee-attack-south-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-south-west.png", "bytes": 961356}
+OK red-melee-attack-south-west
+[93/96] attempt 1 generate 64-red-ranged-move-south-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-south-west.png", "bytes": 959873}
+OK red-ranged-move-south-west
+[94/96] attempt 1 generate 64-red-ranged-attack-south-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-attack-south-west.png", "bytes": 953066}
+OK red-ranged-attack-south-west
+[95/96] attempt 1 generate 64-red-siege-move-south-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-move-south-west.png", "bytes": 994009}
+OK red-siege-move-south-west
+[96/96] attempt 1 generate 64-red-siege-attack-south-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-attack-south-west.png", "bytes": 995796}
+OK red-siege-attack-south-west
+=== retry done 2026-05-11 22:06:54 failures=0 ===
