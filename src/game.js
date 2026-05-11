@@ -15,20 +15,20 @@
   ];
   const TEAM_STYLE = {
     blue: {
-      main: '#43e0d2',
-      dim: '#1f8f95',
-      dark: '#0c4551',
-      bar: '#27e8a7',
-      mana: '#42a9ff',
-      text: '#cafff5',
+      main: '#36d7e8',
+      dim: '#166d82',
+      dark: '#082c39',
+      bar: '#29e0aa',
+      mana: '#2788ff',
+      text: '#c8fff4',
     },
     red: {
-      main: '#ff5377',
-      dim: '#b22e57',
-      dark: '#4e1631',
-      bar: '#ff5d64',
-      mana: '#d263ff',
-      text: '#ffe0e8',
+      main: '#ff385f',
+      dim: '#9a203c',
+      dark: '#3d0f23',
+      bar: '#ff4857',
+      mana: '#b64dff',
+      text: '#ffd4de',
     },
   };
   const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-regenerated.png';
@@ -1348,7 +1348,7 @@
     }
 
     miniMapRect() {
-      return { x: 1016, y: 462, w: 226, h: 226 };
+      return { x: 1032, y: 476, w: 198, h: 198 };
     }
 
     worldToMini(entity) {
@@ -1368,11 +1368,11 @@
     }
 
     itemSlotAt(point) {
-      const startX = 734;
+      const startX = 760;
       const y = 646;
       for (let i = 0; i < 4; i += 1) {
-        const x = startX + i * 52;
-        if (point.x >= x && point.x <= x + 44 && point.y >= y && point.y <= y + 44) return i;
+        const x = startX + i * 48;
+        if (point.x >= x && point.x <= x + 42 && point.y >= y && point.y <= y + 42) return i;
       }
       return -1;
     }
@@ -1438,17 +1438,36 @@
       ctx.save();
       ctx.globalCompositeOperation = 'multiply';
       const fieldTone = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
-      fieldTone.addColorStop(0, 'rgba(5, 11, 8, .2)');
-      fieldTone.addColorStop(0.44, 'rgba(27, 35, 22, .07)');
-      fieldTone.addColorStop(1, 'rgba(6, 8, 9, .28)');
+      fieldTone.addColorStop(0, 'rgba(2, 7, 8, .42)');
+      fieldTone.addColorStop(0.46, 'rgba(9, 18, 14, .2)');
+      fieldTone.addColorStop(1, 'rgba(3, 4, 6, .56)');
       ctx.fillStyle = fieldTone;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
       ctx.globalCompositeOperation = 'screen';
-      const gameplayLight = ctx.createRadialGradient(708, 316, 70, 708, 316, 430);
-      gameplayLight.addColorStop(0, 'rgba(255, 232, 170, .045)');
+      const blueBloom = ctx.createRadialGradient(240, 520, 22, 240, 520, 270);
+      blueBloom.addColorStop(0, 'rgba(54, 215, 232, .16)');
+      blueBloom.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = blueBloom;
+      ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      const redBloom = ctx.createRadialGradient(1028, 142, 20, 1028, 142, 260);
+      redBloom.addColorStop(0, 'rgba(255, 56, 95, .15)');
+      redBloom.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = redBloom;
+      ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      const gameplayLight = ctx.createRadialGradient(680, 330, 45, 680, 330, 390);
+      gameplayLight.addColorStop(0, 'rgba(214, 188, 116, .05)');
       gameplayLight.addColorStop(1, 'rgba(0, 0, 0, 0)');
       ctx.fillStyle = gameplayLight;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      ctx.globalCompositeOperation = 'source-over';
+      const fog = ctx.createLinearGradient(0, 84, WIDTH, 468);
+      fog.addColorStop(0, 'rgba(166, 219, 205, .035)');
+      fog.addColorStop(0.52, 'rgba(0, 0, 0, 0)');
+      fog.addColorStop(1, 'rgba(151, 180, 171, .025)');
+      ctx.fillStyle = fog;
+      ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      ctx.fillStyle = 'rgba(0, 0, 0, .08)';
+      for (let y = 0; y < HUD_Y; y += 4) ctx.fillRect(0, y, WIDTH, 1);
       ctx.restore();
     }
 
@@ -1490,18 +1509,20 @@
           sh = background.width / targetRatio;
           sy = clamp((background.height - sh) * 0.42, 0, background.height - sh);
         }
+        ctx.filter = 'saturate(.58) brightness(.66) contrast(1.22)';
         ctx.drawImage(background, sx, sy, sw, sh, 0, 0, WIDTH, HUD_Y);
+        ctx.filter = 'none';
         ctx.imageSmoothingEnabled = false;
         const depthTint = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
-        depthTint.addColorStop(0, 'rgba(5, 13, 9, .24)');
-        depthTint.addColorStop(0.5, 'rgba(180, 168, 108, .025)');
-        depthTint.addColorStop(1, 'rgba(8, 9, 8, .34)');
+        depthTint.addColorStop(0, 'rgba(2, 8, 9, .42)');
+        depthTint.addColorStop(0.5, 'rgba(45, 42, 27, .08)');
+        depthTint.addColorStop(1, 'rgba(5, 5, 7, .52)');
         ctx.fillStyle = depthTint;
         ctx.fillRect(0, 0, WIDTH, HUD_Y);
-        const laneFocus = ctx.createRadialGradient(720, 314, 80, 720, 314, 560);
-        laneFocus.addColorStop(0, 'rgba(255, 230, 160, .045)');
-        laneFocus.addColorStop(0.48, 'rgba(0, 0, 0, 0)');
-        laneFocus.addColorStop(1, 'rgba(0, 0, 0, .32)');
+        const laneFocus = ctx.createRadialGradient(682, 330, 72, 682, 330, 520);
+        laneFocus.addColorStop(0, 'rgba(206, 180, 105, .055)');
+        laneFocus.addColorStop(0.42, 'rgba(0, 0, 0, 0)');
+        laneFocus.addColorStop(1, 'rgba(0, 0, 0, .48)');
         ctx.fillStyle = laneFocus;
         ctx.fillRect(0, 0, WIDTH, HUD_Y);
         ctx.restore();
@@ -1569,7 +1590,7 @@
       }
 
       if (usesGeneratedBackground) this.drawPerspectiveLaneGround(ctx);
-      const laneOverlayAlpha = usesGeneratedBackground ? 0.08 : 1;
+      const laneOverlayAlpha = usesGeneratedBackground ? 0.16 : 1;
 
       ctx.save();
       ctx.globalAlpha = laneOverlayAlpha;
@@ -1625,7 +1646,7 @@
       this.drawLaneEdge(ctx, -82, usesGeneratedBackground ? 'rgba(255, 235, 164, .18)' : 'rgba(233, 206, 142, .32)', 4);
       this.drawLaneEdge(ctx, 82, usesGeneratedBackground ? 'rgba(255, 235, 164, .18)' : 'rgba(233, 206, 142, .32)', 4);
 
-      const stoneCount = usesGeneratedBackground ? 54 : 128;
+      const stoneCount = usesGeneratedBackground ? 34 : 128;
       for (let i = 0; i < stoneCount; i += 1) {
         const p = pointOnPath((i + 0.26) / stoneCount);
         const side = ((i % 7) - 3) * 15 + (seeded(i + 17) - 0.5) * 14;
@@ -1635,7 +1656,7 @@
 
       ctx.save();
       ctx.globalAlpha = usesGeneratedBackground ? 0.42 : 1;
-      const grassClusterCount = usesGeneratedBackground ? 30 : 54;
+      const grassClusterCount = usesGeneratedBackground ? 18 : 54;
       for (let i = 0; i < grassClusterCount; i += 1) {
         const p = pointOnPath((i + 0.3) / grassClusterCount);
         const side = i % 2 ? 1 : -1;
@@ -1734,12 +1755,12 @@
       right.reverse().forEach(p => ctx.lineTo(p.x, p.y));
       ctx.closePath();
       const laneShade = ctx.createLinearGradient(160, 560, 1120, 96);
-      laneShade.addColorStop(0, 'rgba(255, 231, 164, .16)');
-      laneShade.addColorStop(0.46, 'rgba(255, 236, 183, .1)');
-      laneShade.addColorStop(1, 'rgba(37, 24, 22, .28)');
+      laneShade.addColorStop(0, 'rgba(105, 97, 70, .2)');
+      laneShade.addColorStop(0.46, 'rgba(128, 118, 78, .13)');
+      laneShade.addColorStop(1, 'rgba(23, 13, 17, .36)');
       ctx.fillStyle = laneShade;
       ctx.fill();
-      ctx.strokeStyle = 'rgba(10, 8, 7, .34)';
+      ctx.strokeStyle = 'rgba(2, 4, 5, .46)';
       ctx.lineWidth = 16;
       ctx.stroke();
       ctx.strokeStyle = 'rgba(255, 232, 162, .18)';
@@ -1946,17 +1967,17 @@
         ctx.restore();
       }
 
-      ctx.fillStyle = 'rgba(0,0,0,.34)';
+      ctx.fillStyle = 'rgba(0,0,0,.46)';
       ctx.beginPath();
-      ctx.ellipse(0, 24, building.radius * 1.7, building.radius * 0.52, 0, 0, Math.PI * 2);
+      ctx.ellipse(0, 24, building.radius * 1.52, building.radius * 0.46, 0, 0, Math.PI * 2);
       ctx.fill();
 
       const buildingCells = OBJECT_CELLS.building[building.team];
       const buildingCell = buildingCells && buildingCells[building.type];
       if (this.assets.objects && buildingCell !== undefined) {
         const box = building.type === 'tower'
-          ? { x: -92, y: -182, w: 184, h: 210 }
-          : { x: -80, y: -132, w: 160, h: 162 };
+          ? { x: -76, y: -162, w: 152, h: 184 }
+          : { x: -68, y: -118, w: 136, h: 142 };
         this.drawSheetCell(ctx, this.assets.objects, buildingCell, box.x, box.y, box.w, box.h);
         ctx.restore();
         if (!building.dead) this.drawNameplate(ctx, building, building.name, building.type === 'tower' ? -166 : -126, building.type === 'tower' ? 106 : 118);
@@ -2102,16 +2123,16 @@
 
     drawMinion(ctx, minion) {
       const style = TEAM_STYLE[minion.team];
-      const perspective = 0.86 + clamp(minion.y / HUD_Y, 0, 1) * 0.16;
-      const scale = (minion.type === 'siege' ? 1.08 : minion.type === 'ranged' ? 0.9 : 0.96) * perspective;
+      const perspective = 0.8 + clamp(minion.y / HUD_Y, 0, 1) * 0.14;
+      const scale = (minion.type === 'siege' ? 0.98 : minion.type === 'ranged' ? 0.78 : 0.84) * perspective;
       const v = rowVector(minion.direction);
       ctx.save();
       ctx.globalAlpha = minion.dead ? 0.42 : 1;
       ctx.translate(minion.x, minion.y);
       ctx.scale(scale, scale);
-      ctx.fillStyle = 'rgba(0,0,0,.46)';
+      ctx.fillStyle = 'rgba(0,0,0,.52)';
       ctx.beginPath();
-      ctx.ellipse(0, 12, minion.type === 'siege' ? 30 : 23, minion.type === 'siege' ? 11 : 9, 0, 0, Math.PI * 2);
+      ctx.ellipse(0, 12, minion.type === 'siege' ? 25 : 19, minion.type === 'siege' ? 9 : 7, 0, 0, Math.PI * 2);
       ctx.fill();
       ctx.strokeStyle = style.main;
       ctx.globalAlpha = minion.dead ? 0.34 : 0.72;
@@ -2126,8 +2147,8 @@
       if (this.assets.minions && minionRow !== undefined) {
         const frame = Math.floor((this.time * (attacking ? 10 : 7.5)) + minion.id) % ANIM_COLUMNS;
         const box = minion.type === 'siege'
-          ? { y: -82, w: 108, h: 96 }
-          : { y: -76, w: 86, h: 88 };
+          ? { y: -74, w: 94, h: 84 }
+          : { y: -64, w: 74, h: 74 };
         if (v.x < -0.15) ctx.scale(-1, 1);
         this.drawAnimCell(ctx, this.assets.minions, minionRow, frame, -box.w / 2, box.y, box.w, box.h);
         ctx.restore();
@@ -2138,8 +2159,8 @@
       const minionCell = minionCells && minionCells[minion.type];
       if (this.assets.objects && minionCell !== undefined) {
         const box = minion.type === 'siege'
-          ? { y: -82, w: 108, h: 96 }
-          : { y: -76, w: 86, h: 88 };
+          ? { y: -74, w: 94, h: 84 }
+          : { y: -64, w: 74, h: 74 };
         if (v.x < -0.15) ctx.scale(-1, 1);
         this.drawSheetCell(ctx, this.assets.objects, minionCell, -box.w / 2, box.y, box.w, box.h);
         ctx.restore();
@@ -2217,9 +2238,9 @@
     drawHero(ctx, hero) {
       const style = TEAM_STYLE[hero.team];
       ctx.save();
-      ctx.fillStyle = 'rgba(0,0,0,.34)';
+      ctx.fillStyle = 'rgba(0,0,0,.5)';
       ctx.beginPath();
-      ctx.ellipse(hero.x, hero.y + 8, 32, 12, 0, 0, Math.PI * 2);
+      ctx.ellipse(hero.x, hero.y + 8, 27, 10, 0, 0, Math.PI * 2);
       ctx.fill();
       if (hero.shield > 0 && !hero.dead) {
         ctx.strokeStyle = '#8fffe9';
@@ -2242,15 +2263,15 @@
       const img = enemyImg || this.assets[action] || this.assets.idle;
       const frame = hero.dead ? Math.min(5, Math.floor(hero.deathAnim * 7)) : Math.floor(hero.animTime * 8.5) % 6;
       const row = hero.direction;
-      const perspective = 0.86 + clamp(hero.y / HUD_Y, 0, 1) * 0.12;
-      const size = (hero.isPlayer ? 98 : 94) * perspective;
+      const perspective = 0.8 + clamp(hero.y / HUD_Y, 0, 1) * 0.12;
+      const size = (hero.isPlayer ? 86 : 82) * perspective;
       if (hero.isPlayer && !hero.dead) {
         ctx.strokeStyle = 'rgba(255,229,153,.7)';
         ctx.lineWidth = 2;
         ctx.shadowColor = '#ffe599';
         ctx.shadowBlur = 12;
         ctx.beginPath();
-        ctx.ellipse(hero.x, hero.y + 8, 40, 15, 0, 0, Math.PI * 2);
+        ctx.ellipse(hero.x, hero.y + 8, 34, 12, 0, 0, Math.PI * 2);
         ctx.stroke();
       }
       if (img) {
@@ -2273,11 +2294,11 @@
       ctx.shadowColor = style.main;
       ctx.shadowBlur = 14;
       ctx.beginPath();
-      ctx.ellipse(hero.x, hero.y + 7, 34, 13, 0, 0, Math.PI * 2);
+      ctx.ellipse(hero.x, hero.y + 7, 29, 10, 0, 0, Math.PI * 2);
       ctx.stroke();
       ctx.restore();
-      if (!hero.dead) this.drawNameplate(ctx, hero, `${hero.name} Lv.${hero.level}`, -92, 96);
-      else drawText(ctx, `复活 ${Math.max(0, hero.respawnTimer).toFixed(0)}s`, hero.x, hero.y - 94, 14, '#ffb0bd', 'center', '900');
+      if (!hero.dead) this.drawNameplate(ctx, hero, `${hero.name} Lv.${hero.level}`, -82, 86);
+      else drawText(ctx, `复活 ${Math.max(0, hero.respawnTimer).toFixed(0)}s`, hero.x, hero.y - 84, 14, '#ffb0bd', 'center', '900');
     }
 
     currentHeroAction(hero) {
@@ -2346,9 +2367,9 @@
     drawHUD(ctx) {
       this.drawTopHUD(ctx);
       this.drawMessages(ctx);
+      this.drawBottomHUD(ctx);
       this.drawTeamRoster(ctx);
       this.drawMiniMap(ctx);
-      this.drawBottomHUD(ctx);
     }
 
     drawTopHUD(ctx) {
@@ -2463,9 +2484,9 @@
       const hero = this.player;
       ctx.save();
       const grad = ctx.createLinearGradient(0, HUD_Y - 12, 0, HEIGHT);
-      grad.addColorStop(0, 'rgba(4, 8, 8, .03)');
-      grad.addColorStop(0.16, 'rgba(2, 6, 8, .86)');
-      grad.addColorStop(1, 'rgba(0, 3, 5, .98)');
+      grad.addColorStop(0, 'rgba(0, 0, 0, .08)');
+      grad.addColorStop(0.12, 'rgba(1, 4, 6, .94)');
+      grad.addColorStop(1, 'rgba(0, 1, 3, .99)');
       ctx.fillStyle = grad;
       ctx.fillRect(0, HUD_Y - 12, WIDTH, HEIGHT - HUD_Y + 12);
       ctx.strokeStyle = 'rgba(190,170,105,.2)';
@@ -2473,16 +2494,16 @@
       ctx.moveTo(0, HUD_Y + 0.5);
       ctx.lineTo(WIDTH, HUD_Y + 0.5);
       ctx.stroke();
-      roundedRect(ctx, 92, 600, 866, 108, 5);
-      ctx.fillStyle = 'rgba(4, 7, 8, .82)';
+      roundedRect(ctx, 88, 600, 884, 108, 3);
+      ctx.fillStyle = 'rgba(0, 3, 5, .9)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(185, 163, 105, .32)';
-      ctx.lineWidth = 1.4;
+      ctx.strokeStyle = 'rgba(161, 135, 72, .42)';
+      ctx.lineWidth = 1.6;
       ctx.stroke();
-      const hudShine = ctx.createLinearGradient(92, 600, 958, 708);
-      hudShine.addColorStop(0, 'rgba(255, 225, 140, .07)');
-      hudShine.addColorStop(0.5, 'rgba(255,255,255,.015)');
-      hudShine.addColorStop(1, 'rgba(90, 122, 80, .07)');
+      const hudShine = ctx.createLinearGradient(88, 600, 972, 708);
+      hudShine.addColorStop(0, 'rgba(54, 215, 232, .055)');
+      hudShine.addColorStop(0.48, 'rgba(255,255,255,.012)');
+      hudShine.addColorStop(1, 'rgba(255, 56, 95, .05)');
       ctx.fillStyle = hudShine;
       ctx.fill();
 
@@ -2537,13 +2558,13 @@
         drawText(ctx, value, sx + 26, sy, 9, '#e3c36f', 'right', '900');
       });
 
-      roundedRect(ctx, 404, 606, 542, 94, 4);
-      ctx.fillStyle = 'rgba(1, 5, 7, .74)';
+      roundedRect(ctx, 404, 606, 554, 94, 3);
+      ctx.fillStyle = 'rgba(0, 2, 4, .84)';
       ctx.fill();
       ctx.strokeStyle = 'rgba(185, 163, 105, .18)';
       ctx.stroke();
       ctx.fillStyle = 'rgba(255,255,255,.025)';
-      for (let i = 0; i < 7; i += 1) ctx.fillRect(416 + i * 72, 614, 1, 72);
+      for (let i = 0; i < 8; i += 1) ctx.fillRect(416 + i * 64, 614, 1, 72);
       this.drawSkillBar(ctx, hero);
       this.drawSummonerSlots(ctx);
       this.drawInventory(ctx, hero);
@@ -2552,28 +2573,28 @@
 
     drawSkillBar(ctx, hero) {
       const keys = ['q', 'w', 'e', 'r'];
-      const startX = 418;
+      const startX = 432;
       keys.forEach((key, index) => {
         const skill = hero.skills[key];
-        const x = startX + index * 72;
-        const y = 624;
-        roundedRect(ctx, x, y, 58, 58, 8);
-        ctx.fillStyle = skill.level > 0 ? 'rgba(17, 35, 38, .9)' : 'rgba(20, 20, 24, .85)';
+        const x = startX + index * 64;
+        const y = 626;
+        roundedRect(ctx, x, y, 54, 54, 4);
+        ctx.fillStyle = skill.level > 0 ? 'rgba(9, 27, 31, .94)' : 'rgba(13, 14, 18, .9)';
         ctx.fill();
-        ctx.strokeStyle = skill.cooldown > 0 ? '#555' : key === 'r' ? '#e3c36f' : '#7cc9df';
-        ctx.lineWidth = 2;
+        ctx.strokeStyle = skill.cooldown > 0 ? '#444' : key === 'r' ? '#cda65a' : '#56c8dc';
+        ctx.lineWidth = 1.7;
         ctx.stroke();
-        this.drawSkillIcon(ctx, key, x + 29, y + 27, skill.level > 0);
+        this.drawSkillIcon(ctx, key, x + 27, y + 26, skill.level > 0);
         if (skill.cooldown > 0) {
           const ratio = skill.cooldown / skill.lastCooldown;
-          ctx.fillStyle = 'rgba(0,0,0,.68)';
-          ctx.fillRect(x, y, 58, 58 * ratio);
-          drawText(ctx, skill.cooldown.toFixed(1), x + 29, y + 29, 16, '#ffffff', 'center', '900');
+          ctx.fillStyle = 'rgba(0,0,0,.72)';
+          ctx.fillRect(x, y, 54, 54 * ratio);
+          drawText(ctx, skill.cooldown.toFixed(1), x + 27, y + 27, 15, '#ffffff', 'center', '900');
         }
-        drawText(ctx, skill.key, x + 8, y + 9, 12, '#ffffff', 'center', '900');
-        drawText(ctx, `Lv.${skill.level}`, x + 29, y + 69, 12, '#bfece2', 'center', '700');
+        drawText(ctx, skill.key, x + 7, y + 8, 11, '#ffffff', 'center', '900');
+        drawText(ctx, `Lv.${skill.level}`, x + 27, y + 66, 11, '#bfece2', 'center', '700');
         if (hero.skillPoints > 0 && skill.level < skill.max && (key !== 'r' || hero.level >= 6)) {
-          drawText(ctx, '+', x + 52, y + 9, 16, '#ffe599', 'center', '900');
+          drawText(ctx, '+', x + 48, y + 8, 15, '#ffe599', 'center', '900');
         }
       });
     }
@@ -2633,8 +2654,8 @@
 
     drawSummonerSlots(ctx) {
       [['D', '#8fb4c4'], ['F', '#e3c36f']].forEach(([key, color], index) => {
-        const x = 698;
-        const y = 632 + index * 33;
+        const x = 696;
+        const y = 628 + index * 33;
         roundedRect(ctx, x, y, 30, 30, 6);
         ctx.fillStyle = 'rgba(12, 24, 27, .86)';
         ctx.fill();
@@ -2661,11 +2682,11 @@
     }
 
     drawInventory(ctx, hero) {
-      const startX = 734;
+      const startX = 760;
       ITEMS.forEach((item, index) => {
-        const x = startX + index * 52;
+        const x = startX + index * 48;
         const y = 646;
-        roundedRect(ctx, x, y, 44, 44, 4);
+        roundedRect(ctx, x, y, 42, 42, 3);
         ctx.fillStyle = hero.inventory[index] ? 'rgba(221, 174, 70, .28)' : 'rgba(255,255,255,.055)';
         ctx.fill();
         ctx.strokeStyle = hero.inventory[index] ? '#dcae46' : 'rgba(185,163,105,.24)';
@@ -2674,22 +2695,22 @@
         if (this.assets.icons && iconCell !== undefined) {
           ctx.save();
           ctx.globalAlpha = hero.inventory[index] ? 1 : 0.56;
-          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 5, y + 4, 34, 34);
+          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 5, y + 4, 32, 32);
           ctx.restore();
         } else {
           ctx.fillStyle = hero.inventory[index] ? '#dcae46' : 'rgba(160,170,150,.58)';
           ctx.beginPath();
-          ctx.moveTo(x + 22, y + 8);
-          ctx.lineTo(x + 34, y + 20);
-          ctx.lineTo(x + 22, y + 36);
-          ctx.lineTo(x + 10, y + 20);
+          ctx.moveTo(x + 21, y + 8);
+          ctx.lineTo(x + 32, y + 19);
+          ctx.lineTo(x + 21, y + 34);
+          ctx.lineTo(x + 10, y + 19);
           ctx.closePath();
           ctx.fill();
           ctx.fillStyle = 'rgba(0,0,0,.38)';
           ctx.fillRect(x + 14, y + 18, 16, 5);
         }
-        drawText(ctx, item.key, x + 8, y + 9, 11, '#ffffff', 'center', '900');
-        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 22, y + 39, 10, hero.inventory[index] ? '#e3c36f' : '#c8c4a8', 'center', '700');
+        drawText(ctx, item.key, x + 7, y + 8, 10, '#ffffff', 'center', '900');
+        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 21, y + 37, 9, hero.inventory[index] ? '#cda65a' : '#c8c4a8', 'center', '700');
       });
       drawText(ctx, '装备栏', startX + 100, 626, 12, '#d8d3b6', 'center', '900');
     }
@@ -2712,19 +2733,19 @@
 
     drawMiniMap(ctx) {
       const map = this.miniMapRect();
-      roundedRect(ctx, map.x - 8, map.y - 8, map.w + 16, map.h + 16, 4);
-      ctx.fillStyle = 'rgba(1, 4, 5, .92)';
+      roundedRect(ctx, map.x - 8, map.y - 8, map.w + 16, map.h + 16, 3);
+      ctx.fillStyle = 'rgba(0, 2, 4, .96)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(190,170,105,.42)';
+      ctx.strokeStyle = 'rgba(139,115,61,.5)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
       ctx.save();
       roundedRect(ctx, map.x, map.y, map.w, map.h, 3);
       ctx.clip();
       const bg = ctx.createLinearGradient(map.x, map.y, map.x + map.w, map.y + map.h);
-      bg.addColorStop(0, '#16351f');
-      bg.addColorStop(0.48, '#203c25');
-      bg.addColorStop(1, '#0e1d1f');
+      bg.addColorStop(0, '#071a12');
+      bg.addColorStop(0.48, '#102014');
+      bg.addColorStop(1, '#090e13');
       ctx.fillStyle = bg;
       ctx.fillRect(map.x, map.y, map.w, map.h);
       ctx.fillStyle = 'rgba(5, 13, 16, .52)';
@@ -2733,7 +2754,7 @@
         ctx.ellipse(map.x + map.w * blob[0], map.y + map.h * blob[1], map.w * blob[2], map.h * blob[3], -0.45, 0, Math.PI * 2);
         ctx.fill();
       });
-      ctx.fillStyle = 'rgba(47, 83, 45, .72)';
+      ctx.fillStyle = 'rgba(23, 49, 31, .62)';
       ctx.beginPath();
       ctx.moveTo(map.x, map.y + map.h * .08);
       ctx.lineTo(map.x + map.w * .45, map.y);
@@ -2763,8 +2784,8 @@
         ctx.fill();
         ctx.stroke();
       });
-      ctx.strokeStyle = 'rgba(49, 112, 72, .72)';
-      ctx.lineWidth = 5;
+      ctx.strokeStyle = 'rgba(31, 64, 40, .72)';
+      ctx.lineWidth = 4;
       ctx.lineCap = 'round';
       [[0.12, 0.88, 0.35, 0.66], [0.65, 0.34, 0.88, 0.12], [0.06, 0.48, 0.33, 0.56], [0.67, 0.42, 0.94, 0.53]].forEach(([x1, y1, x2, y2]) => {
         ctx.beginPath();
@@ -2780,8 +2801,8 @@
         ctx.lineTo(map.x + map.w * x2, map.y + map.h * y2);
         ctx.stroke();
       });
-      ctx.strokeStyle = 'rgba(213, 178, 102, .92)';
-      ctx.lineWidth = 9;
+      ctx.strokeStyle = 'rgba(21, 11, 14, .82)';
+      ctx.lineWidth = 11;
       ctx.beginPath();
       LANE_PATH.forEach((p, index) => {
         const m = this.worldToMini(p);
@@ -2789,8 +2810,8 @@
         else ctx.lineTo(m.x, m.y);
       });
       ctx.stroke();
-      ctx.strokeStyle = 'rgba(16, 13, 9, .46)';
-      ctx.lineWidth = 2;
+      ctx.strokeStyle = 'rgba(185, 42, 58, .92)';
+      ctx.lineWidth = 4;
       ctx.stroke();
 
       this.buildings.forEach(entity => {
