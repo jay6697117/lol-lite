@@ -145,12 +145,18 @@
   },
   "generation": {
     "method": "codex-gateway-imagegen",
-    "imagegen_output_path": "source/64-blue-melee-move-south-east.png",
+    "imagegen_output_path": "source/64-blue-melee-move-south.png",
     "procedural": false,
     "text_only": false,
     "imported_contact_sheet": false,
     "final_path": "64/final/minion-direction-test-sheet.png",
-    "metadata_path": "64/final/minion-direction-test-metadata.json"
+    "metadata_path": "64/final/minion-direction-test-metadata.json",
+    "cleanup": {
+      "chroma_key": "#00ff00",
+      "edge_threshold": 120,
+      "residue_threshold": 120,
+      "green_residue_candidates_after_cleanup": 0
+    }
   },
   "strips": [
     {

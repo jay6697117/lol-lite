@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "url": "http://localhost:3000",
+  "checks": {
+    "game_booted": true,
+    "minion_direction_sheet_loaded": true,
+    "sheet_size": "384x6144",
+    "expected_sheet_size": "384x6144",
+    "live_game_uses_direction_rows": true,
+    "runtime_qa_draw_minion_samples": 48,
+    "console_warn_error_count": 0
+  },
+  "observations": [
+    "Runtime loaded assets/sprites/minion-animation-sheet-v2.png with natural size 384x6144.",
+    "Live minion direction distribution included north-east, east, and south-west during the sampled match state.",
+    "Temporary runtime QA canvas rendered 48 samples through game.drawMinion(): 8 directions x 6 team/type/action representatives.",
+    "No browser console warn/error messages were reported after reload and QA rendering."
+  ],
+  "artifacts": {
+    "in_game_screenshot": "64/qa/minion-v2-8dir-in-game-clean.png",
+    "runtime_qa_screenshot": "64/qa/minion-v2-8dir-runtime-qa.png",
+    "initial_in_game_screenshot": "64/qa/minion-v2-8dir-in-game.png"
+  }
+}

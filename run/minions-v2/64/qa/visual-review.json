@@ -1,26 +1,38 @@
 {
   "accepted": true,
   "reviewer_notes": [
-    "Contact sheet shows 24 generated 64px strips with six readable frames per row.",
-    "Blue and red melee/ranged/siege identities are visually distinct and match the requested dark MOBA faction palette.",
-    "South-east rows face diagonally toward screen-right/front; north-west rows face diagonally toward screen-left/back for the two-direction test.",
-    "Siege minions read as compact rune/rift crystal carts with rolling movement and cannon attack flashes."
+    "Full 8-direction minion v2 atlas contains 96 generated 64px rows: 8 directions x 2 teams x 3 minion types x move/attack.",
+    "Blue and red melee, ranged, and siege minions remain visually distinct with teal-blue arcane energy for blue and red-purple rift energy for red.",
+    "Direction groups are readable across south, south-east, east, north-east, north, north-west, west, and south-west; side/back/front silhouettes differ enough for gameplay readability.",
+    "Move rows show readable looping motion and attack rows show distinct weapon, projectile, swing, cannon flash, recoil, or recovery poses.",
+    "The atlas was cleaned after generation; strict validation reports zero chroma residue warnings and a custom green-residue pass reports zero remaining low-blue green pixels."
   ],
   "checks": {
     "reference_identity": true,
     "direction": true,
     "animation_readable": true,
     "frame_separation": true,
-    "not_procedural": true
+    "not_procedural": true,
+    "transparent_background": true,
+    "no_chroma_residue": true,
+    "eight_direction_scope": true
   },
   "artifacts": {
     "atlas": "64/final/minion-direction-test-sheet.png",
+    "metadata": "64/final/minion-direction-test-metadata.json",
     "contact_sheet": "64/qa/minion-direction-test-contact-sheet.png",
     "validation": "64/qa/minion-direction-test-validation.json",
     "motion": "64/qa/minion-direction-test-motion.json",
     "previews": "64/qa/previews",
-    "in_game_screenshot": "64/qa/minion-v2-in-game.png",
-    "siege_in_game_screenshot": "64/qa/minion-v2-siege-in-game.png"
+    "direction_contacts": [
+      "64/qa/minion-direction-south-contact-x3.png",
+      "64/qa/minion-direction-south-east-contact-x3.png",
+      "64/qa/minion-direction-east-contact-x3.png",
+      "64/qa/minion-direction-north-east-contact-x3.png",
+      "64/qa/minion-direction-north-contact-x3.png",
+      "64/qa/minion-direction-north-west-contact-x3.png",
+      "64/qa/minion-direction-west-contact-x3.png",
+      "64/qa/minion-direction-south-west-contact-x3.png"
+    ]
   }
 }
-

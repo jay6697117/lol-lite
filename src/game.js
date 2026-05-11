@@ -94,32 +94,22 @@
       siege: { move: 10, attack: 11 },
     },
   };
-  const MINION_DIRECTION_ROWS = {
-    'south-east': {
+  const MINION_DIRECTIONS = ['south', 'south-east', 'east', 'north-east', 'north', 'north-west', 'west', 'south-west'];
+  const MINION_DIRECTION_ROWS = Object.fromEntries(MINION_DIRECTIONS.map((direction, index) => {
+    const base = index * 12;
+    return [direction, {
       blue: {
-        melee: { move: 0, attack: 1 },
-        ranged: { move: 2, attack: 3 },
-        siege: { move: 16, attack: 17 },
+        melee: { move: base, attack: base + 1 },
+        ranged: { move: base + 2, attack: base + 3 },
+        siege: { move: base + 4, attack: base + 5 },
       },
       red: {
-        melee: { move: 4, attack: 5 },
-        ranged: { move: 6, attack: 7 },
-        siege: { move: 18, attack: 19 },
+        melee: { move: base + 6, attack: base + 7 },
+        ranged: { move: base + 8, attack: base + 9 },
+        siege: { move: base + 10, attack: base + 11 },
       },
-    },
-    'north-west': {
-      blue: {
-        melee: { move: 8, attack: 9 },
-        ranged: { move: 10, attack: 11 },
-        siege: { move: 20, attack: 21 },
-      },
-      red: {
-        melee: { move: 12, attack: 13 },
-        ranged: { move: 14, attack: 15 },
-        siege: { move: 22, attack: 23 },
-      },
-    },
-  };
+    }];
+  }));
   const EFFECT_ROWS = {
     slash: 0,
     ring: 1,
@@ -212,10 +202,7 @@
   }
 
   function minionDirectionKey(row) {
-    const v = rowVector(row);
-    if (v.x > 0.15) return 'south-east';
-    if (v.x < -0.15) return 'north-west';
-    return null;
+    return MINION_DIRECTIONS[row] || 'south';
   }
 
   function pointOnPath(t, path = LANE_PATH) {
