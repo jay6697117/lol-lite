@@ -1,0 +1,42 @@
+{
+  "idle": {
+    "validate_rc": 0,
+    "validate_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "validate_stderr": "",
+    "motion_rc": 0,
+    "motion_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "motion_stderr": ""
+  },
+  "move": {
+    "validate_rc": 0,
+    "validate_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "validate_stderr": "",
+    "motion_rc": 0,
+    "motion_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "motion_stderr": ""
+  },
+  "attack": {
+    "validate_rc": 0,
+    "validate_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "validate_stderr": "",
+    "motion_rc": 0,
+    "motion_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "motion_stderr": ""
+  },
+  "hit": {
+    "validate_rc": 0,
+    "validate_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "validate_stderr": "",
+    "motion_rc": 0,
+    "motion_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "motion_stderr": ""
+  },
+  "death": {
+    "validate_rc": 0,
+    "validate_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "validate_stderr": "",
+    "motion_rc": 0,
+    "motion_stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": 0\n}\n",
+    "motion_stderr": ""
+  }
+}

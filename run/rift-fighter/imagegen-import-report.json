@@ -1,8 +1,8 @@
 {
-  "input": "/Users/zhangjinhui/Desktop/lol-lite/run/rift-fighter/source/64-death-north-west.png",
+  "input": "/Users/zhangjinhui/Desktop/lol-lite/run/rift-fighter/source/64-death-south-west.png",
   "source_copy": null,
   "action": "death",
-  "direction": "north-west",
+  "direction": "south-west",
   "sizes": [
     64
   ],
@@ -16,7 +16,7 @@
   "outputs": [
     {
       "cell": 64,
-      "path": "/Users/zhangjinhui/Desktop/lol-lite/run/rift-fighter/64/generated/death-north-west.png",
+      "path": "/Users/zhangjinhui/Desktop/lol-lite/run/rift-fighter/64/generated/death-south-west.png",
       "row_bounds": [
         0,
         1024

@@ -1,0 +1,21 @@
+{
+  "accepted": true,
+  "reviewed_contact_sheets": [
+    "idle-contact-sheet.png",
+    "move-contact-sheet.png",
+    "attack-contact-sheet.png",
+    "hit-contact-sheet.png",
+    "death-contact-sheet.png"
+  ],
+  "checks": {
+    "identity": "红紫裂隙斗士与蓝方秘源守卫明显区分，暗铁紫红重甲、尖锐肩甲、红紫能量核心和重型符文裂刃在各动作中保持一致。",
+    "directions": "八方向行序可读，south/front、east/west side、north/back 与四个斜向均能区分。",
+    "actions": "idle、move、attack、hit、death 均有可读动作变化，weapon/cape/armor motion 没有明显断裂。",
+    "geometry": "最终 sheet 通过 validate_sheet 与 audit_sprite_motion，validation-summary.json 中五个动作 rc 均为 0 且 warnings 为 0。",
+    "runtime_ready": "最终资源位于 run/rift-fighter/64/final/*-sheet-clean.png，已可被 src/game.js 的 ENEMY_SPRITE_PATHS 加载。"
+  },
+  "notes": [
+    "contact sheets 带有 QA 编号和网格，仅用于目检，不是运行时资产。",
+    "运行时使用 clean sheet 的透明背景版本。"
+  ]
+}

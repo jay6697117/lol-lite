@@ -1,0 +1,66 @@
+{
+  "cell": 64,
+  "columns": 6,
+  "rows": 8,
+  "action": "attack",
+  "directions": [
+    "south",
+    "south-east",
+    "east",
+    "north-east",
+    "north",
+    "north-west",
+    "west",
+    "south-west"
+  ],
+  "rows_meta": [
+    {
+      "row": 0,
+      "action": "attack",
+      "direction": "south",
+      "frames": 6
+    },
+    {
+      "row": 1,
+      "action": "attack",
+      "direction": "south-east",
+      "frames": 6
+    },
+    {
+      "row": 2,
+      "action": "attack",
+      "direction": "east",
+      "frames": 6
+    },
+    {
+      "row": 3,
+      "action": "attack",
+      "direction": "north-east",
+      "frames": 6
+    },
+    {
+      "row": 4,
+      "action": "attack",
+      "direction": "north",
+      "frames": 6
+    },
+    {
+      "row": 5,
+      "action": "attack",
+      "direction": "north-west",
+      "frames": 6
+    },
+    {
+      "row": 6,
+      "action": "attack",
+      "direction": "west",
+      "frames": 6
+    },
+    {
+      "row": 7,
+      "action": "attack",
+      "direction": "south-west",
+      "frames": 6
+    }
+  ]
+}
