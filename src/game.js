@@ -705,6 +705,7 @@
       this.mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
       this.assets = {};
       this.assetsReady = false;
+      this.ready = false;
       this.lastTime = 0;
       this.paused = false;
       this.nextId = 0;
@@ -715,6 +716,7 @@
     start() {
       this.loadAssets().then(() => {
         this.assetsReady = true;
+        this.ready = true;
         this.reset();
         this.lastTime = performance.now();
         requestAnimationFrame(time => this.loop(time));
@@ -743,8 +745,8 @@
       this.projectiles = [];
       this.combatTexts = [];
       this.score = { blueKills: 0, redKills: 0 };
-      const playerStart = pointOnPath(0.38);
-      const enemyStart = pointOnPath(0.61);
+      const playerStart = pointOnPath(0.49);
+      const enemyStart = pointOnPath(0.67);
       this.player = new Hero(this, {
         team: BLUE,
         name: '秘源守卫',
@@ -1093,8 +1095,8 @@
 
     seedOpeningSkirmish() {
       const formation = ['melee', 'melee', 'melee', 'ranged', 'ranged'];
-      this.createMinionFormation(BLUE, 0.44, formation, 3, 0.98);
-      this.createMinionFormation(RED, 0.56, formation, 2, 0.98);
+      this.createMinionFormation(BLUE, 0.55, formation, 3, 0.92);
+      this.createMinionFormation(RED, 0.66, formation, 2, 0.92);
     }
 
     createMinionFormation(team, anchorT, types, waypoint, spread = 1) {
@@ -1258,7 +1260,7 @@
     }
 
     miniMapRect() {
-      return { x: 1034, y: 500, w: 218, h: 168 };
+      return { x: 1018, y: 488, w: 226, h: 176 };
     }
 
     worldToMini(entity) {
@@ -1278,7 +1280,7 @@
     }
 
     itemSlotAt(point) {
-      const startX = 820;
+      const startX = 734;
       const y = 646;
       for (let i = 0; i < 4; i += 1) {
         const x = startX + i * 52;
@@ -1299,10 +1301,29 @@
       const ctx = this.ctx;
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
       this.drawWorld(ctx);
+      this.drawSceneGrade(ctx);
       this.drawHUD(ctx);
       this.combatTexts.forEach(text => text.draw(ctx));
       if (this.paused) this.drawCenterOverlay(ctx, '暂停', '按 Esc 继续游戏');
       if (this.gameOver) this.drawCenterOverlay(ctx, this.gameOver === 'victory' ? '胜利' : '失败', '按 Enter 或点击画面重新开始');
+    }
+
+    drawSceneGrade(ctx) {
+      ctx.save();
+      ctx.globalCompositeOperation = 'multiply';
+      const fieldTone = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
+      fieldTone.addColorStop(0, 'rgba(9, 18, 14, .12)');
+      fieldTone.addColorStop(0.44, 'rgba(255, 244, 210, .03)');
+      fieldTone.addColorStop(1, 'rgba(17, 16, 12, .18)');
+      ctx.fillStyle = fieldTone;
+      ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      ctx.globalCompositeOperation = 'screen';
+      const gameplayLight = ctx.createRadialGradient(708, 316, 70, 708, 316, 430);
+      gameplayLight.addColorStop(0, 'rgba(255, 240, 186, .08)');
+      gameplayLight.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = gameplayLight;
+      ctx.fillRect(0, 0, WIDTH, HUD_Y);
+      ctx.restore();
     }
 
     drawWorld(ctx) {
@@ -1346,10 +1367,16 @@
         ctx.drawImage(background, sx, sy, sw, sh, 0, 0, WIDTH, HUD_Y);
         ctx.imageSmoothingEnabled = false;
         const depthTint = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
-        depthTint.addColorStop(0, 'rgba(8, 22, 26, .1)');
-        depthTint.addColorStop(0.54, 'rgba(255, 236, 180, .04)');
-        depthTint.addColorStop(1, 'rgba(2, 8, 12, .22)');
+        depthTint.addColorStop(0, 'rgba(7, 18, 15, .14)');
+        depthTint.addColorStop(0.5, 'rgba(224, 213, 160, .04)');
+        depthTint.addColorStop(1, 'rgba(15, 15, 10, .26)');
         ctx.fillStyle = depthTint;
+        ctx.fillRect(0, 0, WIDTH, HUD_Y);
+        const laneFocus = ctx.createRadialGradient(720, 314, 80, 720, 314, 560);
+        laneFocus.addColorStop(0, 'rgba(255, 238, 178, .08)');
+        laneFocus.addColorStop(0.48, 'rgba(0, 0, 0, 0)');
+        laneFocus.addColorStop(1, 'rgba(0, 0, 0, .24)');
+        ctx.fillStyle = laneFocus;
         ctx.fillRect(0, 0, WIDTH, HUD_Y);
         ctx.restore();
       } else {
@@ -1521,9 +1548,9 @@
         ctx.save();
         ctx.globalCompositeOperation = 'screen';
         [
-          { x: 210, y: 520, r: 170, color: 'rgba(67, 224, 210, .18)' },
-          { x: 1060, y: 130, r: 160, color: 'rgba(255, 83, 119, .16)' },
-          { x: 640, y: 318, r: 340, color: 'rgba(255, 235, 176, .08)' },
+          { x: 210, y: 520, r: 132, color: 'rgba(67, 184, 210, .1)' },
+          { x: 1060, y: 130, r: 126, color: 'rgba(255, 83, 88, .1)' },
+          { x: 690, y: 318, r: 310, color: 'rgba(255, 226, 164, .07)' },
         ].forEach(glow => {
           const teamGlow = ctx.createRadialGradient(glow.x, glow.y, 20, glow.x, glow.y, glow.r);
           teamGlow.addColorStop(0, glow.color);
@@ -1535,16 +1562,16 @@
       }
 
       const light = ctx.createRadialGradient(620, 318, 40, 620, 318, 660);
-      light.addColorStop(0, usesGeneratedBackground ? 'rgba(255, 246, 194, .28)' : 'rgba(255, 246, 194, .18)');
-      light.addColorStop(0.48, usesGeneratedBackground ? 'rgba(255, 255, 255, .08)' : 'rgba(255, 255, 255, .03)');
-      light.addColorStop(1, usesGeneratedBackground ? 'rgba(0, 0, 0, .08)' : 'rgba(0, 0, 0, .18)');
+      light.addColorStop(0, usesGeneratedBackground ? 'rgba(255, 246, 194, .24)' : 'rgba(255, 246, 194, .18)');
+      light.addColorStop(0.48, usesGeneratedBackground ? 'rgba(255, 255, 255, .06)' : 'rgba(255, 255, 255, .03)');
+      light.addColorStop(1, usesGeneratedBackground ? 'rgba(0, 0, 0, .12)' : 'rgba(0, 0, 0, .18)');
       ctx.fillStyle = light;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
 
-      const vignette = ctx.createRadialGradient(WIDTH / 2, HEIGHT / 2, 150, WIDTH / 2, HEIGHT / 2, 820);
+      const vignette = ctx.createRadialGradient(WIDTH / 2, HEIGHT / 2, 130, WIDTH / 2, HEIGHT / 2, 800);
       vignette.addColorStop(0, 'rgba(255,255,255,0)');
-      vignette.addColorStop(0.62, usesGeneratedBackground ? 'rgba(0,0,0,.08)' : 'rgba(0,0,0,.12)');
-      vignette.addColorStop(1, usesGeneratedBackground ? 'rgba(0,0,0,.34)' : 'rgba(0,0,0,.27)');
+      vignette.addColorStop(0.54, usesGeneratedBackground ? 'rgba(0,0,0,.08)' : 'rgba(0,0,0,.12)');
+      vignette.addColorStop(1, usesGeneratedBackground ? 'rgba(0,0,0,.48)' : 'rgba(0,0,0,.27)');
       ctx.fillStyle = vignette;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
 
@@ -1581,14 +1608,19 @@
       right.reverse().forEach(p => ctx.lineTo(p.x, p.y));
       ctx.closePath();
       const laneShade = ctx.createLinearGradient(160, 560, 1120, 96);
-      laneShade.addColorStop(0, 'rgba(255, 231, 164, .11)');
-      laneShade.addColorStop(0.5, 'rgba(255, 236, 183, .07)');
-      laneShade.addColorStop(1, 'rgba(37, 24, 22, .22)');
+      laneShade.addColorStop(0, 'rgba(255, 231, 164, .16)');
+      laneShade.addColorStop(0.46, 'rgba(255, 236, 183, .1)');
+      laneShade.addColorStop(1, 'rgba(37, 24, 22, .28)');
       ctx.fillStyle = laneShade;
       ctx.fill();
-      ctx.strokeStyle = 'rgba(18, 14, 11, .24)';
-      ctx.lineWidth = 10;
+      ctx.strokeStyle = 'rgba(10, 8, 7, .34)';
+      ctx.lineWidth = 16;
       ctx.stroke();
+      ctx.strokeStyle = 'rgba(255, 232, 162, .18)';
+      ctx.lineWidth = 3;
+      ctx.setLineDash([30, 18]);
+      ctx.stroke();
+      ctx.setLineDash([]);
       ctx.restore();
     }
 
@@ -1912,8 +1944,8 @@
 
     drawMinion(ctx, minion) {
       const style = TEAM_STYLE[minion.team];
-      const perspective = 0.88 + clamp(minion.y / HUD_Y, 0, 1) * 0.2;
-      const scale = (minion.type === 'siege' ? 1.18 : minion.type === 'ranged' ? 0.94 : 1) * perspective;
+      const perspective = 0.86 + clamp(minion.y / HUD_Y, 0, 1) * 0.16;
+      const scale = (minion.type === 'siege' ? 1.08 : minion.type === 'ranged' ? 0.9 : 0.96) * perspective;
       const v = rowVector(minion.direction);
       ctx.save();
       ctx.globalAlpha = minion.dead ? 0.42 : 1;
@@ -2025,8 +2057,8 @@
       const img = this.assets[action] || this.assets.idle;
       const frame = hero.dead ? Math.min(5, Math.floor(hero.deathAnim * 7)) : Math.floor(hero.animTime * 8.5) % 6;
       const row = hero.direction;
-      const perspective = 0.9 + clamp(hero.y / HUD_Y, 0, 1) * 0.14;
-      const size = (hero.isPlayer ? 108 : 102) * perspective;
+      const perspective = 0.86 + clamp(hero.y / HUD_Y, 0, 1) * 0.12;
+      const size = (hero.isPlayer ? 98 : 94) * perspective;
       if (hero.isPlayer && !hero.dead) {
         ctx.strokeStyle = 'rgba(255,229,153,.7)';
         ctx.lineWidth = 2;
@@ -2038,8 +2070,10 @@
       }
       if (img) {
         ctx.save();
-        if (hero.team === RED) ctx.filter = 'hue-rotate(132deg) saturate(1.65) brightness(1.08) contrast(1.12)';
-        else ctx.filter = 'saturate(1.36) brightness(1.18) contrast(1.1)';
+        ctx.shadowColor = style.main;
+        ctx.shadowBlur = hero.isPlayer ? 18 : 14;
+        if (hero.team === RED) ctx.filter = 'hue-rotate(132deg) saturate(1.5) brightness(1.08) contrast(1.14)';
+        else ctx.filter = 'saturate(1.26) brightness(1.16) contrast(1.12)';
         ctx.drawImage(img, frame * 64, row * 64, 64, 64, hero.x - size / 2, hero.y - size + 24, size, size);
         ctx.restore();
       } else {
@@ -2075,10 +2109,10 @@
       const y = entity.y + yOffset;
       ctx.save();
       roundedRect(ctx, x - (isHero ? 18 : 6), y - 25, width + (isHero ? 30 : 12), isHero ? 44 : 32, 7);
-      ctx.fillStyle = 'rgba(1, 7, 9, .72)';
+      ctx.fillStyle = 'rgba(1, 7, 9, .82)';
       ctx.fill();
-      ctx.strokeStyle = `${style.main}88`;
-      ctx.lineWidth = 1.4;
+      ctx.strokeStyle = `${style.main}aa`;
+      ctx.lineWidth = isHero ? 1.7 : 1.3;
       ctx.stroke();
       if (isHero) {
         ctx.fillStyle = 'rgba(0,0,0,.82)';
@@ -2106,7 +2140,7 @@
 
     drawSmallHealth(ctx, entity, width) {
       const style = TEAM_STYLE[entity.team];
-      drawBar(ctx, entity.x - width / 2, entity.y - 42, width, 5, hpRatio(entity), style.bar, 'rgba(0,0,0,.62)');
+      drawBar(ctx, entity.x - width / 2, entity.y - 44, width, 6, hpRatio(entity), style.bar, 'rgba(0,0,0,.72)', `${style.main}66`);
     }
 
     drawCursorIntent(ctx) {
@@ -2126,6 +2160,7 @@
     drawHUD(ctx) {
       this.drawTopHUD(ctx);
       this.drawMessages(ctx);
+      this.drawTeamRoster(ctx);
       this.drawMiniMap(ctx);
       this.drawBottomHUD(ctx);
     }
@@ -2212,6 +2247,38 @@
       }
     }
 
+    drawTeamRoster(ctx) {
+      const map = this.miniMapRect();
+      const x = map.x + 2;
+      const y = map.y - 64;
+      ctx.save();
+      roundedRect(ctx, x - 6, y - 8, 210, 48, 9);
+      ctx.fillStyle = 'rgba(1, 7, 9, .72)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(202,238,227,.24)';
+      ctx.stroke();
+      const slots = [
+        { team: BLUE, hp: hpRatio(this.player), label: '1' },
+        { team: BLUE, hp: 0.84, label: '2' },
+        { team: RED, hp: hpRatio(this.enemy), label: 'E' },
+        { team: RED, hp: 0.78, label: 'T' },
+      ];
+      slots.forEach((slot, index) => {
+        const style = TEAM_STYLE[slot.team];
+        const px = x + 18 + index * 48;
+        ctx.fillStyle = 'rgba(0,0,0,.64)';
+        ctx.beginPath();
+        ctx.arc(px, y + 15, 15, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = style.main;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        drawText(ctx, slot.label, px, y + 15, 11, '#ffffff', 'center', '900');
+        drawBar(ctx, px - 17, y + 34, 34, 4, slot.hp, style.bar, 'rgba(0,0,0,.76)', 'rgba(255,255,255,.2)');
+      });
+      ctx.restore();
+    }
+
     getPhaseText() {
       if (this.getBuilding(RED, 'tower').dead && this.getBuilding(BLUE, 'tower').dead) return '双塔已破：基地决战';
       if (this.getBuilding(RED, 'tower').dead) return '推进期：攻击敌方核心';
@@ -2223,9 +2290,9 @@
       const hero = this.player;
       ctx.save();
       const grad = ctx.createLinearGradient(0, HUD_Y - 12, 0, HEIGHT);
-      grad.addColorStop(0, 'rgba(7, 15, 18, .04)');
-      grad.addColorStop(0.18, 'rgba(7, 15, 18, .78)');
-      grad.addColorStop(1, 'rgba(2, 5, 7, .98)');
+      grad.addColorStop(0, 'rgba(7, 15, 18, .02)');
+      grad.addColorStop(0.16, 'rgba(3, 10, 13, .82)');
+      grad.addColorStop(1, 'rgba(1, 4, 6, .98)');
       ctx.fillStyle = grad;
       ctx.fillRect(0, HUD_Y - 12, WIDTH, HEIGHT - HUD_Y + 12);
       ctx.strokeStyle = 'rgba(202,238,227,.25)';
@@ -2233,50 +2300,87 @@
       ctx.moveTo(0, HUD_Y + 0.5);
       ctx.lineTo(WIDTH, HUD_Y + 0.5);
       ctx.stroke();
-
-      roundedRect(ctx, 26, 602, 462, 102, 9);
-      ctx.fillStyle = 'rgba(0,0,0,.68)';
+      roundedRect(ctx, 92, 600, 866, 108, 5);
+      ctx.fillStyle = 'rgba(4, 7, 8, .82)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(67,224,210,.46)';
-      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = 'rgba(185, 163, 105, .32)';
+      ctx.lineWidth = 1.4;
       ctx.stroke();
-      ctx.fillStyle = 'rgba(67,224,210,.12)';
-      ctx.beginPath();
-      ctx.arc(80, 653, 40, 0, Math.PI * 2);
+      const hudShine = ctx.createLinearGradient(92, 600, 958, 708);
+      hudShine.addColorStop(0, 'rgba(255, 225, 140, .07)');
+      hudShine.addColorStop(0.5, 'rgba(255,255,255,.015)');
+      hudShine.addColorStop(1, 'rgba(90, 122, 80, .07)');
+      ctx.fillStyle = hudShine;
       ctx.fill();
-      ctx.strokeStyle = TEAM_STYLE.blue.main;
+
+      roundedRect(ctx, 96, 606, 300, 94, 5);
+      ctx.fillStyle = 'rgba(2, 7, 8, .72)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(185, 163, 105, .32)';
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(22, 28, 21, .95)';
+      ctx.beginPath();
+      ctx.arc(146, 653, 42, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(198, 171, 98, .78)';
       ctx.lineWidth = 2;
       ctx.stroke();
-      ctx.strokeStyle = 'rgba(255,229,153,.42)';
+      ctx.fillStyle = 'rgba(45, 77, 54, .9)';
       ctx.beginPath();
-      ctx.arc(80, 653, 32, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * hpRatio(hero));
-      ctx.stroke();
-      drawText(ctx, hero.level, 80, 653, 24, '#ffe599', 'center', '900');
-      drawText(ctx, '秘源守卫', 142, 622, 16, '#d9fff6', 'left', '900');
-      drawText(ctx, `补刀 ${hero.cs}   金币 ${Math.floor(hero.gold)}   波次 ${this.waveNumber}`, 142, 690, 13, '#ffe599', 'left', '900');
-
-      drawBar(ctx, 142, 636, 326, 18, hpRatio(hero), TEAM_STYLE.blue.bar, 'rgba(0,0,0,.58)');
-      drawText(ctx, `${Math.ceil(hero.hp)} / ${hero.maxHp}`, 305, 645, 12, '#06221d', 'center', '900');
-      drawBar(ctx, 142, 661, 326, 13, manaRatio(hero), TEAM_STYLE.blue.mana, 'rgba(0,0,0,.56)');
-      drawBar(ctx, 142, 680, 160, 8, hero.xp / hero.xpNeeded, '#ffe599', 'rgba(0,0,0,.56)');
-      drawText(ctx, `攻击 ${Math.round(hero.attackDamage)}  移速 ${Math.round(hero.speed)}  技能点 ${hero.skillPoints}`, 322, 684, 12, '#d9fff6', 'left', '700');
-
-      roundedRect(ctx, 496, 602, 508, 102, 9);
-      ctx.fillStyle = 'rgba(0,0,0,.62)';
+      ctx.arc(146, 653, 31, 0, Math.PI * 2);
       ctx.fill();
-      ctx.strokeStyle = 'rgba(202,238,227,.2)';
+      if (this.assets.idle) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(146, 653, 31, 0, Math.PI * 2);
+        ctx.clip();
+        ctx.filter = 'saturate(1.12) brightness(1.08) contrast(1.08)';
+        ctx.drawImage(this.assets.idle, 0, 0, 64, 64, 112, 614, 68, 76);
+        ctx.restore();
+      }
+      ctx.strokeStyle = TEAM_STYLE.blue.main;
+      ctx.beginPath();
+      ctx.arc(146, 653, 34, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * hpRatio(hero));
       ctx.stroke();
-      ctx.fillStyle = 'rgba(255,255,255,.04)';
-      for (let i = 0; i < 6; i += 1) ctx.fillRect(510 + i * 78, 610, 1, 84);
-      drawText(ctx, '技能 / 装备', 748, 618, 12, '#bfece2', 'center', '900');
+      ctx.fillStyle = 'rgba(0,0,0,.72)';
+      ctx.beginPath();
+      ctx.arc(118, 681, 12, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(198, 171, 98, .72)';
+      ctx.stroke();
+      drawText(ctx, hero.level, 118, 681, 13, '#ffe599', 'center', '900');
+      drawText(ctx, '秘源守卫', 204, 620, 15, '#f0efe2', 'left', '900');
+      drawText(ctx, `CS ${hero.cs}   ${Math.floor(hero.gold)}g   波次 ${this.waveNumber}`, 204, 690, 12, '#e3c36f', 'left', '900');
+
+      drawBar(ctx, 204, 636, 170, 16, hpRatio(hero), TEAM_STYLE.blue.bar, 'rgba(0,0,0,.7)', 'rgba(221,202,132,.34)');
+      drawText(ctx, `${Math.ceil(hero.hp)} / ${hero.maxHp}`, 289, 644, 11, '#071510', 'center', '900');
+      drawBar(ctx, 204, 659, 170, 11, manaRatio(hero), TEAM_STYLE.blue.mana, 'rgba(0,0,0,.62)', 'rgba(221,202,132,.22)');
+      drawBar(ctx, 204, 676, 112, 7, hero.xp / hero.xpNeeded, '#d6b95e', 'rgba(0,0,0,.6)', 'rgba(221,202,132,.2)');
+      [['AD', Math.round(hero.attackDamage)], ['AP', Math.round(hero.spellPower)], ['MS', Math.round(hero.speed)], ['CS', hero.cs]].forEach(([label, value], index) => {
+        const sx = 104 + (index % 2) * 38;
+        const sy = 612 + Math.floor(index / 2) * 16;
+        drawText(ctx, label, sx, sy, 8, 'rgba(218,219,190,.72)', 'left', '900');
+        drawText(ctx, value, sx + 26, sy, 9, '#e3c36f', 'right', '900');
+      });
+
+      roundedRect(ctx, 404, 606, 542, 94, 5);
+      ctx.fillStyle = 'rgba(2, 7, 8, .66)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(185, 163, 105, .2)';
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(255,255,255,.035)';
+      for (let i = 0; i < 7; i += 1) ctx.fillRect(416 + i * 72, 612, 1, 78);
+      drawText(ctx, '技能 / 召唤师 / 装备', 674, 618, 11, 'rgba(218,219,190,.78)', 'center', '900');
       this.drawSkillBar(ctx, hero);
+      this.drawSummonerSlots(ctx);
       this.drawInventory(ctx, hero);
       ctx.restore();
     }
 
     drawSkillBar(ctx, hero) {
       const keys = ['q', 'w', 'e', 'r'];
-      const startX = 505;
+      const startX = 418;
       keys.forEach((key, index) => {
         const skill = hero.skills[key];
         const x = startX + index * 72;
@@ -2284,7 +2388,7 @@
         roundedRect(ctx, x, y, 58, 58, 8);
         ctx.fillStyle = skill.level > 0 ? 'rgba(17, 35, 38, .9)' : 'rgba(20, 20, 24, .85)';
         ctx.fill();
-        ctx.strokeStyle = skill.cooldown > 0 ? '#666' : key === 'r' ? '#ffe599' : '#8fffe9';
+        ctx.strokeStyle = skill.cooldown > 0 ? '#555' : key === 'r' ? '#e3c36f' : '#7cc9df';
         ctx.lineWidth = 2;
         ctx.stroke();
         this.drawSkillIcon(ctx, key, x + 29, y + 27, skill.level > 0);
@@ -2305,11 +2409,11 @@
     drawSkillIcon(ctx, key, x, y, active) {
       ctx.save();
       ctx.globalAlpha = active ? 1 : 0.32;
-      ctx.strokeStyle = key === 'r' ? '#ffe599' : '#8fffe9';
-      ctx.fillStyle = key === 'w' ? 'rgba(143,255,233,.22)' : 'transparent';
-      ctx.lineWidth = 4;
-      ctx.shadowColor = ctx.strokeStyle;
-      ctx.shadowBlur = 12;
+      ctx.strokeStyle = key === 'r' ? '#e3c36f' : '#8fb4c4';
+      ctx.fillStyle = key === 'w' ? 'rgba(143,180,196,.18)' : 'transparent';
+      ctx.lineWidth = 3.5;
+      ctx.shadowColor = 'rgba(0,0,0,.7)';
+      ctx.shadowBlur = 4;
       if (key === 'q') {
         ctx.beginPath();
         ctx.arc(x, y, 18, -0.8, 0.8);
@@ -2349,17 +2453,40 @@
       ctx.restore();
     }
 
+    drawSummonerSlots(ctx) {
+      [['D', '#8fb4c4'], ['F', '#e3c36f']].forEach(([key, color], index) => {
+        const x = 698;
+        const y = 632 + index * 33;
+        roundedRect(ctx, x, y, 30, 30, 6);
+        ctx.fillStyle = 'rgba(12, 24, 27, .86)';
+        ctx.fill();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.3;
+        ctx.stroke();
+        ctx.strokeStyle = color;
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 9;
+        ctx.beginPath();
+        ctx.moveTo(x + 9, y + 21);
+        ctx.lineTo(x + 15, y + 8);
+        ctx.lineTo(x + 21, y + 21);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        drawText(ctx, key, x + 6, y + 7, 9, '#ffffff', 'center', '900');
+      });
+    }
+
     drawInventory(ctx, hero) {
-      const startX = 820;
+      const startX = 734;
       ITEMS.forEach((item, index) => {
         const x = startX + index * 52;
         const y = 646;
-        roundedRect(ctx, x, y, 44, 44, 7);
-        ctx.fillStyle = hero.inventory[index] ? 'rgba(255, 195, 90, .28)' : 'rgba(255,255,255,.06)';
+        roundedRect(ctx, x, y, 44, 44, 4);
+        ctx.fillStyle = hero.inventory[index] ? 'rgba(221, 174, 70, .28)' : 'rgba(255,255,255,.055)';
         ctx.fill();
-        ctx.strokeStyle = hero.inventory[index] ? '#ffc35a' : 'rgba(202,238,227,.22)';
+        ctx.strokeStyle = hero.inventory[index] ? '#dcae46' : 'rgba(185,163,105,.24)';
         ctx.stroke();
-        ctx.fillStyle = hero.inventory[index] ? '#ffc35a' : 'rgba(143,255,233,.5)';
+        ctx.fillStyle = hero.inventory[index] ? '#dcae46' : 'rgba(160,170,150,.58)';
         ctx.beginPath();
         ctx.moveTo(x + 22, y + 8);
         ctx.lineTo(x + 34, y + 20);
@@ -2370,9 +2497,9 @@
         ctx.fillStyle = 'rgba(0,0,0,.38)';
         ctx.fillRect(x + 14, y + 18, 16, 5);
         drawText(ctx, item.key, x + 8, y + 9, 11, '#ffffff', 'center', '900');
-        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 22, y + 39, 10, hero.inventory[index] ? '#ffe599' : '#bfece2', 'center', '700');
+        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 22, y + 39, 10, hero.inventory[index] ? '#e3c36f' : '#c8c4a8', 'center', '700');
       });
-      drawText(ctx, '装备栏', startX + 100, 626, 13, '#d9fff6', 'center', '900');
+      drawText(ctx, '装备栏', startX + 100, 626, 12, '#d8d3b6', 'center', '900');
     }
 
     drawMessages(ctx) {
@@ -2394,15 +2521,15 @@
 
     drawMiniMap(ctx) {
       const map = this.miniMapRect();
-      roundedRect(ctx, map.x - 10, map.y - 30, map.w + 20, map.h + 40, 18);
-      ctx.fillStyle = 'rgba(1, 6, 8, .88)';
+      roundedRect(ctx, map.x - 10, map.y - 28, map.w + 20, map.h + 38, 6);
+      ctx.fillStyle = 'rgba(2, 5, 6, .9)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(202,238,227,.34)';
+      ctx.strokeStyle = 'rgba(185,163,105,.36)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
-      drawText(ctx, '战术地图', map.x + map.w / 2, map.y - 13, 12, '#d9fff6', 'center', '900');
+      drawText(ctx, '小地图', map.x + map.w / 2, map.y - 13, 12, '#d8d3b6', 'center', '900');
       ctx.save();
-      roundedRect(ctx, map.x, map.y, map.w, map.h, 14);
+      roundedRect(ctx, map.x, map.y, map.w, map.h, 4);
       ctx.clip();
       const bg = ctx.createLinearGradient(map.x, map.y, map.x + map.w, map.y + map.h);
       bg.addColorStop(0, '#16351f');
@@ -2530,7 +2657,7 @@
       ctx.setLineDash([]);
       ctx.restore();
       ctx.globalAlpha = 1;
-      roundedRect(ctx, map.x, map.y, map.w, map.h, 14);
+      roundedRect(ctx, map.x, map.y, map.w, map.h, 4);
       ctx.strokeStyle = 'rgba(143,255,233,.46)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
