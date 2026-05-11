@@ -6,3 +6,156 @@ OK blue-siege-move-south
 {"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-south.png", "bytes": 973767}
 OK blue-siege-attack-south
 [7/96] attempt 1 generate 64-red-melee-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-south.png", "bytes": 965861}
+OK red-melee-move-south
+[8/96] attempt 1 generate 64-red-melee-attack-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-south.png", "bytes": 969767}
+OK red-melee-attack-south
+[9/96] attempt 1 generate 64-red-ranged-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-south.png", "bytes": 1003952}
+OK red-ranged-move-south
+[10/96] attempt 1 generate 64-red-ranged-attack-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-attack-south.png", "bytes": 967346}
+OK red-ranged-attack-south
+[11/96] attempt 1 generate 64-red-siege-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-move-south.png", "bytes": 1001489}
+OK red-siege-move-south
+[12/96] attempt 1 generate 64-red-siege-attack-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-attack-south.png", "bytes": 1002331}
+OK red-siege-attack-south
+[25/96] attempt 1 generate 64-blue-melee-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-move-east.png", "bytes": 953702}
+OK blue-melee-move-east
+[26/96] attempt 1 generate 64-blue-melee-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-attack-east.png", "bytes": 937561}
+OK blue-melee-attack-east
+[27/96] attempt 1 generate 64-blue-ranged-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-move-east.png", "bytes": 950138}
+OK blue-ranged-move-east
+[28/96] attempt 1 generate 64-blue-ranged-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-attack-east.png", "bytes": 930712}
+OK blue-ranged-attack-east
+[29/96] attempt 1 generate 64-blue-siege-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-move-east.png", "bytes": 955614}
+OK blue-siege-move-east
+[30/96] attempt 1 generate 64-blue-siege-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-east.png", "bytes": 953162}
+OK blue-siege-attack-east
+[31/96] attempt 1 generate 64-red-melee-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-east.png", "bytes": 977184}
+OK red-melee-move-east
+[32/96] attempt 1 generate 64-red-melee-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-east.png", "bytes": 955677}
+OK red-melee-attack-east
+[33/96] attempt 1 generate 64-red-ranged-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-east.png", "bytes": 949436}
+OK red-ranged-move-east
+[34/96] attempt 1 generate 64-red-ranged-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-attack-east.png", "bytes": 946589}
+OK red-ranged-attack-east
+[35/96] attempt 1 generate 64-red-siege-move-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-move-east.png", "bytes": 972617}
+OK red-siege-move-east
+[36/96] attempt 1 generate 64-red-siege-attack-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-attack-east.png", "bytes": 972537}
+OK red-siege-attack-east
+[37/96] attempt 1 generate 64-blue-melee-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-move-north-east.png", "bytes": 966000}
+OK blue-melee-move-north-east
+[38/96] attempt 1 generate 64-blue-melee-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-attack-north-east.png", "bytes": 941631}
+OK blue-melee-attack-north-east
+[39/96] attempt 1 generate 64-blue-ranged-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-move-north-east.png", "bytes": 949080}
+OK blue-ranged-move-north-east
+[40/96] attempt 1 generate 64-blue-ranged-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-attack-north-east.png", "bytes": 933559}
+OK blue-ranged-attack-north-east
+[41/96] attempt 1 generate 64-blue-siege-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-move-north-east.png", "bytes": 978731}
+OK blue-siege-move-north-east
+[42/96] attempt 1 generate 64-blue-siege-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-north-east.png", "bytes": 978664}
+OK blue-siege-attack-north-east
+[43/96] attempt 1 generate 64-red-melee-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-north-east.png", "bytes": 995590}
+OK red-melee-move-north-east
+[44/96] attempt 1 generate 64-red-melee-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-north-east.png", "bytes": 947963}
+OK red-melee-attack-north-east
+[45/96] attempt 1 generate 64-red-ranged-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-north-east.png", "bytes": 980945}
+OK red-ranged-move-north-east
+[46/96] attempt 1 generate 64-red-ranged-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-attack-north-east.png", "bytes": 971949}
+OK red-ranged-attack-north-east
+[47/96] attempt 1 generate 64-red-siege-move-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-move-north-east.png", "bytes": 982878}
+OK red-siege-move-north-east
+[48/96] attempt 1 generate 64-red-siege-attack-north-east.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-attack-north-east.png", "bytes": 1000561}
+OK red-siege-attack-north-east
+[49/96] attempt 1 generate 64-blue-melee-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-move-north.png", "bytes": 941043}
+OK blue-melee-move-north
+[50/96] attempt 1 generate 64-blue-melee-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-attack-north.png", "bytes": 980991}
+OK blue-melee-attack-north
+[51/96] attempt 1 generate 64-blue-ranged-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-move-north.png", "bytes": 962278}
+OK blue-ranged-move-north
+[52/96] attempt 1 generate 64-blue-ranged-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-attack-north.png", "bytes": 938019}
+OK blue-ranged-attack-north
+[53/96] attempt 1 generate 64-blue-siege-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-move-north.png", "bytes": 968063}
+OK blue-siege-move-north
+[54/96] attempt 1 generate 64-blue-siege-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-north.png", "bytes": 1014097}
+OK blue-siege-attack-north
+[55/96] attempt 1 generate 64-red-melee-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-north.png", "bytes": 957193}
+OK red-melee-move-north
+[56/96] attempt 1 generate 64-red-melee-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-north.png", "bytes": 965319}
+OK red-melee-attack-north
+[57/96] attempt 1 generate 64-red-ranged-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-north.png", "bytes": 971200}
+OK red-ranged-move-north
+[58/96] attempt 1 generate 64-red-ranged-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-attack-north.png", "bytes": 957328}
+OK red-ranged-attack-north
+[59/96] attempt 1 generate 64-red-siege-move-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-move-north.png", "bytes": 946288}
+OK red-siege-move-north
+[60/96] attempt 1 generate 64-red-siege-attack-north.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-siege-attack-north.png", "bytes": 980636}
+OK red-siege-attack-north
+[73/96] attempt 1 generate 64-blue-melee-move-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-move-west.png", "bytes": 947016}
+OK blue-melee-move-west
+[74/96] attempt 1 generate 64-blue-melee-attack-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-attack-west.png", "bytes": 942521}
+OK blue-melee-attack-west
+[75/96] attempt 1 generate 64-blue-ranged-move-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-move-west.png", "bytes": 954158}
+OK blue-ranged-move-west
+[76/96] attempt 1 generate 64-blue-ranged-attack-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-attack-west.png", "bytes": 950180}
+OK blue-ranged-attack-west
+[77/96] attempt 1 generate 64-blue-siege-move-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-move-west.png", "bytes": 981631}
+OK blue-siege-move-west
+[78/96] attempt 1 generate 64-blue-siege-attack-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-west.png", "bytes": 961372}
+OK blue-siege-attack-west
+[79/96] attempt 1 generate 64-red-melee-move-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-move-west.png", "bytes": 992049}
+OK red-melee-move-west
+[80/96] attempt 1 generate 64-red-melee-attack-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-melee-attack-west.png", "bytes": 956319}
+OK red-melee-attack-west
+[81/96] attempt 1 generate 64-red-ranged-move-west.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-red-ranged-move-west.png", "bytes": 965871}
+OK red-ranged-move-west
+[82/96] attempt 1 generate 64-red-ranged-attack-west.png
