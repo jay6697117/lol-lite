@@ -1,0 +1,17 @@
+Create an original 2.5D pixel-art MOBA minion animation sprite sheet. Pure flat chroma-key background #00ff00 only, no gradient, no UI, no text, no frame numbers, no labels, no borders, no floor, no baked shadow. Output a clean sheet with equal 64x64 intended cells, 6 columns per row, 12 rows total. Each row is one horizontal animation strip of exactly six frames. Style: readable 64px pixel art, hard pixel edges, limited palette, original fantasy arcane ruins factions, simpler than hero, suitable for grass and broken-stone MOBA lane. Blue team uses teal-blue arcane crystal energy; red team uses red-purple rift energy. Do not copy any commercial MOBA minion design.
+
+Rows in exact order:
+1 blue melee minion move south, short blade and compact armor, clear alternating feet.
+2 blue melee minion attack south, anticipation/swing/contact/recover.
+3 blue ranged minion move south, small caster staff with teal crystal, clear walk loop.
+4 blue ranged minion attack south, draw/aim/release/recover with tiny teal spell spark.
+5 blue siege minion move south, small rune crystal cart, rolling/chugging motion.
+6 blue siege minion attack south, charge/recoil/fire/recover with crystal cannon flash.
+7 red melee minion move south, short weapon and dark red armor, clear alternating feet.
+8 red melee minion attack south, anticipation/swing/contact/recover.
+9 red ranged minion move south, rift staff with red-purple crystal, clear walk loop.
+10 red ranged minion attack south, draw/aim/release/recover with tiny red-purple spell spark.
+11 red siege minion move south, small rift crystal cart, rolling/chugging motion.
+12 red siege minion attack south, charge/recoil/fire/recover with rift cannon flash.
+
+All minions front-facing south, same 2.5D camera as the hero sprites, centered in every cell with 2-4 px margin.

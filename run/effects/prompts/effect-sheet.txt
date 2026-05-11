@@ -1,0 +1,11 @@
+Create an original transparent-style VFX sprite sheet for a 2.5D fantasy MOBA prototype. Use pure flat chroma-key background #00ff00 only, no gradient background, no UI, no text, no frame numbers, no labels, no borders. Output a clean 6 columns x 6 rows sheet, equal cells, each row exactly six animation frames. Style: additive glow, crisp game VFX, readable over grass and stone lane, original design only, do not copy commercial MOBA effects.
+
+Rows in exact order:
+1 basic teal sword slash: anticipation arc, bright contact, fading follow-through, ellipse-perspective and attached-to-weapon feel.
+2 teal shield ring: forming hex shield, bright hold, fade; suitable around hero body.
+3 gold-teal dash trail: fast diagonal streaks and star sparks, fade quickly.
+4 golden-cyan ultimate shockwave: elliptical ground shockwave expanding outward, strong center then fade.
+5 red-purple tower projectile: crystal bolt forming, flying glow, impact-ready frames.
+6 hit spark: short burst of teal/red-neutral sparks, bright contact then fade.
+
+Each frame should fit inside one cell with safe margin; no characters, no weapons except abstract slash energy, no floor shadow.

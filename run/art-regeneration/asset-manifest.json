@@ -1,0 +1,56 @@
+{
+  "reference": {
+    "source_type": "chat_attachment_and_local_file",
+    "source": "Image #2 plus /Users/zhangjinhui/Desktop/lol-lite/moba_25d_interface.png for camera/composition grounding",
+    "used_for_generation": true,
+    "identity_notes": [
+      "original 2.5D isometric single-lane MOBA battlefield",
+      "blue-teal allied faction and red-magenta enemy faction",
+      "fantasy rune/crystal towers, minions, core structures, HUD icons",
+      "no direct copying of commercial MOBA characters, icons, or map details"
+    ]
+  },
+  "scope": {
+    "backgrounds": [
+      "assets/backgrounds/moba-lane-bg-regenerated.png"
+    ],
+    "object_sheets": [
+      "assets/sprites/moba-object-sheet.png"
+    ],
+    "ui_icon_sheets": [
+      "assets/ui/moba-icon-sheet.png"
+    ],
+    "existing_codex_character_sheets_reused": [
+      "run/64/final/idle-sheet-clean.png",
+      "run/64/final/move-sheet-clean.png",
+      "run/64/final/attack-sheet-clean.png",
+      "run/64/final/hit-sheet-clean.png",
+      "run/64/final/death-sheet-clean.png"
+    ]
+  },
+  "generation": {
+    "method": "codex-gateway-imagegen",
+    "procedural": false,
+    "text_only": false,
+    "imagegen_output_paths": [
+      "assets/backgrounds/moba-lane-bg-regenerated.png",
+      "run/art-regeneration/source/moba-object-sheet-raw.png",
+      "run/art-regeneration/source/moba-icon-sheet-raw.png"
+    ]
+  },
+  "prompts": [
+    "run/art-regeneration/prompts/background.txt",
+    "run/art-regeneration/prompts/object-sheet.txt",
+    "run/art-regeneration/prompts/icon-sheet.txt"
+  ],
+  "processed_outputs": [
+    {
+      "path": "assets/sprites/moba-object-sheet.png",
+      "cleanup": "game-character-sprites/scripts/pixel_snap.py chroma-key #00ff00"
+    },
+    {
+      "path": "assets/ui/moba-icon-sheet.png",
+      "cleanup": "game-character-sprites/scripts/pixel_snap.py chroma-key #00ff00"
+    }
+  ]
+}

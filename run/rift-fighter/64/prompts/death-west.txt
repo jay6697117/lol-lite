@@ -1,0 +1,16 @@
+Create a 64x64 pixel-art game sprite animation strip for an original 2.5D MOBA enemy hero.
+Character identity to preserve exactly: 原创敌方英雄“裂隙斗士”：红紫裂隙能量阵营，暗铁和紫红重甲，尖锐肩甲，红紫能量核心，重型符文裂刃，轮廓比秘源守卫更尖锐、更具侵略性，但保持同一 64x64 2.5D MOBA 像素精灵比例。不能像任何现有商业 MOBA 英雄。
+Visual style: 像素艺术，64x64 game-ready sprite，2.5D 等距斜俯视角，硬边像素，有限调色板，颜色和轮廓清晰，适合草地石板路幻想 MOBA 战场。无 UI、无文字、无数字、无边框、无阴影地板、无场景背景。
+Action: death animation: six frames wounded stagger, knees buckle, fall, collapse, settle on ground, final still body; weapon remains visible and inside cell.
+Direction: west: side-facing screen-left, clear profile, weapon points and body orientation toward screen-left.
+
+Strict strip requirements:
+- One horizontal row of exactly 6 separated frames.
+- Each frame is intended for one 64x64 sprite cell.
+- Pure flat solid chroma-key background #00ff00 only.
+- No gradient background, no floor, no cast shadow, no UI, no text, no frame numbers, no labels, no frame borders.
+- Full body and weapon visible in every frame, centered with 2-4 px margin.
+- Same character design, palette, head size, armor, cape, and weapon across all frames.
+- Direction must stay locked for all six frames; do not drift into another direction.
+- Pixel-art hard edges, limited palette, crisp silhouette, readable at 64x64.
+- Original art only, do not copy any existing commercial game character.

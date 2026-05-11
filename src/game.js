@@ -31,13 +31,72 @@
       text: '#ffe0e8',
     },
   };
-  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg.png';
+  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-regenerated.png';
+  const OBJECT_SHEET_PATH = 'assets/sprites/moba-object-sheet.png';
+  const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet.png';
+  const MINION_SHEET_PATH = 'assets/sprites/minion-animation-sheet.png';
+  const EFFECT_SHEET_PATH = 'assets/effects/moba-effect-sheet.png';
+  const ART_CELL = 256;
+  const ART_COLUMNS = 4;
+  const ANIM_CELL = 64;
+  const ANIM_COLUMNS = 6;
   const SPRITE_PATHS = {
     idle: 'run/64/final/idle-sheet-clean.png',
     move: 'run/64/final/move-sheet-clean.png',
     attack: 'run/64/final/attack-sheet-clean.png',
     hit: 'run/64/final/hit-sheet-clean.png',
     death: 'run/64/final/death-sheet-clean.png',
+  };
+  const ENEMY_SPRITE_PATHS = {
+    idle: 'run/rift-fighter/64/final/idle-sheet-clean.png',
+    move: 'run/rift-fighter/64/final/move-sheet-clean.png',
+    attack: 'run/rift-fighter/64/final/attack-sheet-clean.png',
+    hit: 'run/rift-fighter/64/final/hit-sheet-clean.png',
+    death: 'run/rift-fighter/64/final/death-sheet-clean.png',
+  };
+  const OBJECT_CELLS = {
+    minion: {
+      blue: { melee: 0, ranged: 1, siege: 2 },
+      red: { melee: 4, ranged: 5, siege: 6 },
+    },
+    building: {
+      blue: { tower: 3, core: 8 },
+      red: { tower: 7, core: 9 },
+    },
+    decor: {
+      tree: 10,
+      brush: 11,
+      rock: 12,
+      ruin: 13,
+      wall: 13,
+      torchBlue: 14,
+      torchRed: 15,
+    },
+  };
+  const ICON_CELLS = {
+    skills: { q: 0, w: 1, e: 2, r: 3 },
+    items: [4, 5, 6, 7],
+    summoners: [8, 9],
+  };
+  const MINION_ROWS = {
+    blue: {
+      melee: { move: 0, attack: 1 },
+      ranged: { move: 2, attack: 3 },
+      siege: { move: 4, attack: 5 },
+    },
+    red: {
+      melee: { move: 6, attack: 7 },
+      ranged: { move: 8, attack: 9 },
+      siege: { move: 10, attack: 11 },
+    },
+  };
+  const EFFECT_ROWS = {
+    slash: 0,
+    ring: 1,
+    dash: 2,
+    blast: 3,
+    projectile: 4,
+    spark: 5,
   };
   const ITEMS = [
     { key: '1', name: '裂纹长刃', cost: 300, stat: '+14 攻击', apply: hero => { hero.attackDamage += 14; } },
@@ -203,11 +262,22 @@
       this.life -= dt;
     }
 
-    draw(ctx) {
+    draw(ctx, image = null) {
       const p = 1 - clamp(this.life / this.maxLife, 0, 1);
       const alpha = clamp(this.life / this.maxLife, 0, 1);
       ctx.save();
       ctx.globalAlpha = alpha;
+      const effectRow = EFFECT_ROWS[this.type];
+      if (image && effectRow !== undefined) {
+        const frame = Math.min(ANIM_COLUMNS - 1, Math.floor(p * ANIM_COLUMNS));
+        const size = this.radius * (this.type === 'blast' ? 2.6 : this.type === 'ring' ? 2.2 : 2);
+        ctx.translate(this.x, this.y);
+        if (this.angle !== undefined) ctx.rotate(this.angle);
+        ctx.globalCompositeOperation = 'screen';
+        ctx.drawImage(image, frame * ANIM_CELL, effectRow * ANIM_CELL, ANIM_CELL, ANIM_CELL, -size / 2, -size / 2, size, size);
+        ctx.restore();
+        return;
+      }
       ctx.strokeStyle = this.color;
       ctx.fillStyle = this.color;
       ctx.lineWidth = 3;
@@ -251,10 +321,12 @@
       this.speed = options.speed ?? 440;
       this.color = options.color ?? '#ffffff';
       this.life = 3;
+      this.age = 0;
     }
 
     update(dt) {
       if (this.dead) return;
+      this.age += dt;
       this.life -= dt;
       if (this.life <= 0 || !this.game.isAlive(this.target)) {
         this.dead = true;
@@ -275,9 +347,17 @@
       this.y += dy / dist * step;
     }
 
-    draw(ctx) {
+    draw(ctx, image = null) {
       if (this.dead) return;
       ctx.save();
+      if (image && EFFECT_ROWS.projectile !== undefined) {
+        const frame = Math.floor(this.age * 14) % ANIM_COLUMNS;
+        const size = this.radius * 8;
+        ctx.globalCompositeOperation = 'screen';
+        ctx.drawImage(image, frame * ANIM_CELL, EFFECT_ROWS.projectile * ANIM_CELL, ANIM_CELL, ANIM_CELL, this.x - size / 2, this.y - size / 2, size, size);
+        ctx.restore();
+        return;
+      }
       ctx.fillStyle = this.color;
       ctx.shadowColor = this.color;
       ctx.shadowBlur = 18;
@@ -724,7 +804,15 @@
     }
 
     loadAssets() {
-      const entries = [['background', BACKGROUND_PATH], ...Object.entries(SPRITE_PATHS)];
+      const entries = [
+        ['background', BACKGROUND_PATH],
+        ['objects', OBJECT_SHEET_PATH],
+        ['icons', ICON_SHEET_PATH],
+        ['minions', MINION_SHEET_PATH],
+        ['effects', EFFECT_SHEET_PATH],
+        ...Object.entries(SPRITE_PATHS),
+        ...Object.entries(ENEMY_SPRITE_PATHS).map(([key, src]) => [`enemy-${key}`, src]),
+      ];
       return Promise.all(entries.map(([key, src]) => new Promise(resolve => {
         const img = new Image();
         img.onload = () => { this.assets[key] = img; resolve(); };
@@ -1012,7 +1100,7 @@
       hero.x = clamp(hero.x + dir.x * (126 + skill.level * 9), 70, 1210);
       hero.y = clamp(hero.y + dir.y * (96 + skill.level * 6), 70, HUD_Y - 30);
       hero.empoweredTimer = 4.5;
-      this.effects.push(new Effect({ type: 'ring', x: hero.x, y: hero.y, color: '#ffe599', radius: 62, life: 0.48 }));
+      this.effects.push(new Effect({ type: 'dash', x: hero.x - dir.x * 36, y: hero.y - dir.y * 24, angle: Math.atan2(dir.y, dir.x), color: '#ffe599', radius: 74, life: 0.48 }));
       this.pushMessage('踏星突进完成，下一次普攻强化。', '#ffe599');
     }
 
@@ -1297,6 +1385,44 @@
       drawText(ctx, '正在装载秘源战场与 8 方向精灵图...', WIDTH / 2, HEIGHT / 2, 24, '#8fffe9', 'center', '900');
     }
 
+    drawSheetCell(ctx, image, cell, x, y, width, height) {
+      if (!image || cell === undefined) return false;
+      const smoothing = ctx.imageSmoothingEnabled;
+      ctx.imageSmoothingEnabled = true;
+      ctx.drawImage(
+        image,
+        (cell % ART_COLUMNS) * ART_CELL,
+        Math.floor(cell / ART_COLUMNS) * ART_CELL,
+        ART_CELL,
+        ART_CELL,
+        x,
+        y,
+        width,
+        height,
+      );
+      ctx.imageSmoothingEnabled = smoothing;
+      return true;
+    }
+
+    drawAnimCell(ctx, image, row, frame, x, y, width, height) {
+      if (!image || row === undefined) return false;
+      const smoothing = ctx.imageSmoothingEnabled;
+      ctx.imageSmoothingEnabled = false;
+      ctx.drawImage(
+        image,
+        (frame % ANIM_COLUMNS) * ANIM_CELL,
+        row * ANIM_CELL,
+        ANIM_CELL,
+        ANIM_CELL,
+        x,
+        y,
+        width,
+        height,
+      );
+      ctx.imageSmoothingEnabled = smoothing;
+      return true;
+    }
+
     render() {
       const ctx = this.ctx;
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
@@ -1328,7 +1454,7 @@
 
     drawWorld(ctx) {
       this.drawTerrain(ctx);
-      this.effects.filter(effect => effect.type === 'ring' || effect.type === 'blast').forEach(effect => effect.draw(ctx));
+      this.effects.filter(effect => effect.type === 'ring' || effect.type === 'blast').forEach(effect => effect.draw(ctx, this.assets.effects));
 
       const visibleDecor = this.assets.background ? this.decor.filter(item => item.type === 'torch') : this.decor;
       const drawables = [
@@ -1339,8 +1465,8 @@
       ].sort((a, b) => a.y - b.y);
       drawables.forEach(item => item.draw());
 
-      this.projectiles.forEach(projectile => projectile.draw(ctx));
-      this.effects.filter(effect => effect.type === 'slash' || effect.type === 'spark').forEach(effect => effect.draw(ctx));
+      this.projectiles.forEach(projectile => projectile.draw(ctx, this.assets.effects));
+      this.effects.filter(effect => effect.type === 'slash' || effect.type === 'spark' || effect.type === 'dash').forEach(effect => effect.draw(ctx, this.assets.effects));
       this.drawCursorIntent(ctx);
     }
 
@@ -1684,6 +1810,26 @@
       ctx.save();
       ctx.translate(item.x, item.y);
       ctx.scale(item.s, item.s);
+      const decorCell = item.type === 'torch'
+        ? OBJECT_CELLS.decor[item.team === RED ? 'torchRed' : 'torchBlue']
+        : OBJECT_CELLS.decor[item.type];
+      if (this.assets.objects && decorCell !== undefined) {
+        const box = {
+          tree: { x: -63, y: -138, w: 126, h: 156, shadow: [0, 18, 42, 14] },
+          brush: { x: -68, y: -76, w: 136, h: 86, shadow: [0, 10, 62, 18] },
+          rock: { x: -58, y: -74, w: 116, h: 88, shadow: [0, 16, 42, 14] },
+          ruin: { x: -64, y: -80, w: 128, h: 94, shadow: [0, 20, 52, 16] },
+          wall: { x: -64, y: -80, w: 128, h: 94, shadow: [0, 20, 58, 16] },
+          torch: { x: -37, y: -96, w: 74, h: 108, shadow: [0, 14, 30, 10] },
+        }[item.type] || { x: -58, y: -78, w: 116, h: 96, shadow: [0, 18, 48, 16] };
+        ctx.fillStyle = 'rgba(0,0,0,.28)';
+        ctx.beginPath();
+        ctx.ellipse(...box.shadow, 0, 0, Math.PI * 2);
+        ctx.fill();
+        this.drawSheetCell(ctx, this.assets.objects, decorCell, box.x, box.y, box.w, box.h);
+        ctx.restore();
+        return;
+      }
       if (item.type === 'tree') {
         ctx.fillStyle = 'rgba(0,0,0,.3)';
         ctx.beginPath();
@@ -1804,6 +1950,18 @@
       ctx.beginPath();
       ctx.ellipse(0, 24, building.radius * 1.7, building.radius * 0.52, 0, 0, Math.PI * 2);
       ctx.fill();
+
+      const buildingCells = OBJECT_CELLS.building[building.team];
+      const buildingCell = buildingCells && buildingCells[building.type];
+      if (this.assets.objects && buildingCell !== undefined) {
+        const box = building.type === 'tower'
+          ? { x: -92, y: -182, w: 184, h: 210 }
+          : { x: -80, y: -132, w: 160, h: 162 };
+        this.drawSheetCell(ctx, this.assets.objects, buildingCell, box.x, box.y, box.w, box.h);
+        ctx.restore();
+        if (!building.dead) this.drawNameplate(ctx, building, building.name, building.type === 'tower' ? -166 : -126, building.type === 'tower' ? 106 : 118);
+        return;
+      }
 
       if (building.type === 'tower') {
         [
@@ -1962,6 +2120,32 @@
       ctx.ellipse(0, 11, minion.type === 'siege' ? 25 : 18, minion.type === 'siege' ? 9 : 7, 0, 0, Math.PI * 2);
       ctx.stroke();
       ctx.globalAlpha = minion.dead ? 0.42 : 1;
+      const attacking = !minion.dead && minion.target && distance(minion, minion.target) <= minion.attackRange + minion.target.radius + 4;
+      const minionRows = MINION_ROWS[minion.team] && MINION_ROWS[minion.team][minion.type];
+      const minionRow = minionRows && minionRows[attacking ? 'attack' : 'move'];
+      if (this.assets.minions && minionRow !== undefined) {
+        const frame = Math.floor((this.time * (attacking ? 10 : 7.5)) + minion.id) % ANIM_COLUMNS;
+        const box = minion.type === 'siege'
+          ? { y: -82, w: 108, h: 96 }
+          : { y: -76, w: 86, h: 88 };
+        if (v.x < -0.15) ctx.scale(-1, 1);
+        this.drawAnimCell(ctx, this.assets.minions, minionRow, frame, -box.w / 2, box.y, box.w, box.h);
+        ctx.restore();
+        if (!minion.dead) this.drawSmallHealth(ctx, minion, minion.type === 'siege' ? 48 : 42);
+        return;
+      }
+      const minionCells = OBJECT_CELLS.minion[minion.team];
+      const minionCell = minionCells && minionCells[minion.type];
+      if (this.assets.objects && minionCell !== undefined) {
+        const box = minion.type === 'siege'
+          ? { y: -82, w: 108, h: 96 }
+          : { y: -76, w: 86, h: 88 };
+        if (v.x < -0.15) ctx.scale(-1, 1);
+        this.drawSheetCell(ctx, this.assets.objects, minionCell, -box.w / 2, box.y, box.w, box.h);
+        ctx.restore();
+        if (!minion.dead) this.drawSmallHealth(ctx, minion, minion.type === 'siege' ? 48 : 42);
+        return;
+      }
       if (minion.type === 'siege') {
         const body = ctx.createLinearGradient(-22, -30, 22, 12);
         body.addColorStop(0, '#827150');
@@ -2054,7 +2238,8 @@
         ctx.stroke();
       }
       const action = this.currentHeroAction(hero);
-      const img = this.assets[action] || this.assets.idle;
+      const enemyImg = hero.team === RED ? this.assets[`enemy-${action}`] : null;
+      const img = enemyImg || this.assets[action] || this.assets.idle;
       const frame = hero.dead ? Math.min(5, Math.floor(hero.deathAnim * 7)) : Math.floor(hero.animTime * 8.5) % 6;
       const row = hero.direction;
       const perspective = 0.86 + clamp(hero.y / HUD_Y, 0, 1) * 0.12;
@@ -2072,7 +2257,8 @@
         ctx.save();
         ctx.shadowColor = style.main;
         ctx.shadowBlur = hero.isPlayer ? 18 : 14;
-        if (hero.team === RED) ctx.filter = 'hue-rotate(132deg) saturate(1.5) brightness(1.08) contrast(1.14)';
+        if (enemyImg) ctx.filter = 'saturate(1.2) brightness(1.1) contrast(1.1)';
+        else if (hero.team === RED) ctx.filter = 'hue-rotate(132deg) saturate(1.5) brightness(1.08) contrast(1.14)';
         else ctx.filter = 'saturate(1.26) brightness(1.16) contrast(1.12)';
         ctx.drawImage(img, frame * 64, row * 64, 64, 64, hero.x - size / 2, hero.y - size + 24, size, size);
         ctx.restore();
@@ -2395,6 +2581,12 @@
     drawSkillIcon(ctx, key, x, y, active) {
       ctx.save();
       ctx.globalAlpha = active ? 1 : 0.32;
+      const iconCell = ICON_CELLS.skills[key];
+      if (this.assets.icons && iconCell !== undefined) {
+        this.drawSheetCell(ctx, this.assets.icons, iconCell, x - 24, y - 24, 48, 48);
+        ctx.restore();
+        return;
+      }
       ctx.strokeStyle = key === 'r' ? '#e3c36f' : '#8fb4c4';
       ctx.fillStyle = key === 'w' ? 'rgba(143,180,196,.18)' : 'transparent';
       ctx.lineWidth = 3.5;
@@ -2449,6 +2641,12 @@
         ctx.strokeStyle = color;
         ctx.lineWidth = 1.3;
         ctx.stroke();
+        const iconCell = ICON_CELLS.summoners[index];
+        if (this.assets.icons && iconCell !== undefined) {
+          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 4, y + 4, 22, 22);
+          drawText(ctx, key, x + 6, y + 7, 9, '#ffffff', 'center', '900');
+          return;
+        }
         ctx.strokeStyle = color;
         ctx.shadowColor = color;
         ctx.shadowBlur = 9;
@@ -2472,16 +2670,24 @@
         ctx.fill();
         ctx.strokeStyle = hero.inventory[index] ? '#dcae46' : 'rgba(185,163,105,.24)';
         ctx.stroke();
-        ctx.fillStyle = hero.inventory[index] ? '#dcae46' : 'rgba(160,170,150,.58)';
-        ctx.beginPath();
-        ctx.moveTo(x + 22, y + 8);
-        ctx.lineTo(x + 34, y + 20);
-        ctx.lineTo(x + 22, y + 36);
-        ctx.lineTo(x + 10, y + 20);
-        ctx.closePath();
-        ctx.fill();
-        ctx.fillStyle = 'rgba(0,0,0,.38)';
-        ctx.fillRect(x + 14, y + 18, 16, 5);
+        const iconCell = ICON_CELLS.items[index];
+        if (this.assets.icons && iconCell !== undefined) {
+          ctx.save();
+          ctx.globalAlpha = hero.inventory[index] ? 1 : 0.56;
+          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 5, y + 4, 34, 34);
+          ctx.restore();
+        } else {
+          ctx.fillStyle = hero.inventory[index] ? '#dcae46' : 'rgba(160,170,150,.58)';
+          ctx.beginPath();
+          ctx.moveTo(x + 22, y + 8);
+          ctx.lineTo(x + 34, y + 20);
+          ctx.lineTo(x + 22, y + 36);
+          ctx.lineTo(x + 10, y + 20);
+          ctx.closePath();
+          ctx.fill();
+          ctx.fillStyle = 'rgba(0,0,0,.38)';
+          ctx.fillRect(x + 14, y + 18, 16, 5);
+        }
         drawText(ctx, item.key, x + 8, y + 9, 11, '#ffffff', 'center', '900');
         drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 22, y + 39, 10, hero.inventory[index] ? '#e3c36f' : '#c8c4a8', 'center', '700');
       });

@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "reviewer_notes": "已在浏览器中查看初始画面和一次移动/技能交互后的画面。新生成背景接近 Image #2 的 2.5D 单中路线 MOBA 视角；蓝红塔、小兵、场景物件、技能图标、装备图标均已从 codex-gateway-imagegen 输出接入画面；资源请求均为 200；控制台无错误。现有英雄 8 方向动作表来自本项目 run-manifest 中记录的 codex-gateway-imagegen 生成结果，并继续作为角色动画使用。",
+  "checks": {
+    "expected_camera_and_lane_style": "pass",
+    "background_generated_by_codex_gateway": "pass",
+    "object_sheet_generated_by_codex_gateway": "pass",
+    "icon_sheet_generated_by_codex_gateway": "pass",
+    "resources_loaded_in_browser": "pass",
+    "console_errors": "pass",
+    "interaction_smoke_test": "pass"
+  },
+  "screenshots": [
+    "run/art-regeneration/browser-check.png",
+    "run/art-regeneration/browser-check-interaction.png"
+  ]
+}
