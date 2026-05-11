@@ -2,7 +2,7 @@
   "ok": true,
   "file": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/64/final/minion-direction-test-sheet.png",
   "width": 384,
-  "height": 1024,
+  "height": 1536,
   "errors": [],
   "warnings": [],
   "cells": [
@@ -1347,6 +1347,678 @@
         5,
         2,
         59,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 2220,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 2190,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 2179,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 2302,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        62,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 2247,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 2317,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1691,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        5,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 2105,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1981,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        3,
+        62,
+        61
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1988,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1334,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        13,
+        2,
+        51,
+        62
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 2130,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 2311,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 2328,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 2370,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 2347,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 2363,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 2325,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 2003,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 2030,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 2360,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1770,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1558,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 2007,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 2041,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 2090,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 2123,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 2050,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 2092,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1907,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 2041,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1839,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1546,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1604,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1546,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 2050,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1842,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1812,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1752,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1759,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1689,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1781,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1634,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1691,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1147,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1446,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1445,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1825,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
         62
       ]
     }
@@ -2915,6 +3587,790 @@
             5,
             2,
             59,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 16,
+      "row_name": "blue-siege-move-south-east",
+      "frame_diffs": [
+        0.07779,
+        0.0727,
+        0.08011,
+        0.07886,
+        0.06546
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 2220,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 2190,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 2179,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 2302,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            62,
+            62
+          ]
+        },
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 2247,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 16,
+          "row_name": "blue-siege-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 2317,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 17,
+      "row_name": "blue-siege-attack-south-east",
+      "frame_diffs": [
+        0.12812,
+        0.17007,
+        0.1717,
+        0.15562,
+        0.15467
+      ],
+      "bbox_shift": 1.5,
+      "cells": [
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1691,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            5,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 2105,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1981,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            3,
+            62,
+            61
+          ]
+        },
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1988,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1334,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            2,
+            51,
+            62
+          ]
+        },
+        {
+          "row": 17,
+          "row_name": "blue-siege-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 2130,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 18,
+      "row_name": "red-siege-move-south-east",
+      "frame_diffs": [
+        0.083,
+        0.06926,
+        0.06181,
+        0.06192,
+        0.05019
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 2311,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 2328,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 2370,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 2347,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 2363,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 18,
+          "row_name": "red-siege-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 2325,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 19,
+      "row_name": "red-siege-attack-south-east",
+      "frame_diffs": [
+        0.06794,
+        0.14791,
+        0.16654,
+        0.08076,
+        0.11544
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 2003,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 2030,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 2360,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1770,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1558,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 19,
+          "row_name": "red-siege-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 2007,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 20,
+      "row_name": "blue-siege-move-north-west",
+      "frame_diffs": [
+        0.06865,
+        0.05292,
+        0.06187,
+        0.06389,
+        0.0807
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 2041,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 2090,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 2123,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 2050,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 2092,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 20,
+          "row_name": "blue-siege-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1907,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 21,
+      "row_name": "blue-siege-attack-north-west",
+      "frame_diffs": [
+        0.10651,
+        0.13972,
+        0.1318,
+        0.06611,
+        0.12484
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 2041,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1839,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1546,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1604,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1546,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 21,
+          "row_name": "blue-siege-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 2050,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            58,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 22,
+      "row_name": "red-siege-move-north-west",
+      "frame_diffs": [
+        0.03522,
+        0.03924,
+        0.0453,
+        0.03861,
+        0.04698
+      ],
+      "bbox_shift": 0.0,
+      "cells": [
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1842,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1812,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1752,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1759,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1689,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 22,
+          "row_name": "red-siege-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1781,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 23,
+      "row_name": "red-siege-attack-north-west",
+      "frame_diffs": [
+        0.06671,
+        0.12773,
+        0.10986,
+        0.08591,
+        0.09154
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1634,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1691,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1147,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1446,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1445,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 23,
+          "row_name": "red-siege-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1825,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
             62
           ]
         }

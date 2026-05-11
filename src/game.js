@@ -96,20 +96,24 @@
       blue: {
         melee: { move: 0, attack: 1 },
         ranged: { move: 2, attack: 3 },
+        siege: { move: 16, attack: 17 },
       },
       red: {
         melee: { move: 4, attack: 5 },
         ranged: { move: 6, attack: 7 },
+        siege: { move: 18, attack: 19 },
       },
     },
     'north-west': {
       blue: {
         melee: { move: 8, attack: 9 },
         ranged: { move: 10, attack: 11 },
+        siege: { move: 20, attack: 21 },
       },
       red: {
         melee: { move: 12, attack: 13 },
         ranged: { move: 14, attack: 15 },
+        siege: { move: 22, attack: 23 },
       },
     },
   };
@@ -2178,7 +2182,7 @@
       const box = minion.type === 'siege'
         ? { y: -74, w: 94, h: 84 }
         : { y: -64, w: 74, h: 74 };
-      const directionKey = minion.type === 'siege' ? null : minionDirectionKey(minion.direction);
+      const directionKey = minionDirectionKey(minion.direction);
       const directionRow = directionKey ? MINION_DIRECTION_ROWS[directionKey]?.[minion.team]?.[minion.type]?.[action] : undefined;
       if (this.assets.minionDirections && directionRow !== undefined) {
         this.drawAnimCell(ctx, this.assets.minionDirections, directionRow, frame, -box.w / 2, box.y, box.w, box.h);

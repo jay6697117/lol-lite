@@ -8,7 +8,7 @@
       "blue minions use teal-blue arcane crystal energy",
       "red minions use red-purple rift energy",
       "64x64 pixel-art cells, two test directions: south-east and north-west",
-      "scope excludes siege minion redraw in this pass"
+      "siege minions use compact rune/rift crystal carts with cannon attack animations"
     ]
   },
   "scope": {
@@ -21,7 +21,8 @@
     ],
     "types": [
       "melee",
-      "ranged"
+      "ranged",
+      "siege"
     ],
     "actions": [
       "move",
@@ -36,7 +37,7 @@
       "attack": 6
     },
     "columns": 6,
-    "rows": 16,
+    "rows": 24,
     "row_order": [
       "blue melee move south east",
       "blue melee attack south east",
@@ -53,7 +54,15 @@
       "red melee move north west",
       "red melee attack north west",
       "red ranged move north west",
-      "red ranged attack north west"
+      "red ranged attack north west",
+      "blue siege move south east",
+      "blue siege attack south east",
+      "red siege move south east",
+      "red siege attack south east",
+      "blue siege move north west",
+      "blue siege attack north west",
+      "red siege move north west",
+      "red siege attack north west"
     ]
   },
   "generation": {
@@ -241,6 +250,94 @@
       "imagegen_output_path": "source/64-red-ranged-attack-north-west.png",
       "source_path": "64/generated/red-ranged-attack-north-west.png",
       "prompt_path": "64/prompts/red-ranged-attack-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "siege",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-siege-move-south-east.png",
+      "source_path": "64/generated/blue-siege-move-south-east.png",
+      "prompt_path": "64/prompts/blue-siege-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "siege",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-siege-attack-south-east.png",
+      "source_path": "64/generated/blue-siege-attack-south-east.png",
+      "prompt_path": "64/prompts/blue-siege-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "siege",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-siege-move-south-east.png",
+      "source_path": "64/generated/red-siege-move-south-east.png",
+      "prompt_path": "64/prompts/red-siege-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "siege",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-siege-attack-south-east.png",
+      "source_path": "64/generated/red-siege-attack-south-east.png",
+      "prompt_path": "64/prompts/red-siege-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "siege",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-siege-move-north-west.png",
+      "source_path": "64/generated/blue-siege-move-north-west.png",
+      "prompt_path": "64/prompts/blue-siege-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "siege",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-siege-attack-north-west.png",
+      "source_path": "64/generated/blue-siege-attack-north-west.png",
+      "prompt_path": "64/prompts/blue-siege-attack-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "siege",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-siege-move-north-west.png",
+      "source_path": "64/generated/red-siege-move-north-west.png",
+      "prompt_path": "64/prompts/red-siege-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "siege",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-siege-attack-north-west.png",
+      "source_path": "64/generated/red-siege-attack-north-west.png",
+      "prompt_path": "64/prompts/red-siege-attack-north-west.txt"
     }
   ],
   "runtime": {

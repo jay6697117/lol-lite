@@ -1,10 +1,10 @@
 {
   "accepted": true,
   "reviewer_notes": [
-    "Contact sheet shows 16 generated 64px strips with six readable frames per row.",
-    "Blue and red melee/ranged identities are visually distinct and match the requested dark MOBA faction palette.",
+    "Contact sheet shows 24 generated 64px strips with six readable frames per row.",
+    "Blue and red melee/ranged/siege identities are visually distinct and match the requested dark MOBA faction palette.",
     "South-east rows face diagonally toward screen-right/front; north-west rows face diagonally toward screen-left/back for the two-direction test.",
-    "This pass intentionally excludes siege minions; game integration should keep siege on the existing fallback rows."
+    "Siege minions read as compact rune/rift crystal carts with rolling movement and cannon attack flashes."
   ],
   "checks": {
     "reference_identity": true,
@@ -19,7 +19,8 @@
     "validation": "64/qa/minion-direction-test-validation.json",
     "motion": "64/qa/minion-direction-test-motion.json",
     "previews": "64/qa/previews",
-    "in_game_screenshot": "64/qa/minion-v2-in-game.png"
+    "in_game_screenshot": "64/qa/minion-v2-in-game.png",
+    "siege_in_game_screenshot": "64/qa/minion-v2-siege-in-game.png"
   }
 }
 
