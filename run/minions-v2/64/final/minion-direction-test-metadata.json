@@ -1159,5 +1159,10 @@
     }
   ],
   "atlas": "64/final/minion-direction-test-sheet.png",
-  "contact_sheet": "64/qa/minion-direction-test-contact-sheet.png"
+  "contact_sheet": "64/qa/minion-direction-test-contact-sheet.png",
+  "cleanup": {
+    "edge_threshold": 120,
+    "residue_threshold": 120,
+    "chroma_key": "#00ff00"
+  }
 }
