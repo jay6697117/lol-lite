@@ -1260,7 +1260,7 @@
     }
 
     miniMapRect() {
-      return { x: 1018, y: 488, w: 226, h: 176 };
+      return { x: 1016, y: 462, w: 226, h: 226 };
     }
 
     worldToMini(entity) {
@@ -1312,14 +1312,14 @@
       ctx.save();
       ctx.globalCompositeOperation = 'multiply';
       const fieldTone = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
-      fieldTone.addColorStop(0, 'rgba(9, 18, 14, .12)');
-      fieldTone.addColorStop(0.44, 'rgba(255, 244, 210, .03)');
-      fieldTone.addColorStop(1, 'rgba(17, 16, 12, .18)');
+      fieldTone.addColorStop(0, 'rgba(5, 11, 8, .2)');
+      fieldTone.addColorStop(0.44, 'rgba(27, 35, 22, .07)');
+      fieldTone.addColorStop(1, 'rgba(6, 8, 9, .28)');
       ctx.fillStyle = fieldTone;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
       ctx.globalCompositeOperation = 'screen';
       const gameplayLight = ctx.createRadialGradient(708, 316, 70, 708, 316, 430);
-      gameplayLight.addColorStop(0, 'rgba(255, 240, 186, .08)');
+      gameplayLight.addColorStop(0, 'rgba(255, 232, 170, .045)');
       gameplayLight.addColorStop(1, 'rgba(0, 0, 0, 0)');
       ctx.fillStyle = gameplayLight;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
@@ -1367,15 +1367,15 @@
         ctx.drawImage(background, sx, sy, sw, sh, 0, 0, WIDTH, HUD_Y);
         ctx.imageSmoothingEnabled = false;
         const depthTint = ctx.createLinearGradient(0, 0, WIDTH, HUD_Y);
-        depthTint.addColorStop(0, 'rgba(7, 18, 15, .14)');
-        depthTint.addColorStop(0.5, 'rgba(224, 213, 160, .04)');
-        depthTint.addColorStop(1, 'rgba(15, 15, 10, .26)');
+        depthTint.addColorStop(0, 'rgba(5, 13, 9, .24)');
+        depthTint.addColorStop(0.5, 'rgba(180, 168, 108, .025)');
+        depthTint.addColorStop(1, 'rgba(8, 9, 8, .34)');
         ctx.fillStyle = depthTint;
         ctx.fillRect(0, 0, WIDTH, HUD_Y);
         const laneFocus = ctx.createRadialGradient(720, 314, 80, 720, 314, 560);
-        laneFocus.addColorStop(0, 'rgba(255, 238, 178, .08)');
+        laneFocus.addColorStop(0, 'rgba(255, 230, 160, .045)');
         laneFocus.addColorStop(0.48, 'rgba(0, 0, 0, 0)');
-        laneFocus.addColorStop(1, 'rgba(0, 0, 0, .24)');
+        laneFocus.addColorStop(1, 'rgba(0, 0, 0, .32)');
         ctx.fillStyle = laneFocus;
         ctx.fillRect(0, 0, WIDTH, HUD_Y);
         ctx.restore();
@@ -1443,7 +1443,7 @@
       }
 
       if (usesGeneratedBackground) this.drawPerspectiveLaneGround(ctx);
-      const laneOverlayAlpha = usesGeneratedBackground ? 0.15 : 1;
+      const laneOverlayAlpha = usesGeneratedBackground ? 0.08 : 1;
 
       ctx.save();
       ctx.globalAlpha = laneOverlayAlpha;
@@ -1548,9 +1548,9 @@
         ctx.save();
         ctx.globalCompositeOperation = 'screen';
         [
-          { x: 210, y: 520, r: 132, color: 'rgba(67, 184, 210, .1)' },
-          { x: 1060, y: 130, r: 126, color: 'rgba(255, 83, 88, .1)' },
-          { x: 690, y: 318, r: 310, color: 'rgba(255, 226, 164, .07)' },
+          { x: 210, y: 520, r: 132, color: 'rgba(67, 184, 210, .045)' },
+          { x: 1060, y: 130, r: 126, color: 'rgba(255, 83, 88, .045)' },
+          { x: 690, y: 318, r: 310, color: 'rgba(255, 226, 164, .045)' },
         ].forEach(glow => {
           const teamGlow = ctx.createRadialGradient(glow.x, glow.y, 20, glow.x, glow.y, glow.r);
           teamGlow.addColorStop(0, glow.color);
@@ -1562,16 +1562,16 @@
       }
 
       const light = ctx.createRadialGradient(620, 318, 40, 620, 318, 660);
-      light.addColorStop(0, usesGeneratedBackground ? 'rgba(255, 246, 194, .24)' : 'rgba(255, 246, 194, .18)');
-      light.addColorStop(0.48, usesGeneratedBackground ? 'rgba(255, 255, 255, .06)' : 'rgba(255, 255, 255, .03)');
-      light.addColorStop(1, usesGeneratedBackground ? 'rgba(0, 0, 0, .12)' : 'rgba(0, 0, 0, .18)');
+      light.addColorStop(0, usesGeneratedBackground ? 'rgba(255, 238, 178, .14)' : 'rgba(255, 246, 194, .18)');
+      light.addColorStop(0.48, usesGeneratedBackground ? 'rgba(255, 255, 255, .035)' : 'rgba(255, 255, 255, .03)');
+      light.addColorStop(1, usesGeneratedBackground ? 'rgba(0, 0, 0, .18)' : 'rgba(0, 0, 0, .18)');
       ctx.fillStyle = light;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
 
       const vignette = ctx.createRadialGradient(WIDTH / 2, HEIGHT / 2, 130, WIDTH / 2, HEIGHT / 2, 800);
       vignette.addColorStop(0, 'rgba(255,255,255,0)');
-      vignette.addColorStop(0.54, usesGeneratedBackground ? 'rgba(0,0,0,.08)' : 'rgba(0,0,0,.12)');
-      vignette.addColorStop(1, usesGeneratedBackground ? 'rgba(0,0,0,.48)' : 'rgba(0,0,0,.27)');
+      vignette.addColorStop(0.54, usesGeneratedBackground ? 'rgba(0,0,0,.12)' : 'rgba(0,0,0,.12)');
+      vignette.addColorStop(1, usesGeneratedBackground ? 'rgba(0,0,0,.58)' : 'rgba(0,0,0,.27)');
       ctx.fillStyle = vignette;
       ctx.fillRect(0, 0, WIDTH, HUD_Y);
 
@@ -1785,12 +1785,12 @@
 
       if (!dead) {
         ctx.save();
-        ctx.globalAlpha = building.type === 'tower' ? 0.1 : 0.08;
+        ctx.globalAlpha = building.type === 'tower' ? 0.055 : 0.045;
         ctx.fillStyle = style.main;
         ctx.beginPath();
         ctx.ellipse(0, 18, building.attackRange, building.attackRange * 0.38, 0, 0, Math.PI * 2);
         ctx.fill();
-        ctx.globalAlpha = building.type === 'tower' ? 0.34 : 0.24;
+        ctx.globalAlpha = building.type === 'tower' ? 0.18 : 0.14;
         ctx.setLineDash([14, 18]);
         ctx.strokeStyle = style.main;
         ctx.lineWidth = 2;
@@ -1849,7 +1849,7 @@
         ctx.stroke();
         for (let i = 0; i < 4; i += 1) {
           ctx.strokeStyle = i % 2 ? 'rgba(0,0,0,.24)' : style.main;
-          ctx.globalAlpha = dead ? 0.28 : i % 2 ? 0.5 : 0.75;
+          ctx.globalAlpha = dead ? 0.24 : i % 2 ? 0.34 : 0.48;
           ctx.lineWidth = i % 2 ? 5 : 2;
           ctx.beginPath();
           ctx.moveTo(-22 + i * 4, -16 - i * 20);
@@ -1868,7 +1868,7 @@
         ctx.strokeStyle = 'rgba(255,232,170,.28)';
         ctx.stroke();
         ctx.shadowColor = style.main;
-        ctx.shadowBlur = dead ? 0 : 24;
+        ctx.shadowBlur = dead ? 0 : 14;
         ctx.fillStyle = dead ? '#656565' : style.main;
         ctx.beginPath();
         ctx.moveTo(0, -156);
@@ -1878,7 +1878,7 @@
         ctx.lineTo(-30, -112);
         ctx.closePath();
         ctx.fill();
-        ctx.fillStyle = 'rgba(255,255,255,.62)';
+        ctx.fillStyle = 'rgba(255,255,255,.38)';
         ctx.beginPath();
         ctx.moveTo(-7, -132);
         ctx.lineTo(8, -108);
@@ -1906,7 +1906,7 @@
         ctx.strokeStyle = style.main;
         ctx.lineWidth = 4;
         ctx.shadowColor = style.main;
-        ctx.shadowBlur = dead ? 0 : 30;
+        ctx.shadowBlur = dead ? 0 : 18;
         [-18, 0, 18].forEach((dy, index) => {
           ctx.globalAlpha = dead ? 0.25 : 0.46 - index * 0.08;
           ctx.beginPath();
@@ -2167,95 +2167,82 @@
 
     drawTopHUD(ctx) {
       ctx.save();
-      const panel = ctx.createLinearGradient(0, 0, 0, 90);
-      panel.addColorStop(0, 'rgba(1, 8, 10, .94)');
-      panel.addColorStop(0.55, 'rgba(1, 8, 10, .64)');
-      panel.addColorStop(1, 'rgba(1, 8, 10, .04)');
+      const panel = ctx.createLinearGradient(0, 0, 0, 64);
+      panel.addColorStop(0, 'rgba(0, 5, 7, .76)');
+      panel.addColorStop(0.62, 'rgba(0, 5, 7, .3)');
+      panel.addColorStop(1, 'rgba(0, 5, 7, 0)');
       ctx.fillStyle = panel;
-      ctx.fillRect(0, 0, WIDTH, 96);
-      ctx.strokeStyle = 'rgba(255,255,255,.08)';
+      ctx.fillRect(0, 0, WIDTH, 66);
+      ctx.strokeStyle = 'rgba(190,170,105,.12)';
       ctx.beginPath();
-      ctx.moveTo(0, 70.5);
-      ctx.lineTo(WIDTH, 70.5);
+      ctx.moveTo(0, 54.5);
+      ctx.lineTo(WIDTH, 54.5);
       ctx.stroke();
 
-      roundedRect(ctx, 404, 8, 472, 62, 9);
-      ctx.fillStyle = 'rgba(0,0,0,.78)';
+      roundedRect(ctx, 498, 6, 284, 44, 3);
+      ctx.fillStyle = 'rgba(0,0,0,.68)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(202,238,227,.3)';
-      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = 'rgba(190,170,105,.28)';
+      ctx.lineWidth = 1;
       ctx.stroke();
-      ctx.fillStyle = 'rgba(67,224,210,.14)';
-      ctx.fillRect(410, 14, 118, 50);
-      ctx.fillStyle = 'rgba(255,83,119,.14)';
-      ctx.fillRect(752, 14, 118, 50);
-      ctx.strokeStyle = 'rgba(255,229,153,.38)';
+      ctx.fillStyle = 'rgba(44,107,145,.22)';
+      ctx.fillRect(502, 10, 74, 36);
+      ctx.fillStyle = 'rgba(130,39,52,.22)';
+      ctx.fillRect(704, 10, 74, 36);
+      ctx.strokeStyle = 'rgba(216,190,112,.44)';
       ctx.beginPath();
-      ctx.moveTo(640, 10);
-      ctx.lineTo(675, 39);
-      ctx.lineTo(640, 68);
-      ctx.lineTo(605, 39);
+      ctx.moveTo(640, 8);
+      ctx.lineTo(666, 28);
+      ctx.lineTo(640, 48);
+      ctx.lineTo(614, 28);
       ctx.closePath();
       ctx.stroke();
-      drawText(ctx, this.score.blueKills, 482, 39, 30, TEAM_STYLE.blue.main, 'center', '900');
-      drawText(ctx, this.formatTime(this.time), 640, 38, 28, '#ffe599', 'center', '900');
-      drawText(ctx, this.score.redKills, 798, 39, 30, TEAM_STYLE.red.main, 'center', '900');
-      drawText(ctx, 'BLUE', 445, 18, 10, '#bfece2', 'center', '900');
-      drawText(ctx, 'RED', 835, 18, 10, '#ffd4de', 'center', '900');
-      drawText(ctx, '击杀', 548, 40, 12, '#bfece2', 'center', '700');
-      drawText(ctx, '击杀', 732, 40, 12, '#bfece2', 'center', '700');
-      drawText(ctx, `下一波 ${Math.max(0, Math.ceil(this.waveTimer))}s`, WIDTH / 2, 16, 12, '#bfece2', 'center', '700');
-      drawText(ctx, this.getPhaseText(), WIDTH / 2, 78, 13, '#d9fff6', 'center', '700');
+      drawText(ctx, this.score.blueKills, 539, 31, 22, '#6fb9ff', 'center', '900');
+      drawText(ctx, this.formatTime(this.time), 640, 30, 20, '#d9c681', 'center', '900');
+      drawText(ctx, this.score.redKills, 741, 31, 22, '#d96161', 'center', '900');
+      drawText(ctx, this.getPhaseText(), WIDTH / 2, 62, 11, 'rgba(230,225,190,.72)', 'center', '700');
 
-      this.drawTopHeroPanel(ctx, this.player, 18, 12, TEAM_STYLE.blue);
-      this.drawTopHeroPanel(ctx, this.enemy, WIDTH - 306, 12, TEAM_STYLE.red, true);
+      this.drawTopHeroPanel(ctx, this.player, 14, 10, TEAM_STYLE.blue);
+      this.drawTopHeroPanel(ctx, this.enemy, WIDTH - 264, 10, TEAM_STYLE.red, true);
       ctx.restore();
     }
 
     drawTopHeroPanel(ctx, hero, x, y, style, reverse = false) {
-      roundedRect(ctx, x, y, 288, 60, 8);
-      ctx.fillStyle = 'rgba(2, 10, 12, .78)';
+      const w = 250;
+      roundedRect(ctx, x, y, w, 42, 3);
+      ctx.fillStyle = 'rgba(1, 7, 9, .66)';
       ctx.fill();
-      ctx.strokeStyle = style.main;
-      ctx.globalAlpha = 0.72;
+      ctx.strokeStyle = 'rgba(190,170,105,.22)';
+      ctx.lineWidth = 1;
       ctx.stroke();
-      ctx.globalAlpha = 1;
-      const avatarX = reverse ? x + 244 : x + 44;
-      ctx.fillStyle = 'rgba(0,0,0,.5)';
+      const avatarX = reverse ? x + w - 22 : x + 22;
+      ctx.fillStyle = 'rgba(0,0,0,.66)';
       ctx.beginPath();
-      ctx.arc(avatarX, y + 30, 24, 0, Math.PI * 2);
+      ctx.arc(avatarX, y + 21, 17, 0, Math.PI * 2);
       ctx.fill();
       ctx.strokeStyle = style.main;
-      ctx.lineWidth = 2;
+      ctx.lineWidth = 1.4;
       ctx.stroke();
-      drawText(ctx, hero.level, avatarX, y + 30, 18, '#ffe599', 'center', '900');
-      const tx = reverse ? x + 216 : x + 72;
+      drawText(ctx, hero.level, avatarX, y + 21, 12, '#d9c681', 'center', '900');
+      const tx = reverse ? x + w - 44 : x + 44;
       const align = reverse ? 'right' : 'left';
-      drawText(ctx, hero.name, tx, y + 14, 13, style.text, align, '900');
-      const barX = reverse ? x + 66 : x + 72;
-      drawBar(ctx, barX, y + 24, 146, 8, hpRatio(hero), style.bar, 'rgba(0,0,0,.64)');
-      drawBar(ctx, barX, y + 35, 146, 5, manaRatio(hero), style.mana, 'rgba(0,0,0,.52)');
-      drawText(ctx, `HP ${Math.ceil(hero.hp)}  MP ${Math.ceil(hero.mp)}`, tx, y + 48, 10, '#cfeee5', align, '700');
+      drawText(ctx, hero.name, tx, y + 13, 11, style.text, align, '900');
+      const barX = reverse ? x + w - 168 : x + 44;
+      drawBar(ctx, barX, y + 20, 124, 7, hpRatio(hero), style.bar, 'rgba(0,0,0,.68)');
+      drawBar(ctx, barX, y + 30, 124, 4, manaRatio(hero), style.mana, 'rgba(0,0,0,.58)');
       const statText = `K ${reverse ? this.score.redKills : this.score.blueKills}  CS ${hero.cs || 0}  G ${Math.floor(hero.gold || 0)}`;
-      drawText(ctx, statText, reverse ? x + 62 : x + 226, y + 14, 10, '#ffe599', reverse ? 'left' : 'right', '700');
-      for (let i = 0; i < 4; i += 1) {
-        const px = reverse ? x + 218 - i * 12 : x + 70 + i * 12;
-        ctx.fillStyle = i < Math.min(4, hero.level) ? style.main : 'rgba(255,255,255,.12)';
-        ctx.beginPath();
-        ctx.arc(px, y + 57, 3, 0, Math.PI * 2);
-        ctx.fill();
-      }
+      drawText(ctx, statText, reverse ? x + 10 : x + w - 10, y + 13, 9, '#d9c681', reverse ? 'left' : 'right', '700');
     }
 
     drawTeamRoster(ctx) {
       const map = this.miniMapRect();
-      const x = map.x + 2;
-      const y = map.y - 64;
+      const x = map.x + 8;
+      const y = map.y - 42;
       ctx.save();
-      roundedRect(ctx, x - 6, y - 8, 210, 48, 9);
-      ctx.fillStyle = 'rgba(1, 7, 9, .72)';
+      roundedRect(ctx, x - 6, y - 6, 206, 38, 4);
+      ctx.fillStyle = 'rgba(1, 6, 8, .78)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(202,238,227,.24)';
+      ctx.strokeStyle = 'rgba(190,170,105,.24)';
       ctx.stroke();
       const slots = [
         { team: BLUE, hp: hpRatio(this.player), label: '1' },
@@ -2265,16 +2252,16 @@
       ];
       slots.forEach((slot, index) => {
         const style = TEAM_STYLE[slot.team];
-        const px = x + 18 + index * 48;
-        ctx.fillStyle = 'rgba(0,0,0,.64)';
+        const px = x + 17 + index * 48;
+        ctx.fillStyle = 'rgba(0,0,0,.68)';
         ctx.beginPath();
-        ctx.arc(px, y + 15, 15, 0, Math.PI * 2);
+        ctx.arc(px, y + 13, 13, 0, Math.PI * 2);
         ctx.fill();
         ctx.strokeStyle = style.main;
-        ctx.lineWidth = 1.5;
+        ctx.lineWidth = 1.3;
         ctx.stroke();
-        drawText(ctx, slot.label, px, y + 15, 11, '#ffffff', 'center', '900');
-        drawBar(ctx, px - 17, y + 34, 34, 4, slot.hp, style.bar, 'rgba(0,0,0,.76)', 'rgba(255,255,255,.2)');
+        drawText(ctx, slot.label, px, y + 13, 10, '#ffffff', 'center', '900');
+        drawBar(ctx, px - 15, y + 28, 30, 3, slot.hp, style.bar, 'rgba(0,0,0,.76)', 'rgba(255,255,255,.18)');
       });
       ctx.restore();
     }
@@ -2290,12 +2277,12 @@
       const hero = this.player;
       ctx.save();
       const grad = ctx.createLinearGradient(0, HUD_Y - 12, 0, HEIGHT);
-      grad.addColorStop(0, 'rgba(7, 15, 18, .02)');
-      grad.addColorStop(0.16, 'rgba(3, 10, 13, .82)');
-      grad.addColorStop(1, 'rgba(1, 4, 6, .98)');
+      grad.addColorStop(0, 'rgba(4, 8, 8, .03)');
+      grad.addColorStop(0.16, 'rgba(2, 6, 8, .86)');
+      grad.addColorStop(1, 'rgba(0, 3, 5, .98)');
       ctx.fillStyle = grad;
       ctx.fillRect(0, HUD_Y - 12, WIDTH, HEIGHT - HUD_Y + 12);
-      ctx.strokeStyle = 'rgba(202,238,227,.25)';
+      ctx.strokeStyle = 'rgba(190,170,105,.2)';
       ctx.beginPath();
       ctx.moveTo(0, HUD_Y + 0.5);
       ctx.lineTo(WIDTH, HUD_Y + 0.5);
@@ -2364,14 +2351,13 @@
         drawText(ctx, value, sx + 26, sy, 9, '#e3c36f', 'right', '900');
       });
 
-      roundedRect(ctx, 404, 606, 542, 94, 5);
-      ctx.fillStyle = 'rgba(2, 7, 8, .66)';
+      roundedRect(ctx, 404, 606, 542, 94, 4);
+      ctx.fillStyle = 'rgba(1, 5, 7, .74)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(185, 163, 105, .2)';
+      ctx.strokeStyle = 'rgba(185, 163, 105, .18)';
       ctx.stroke();
-      ctx.fillStyle = 'rgba(255,255,255,.035)';
-      for (let i = 0; i < 7; i += 1) ctx.fillRect(416 + i * 72, 612, 1, 78);
-      drawText(ctx, '技能 / 召唤师 / 装备', 674, 618, 11, 'rgba(218,219,190,.78)', 'center', '900');
+      ctx.fillStyle = 'rgba(255,255,255,.025)';
+      for (let i = 0; i < 7; i += 1) ctx.fillRect(416 + i * 72, 614, 1, 72);
       this.drawSkillBar(ctx, hero);
       this.drawSummonerSlots(ctx);
       this.drawInventory(ctx, hero);
@@ -2503,33 +2489,31 @@
     }
 
     drawMessages(ctx) {
-      const x = 24;
-      const y = 424;
-      roundedRect(ctx, x, y, 360, 132, 16);
-      ctx.fillStyle = 'rgba(0,0,0,.34)';
+      const x = 22;
+      const y = 454;
+      roundedRect(ctx, x, y, 356, 112, 4);
+      ctx.fillStyle = 'rgba(0,0,0,.18)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(202,238,227,.18)';
+      ctx.strokeStyle = 'rgba(190,170,105,.08)';
       ctx.stroke();
-      drawText(ctx, '战斗消息', x + 18, y + 18, 13, '#8fffe9', 'left', '900');
       this.messages.slice(-5).forEach((message, index) => {
         ctx.save();
-        ctx.globalAlpha = clamp(message.life / 1.4, 0.45, 1);
-        drawText(ctx, message.text, x + 18, y + 43 + index * 18, 12, message.color, 'left', '700');
+        ctx.globalAlpha = clamp(message.life / 1.4, 0.42, 0.88);
+        drawText(ctx, message.text, x + 14, y + 22 + index * 18, 11, message.color, 'left', '700');
         ctx.restore();
       });
     }
 
     drawMiniMap(ctx) {
       const map = this.miniMapRect();
-      roundedRect(ctx, map.x - 10, map.y - 28, map.w + 20, map.h + 38, 6);
-      ctx.fillStyle = 'rgba(2, 5, 6, .9)';
+      roundedRect(ctx, map.x - 8, map.y - 8, map.w + 16, map.h + 16, 4);
+      ctx.fillStyle = 'rgba(1, 4, 5, .92)';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(185,163,105,.36)';
+      ctx.strokeStyle = 'rgba(190,170,105,.42)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
-      drawText(ctx, '小地图', map.x + map.w / 2, map.y - 13, 12, '#d8d3b6', 'center', '900');
       ctx.save();
-      roundedRect(ctx, map.x, map.y, map.w, map.h, 4);
+      roundedRect(ctx, map.x, map.y, map.w, map.h, 3);
       ctx.clip();
       const bg = ctx.createLinearGradient(map.x, map.y, map.x + map.w, map.y + map.h);
       bg.addColorStop(0, '#16351f');
@@ -2657,9 +2641,9 @@
       ctx.setLineDash([]);
       ctx.restore();
       ctx.globalAlpha = 1;
-      roundedRect(ctx, map.x, map.y, map.w, map.h, 4);
-      ctx.strokeStyle = 'rgba(143,255,233,.46)';
-      ctx.lineWidth = 1.5;
+      roundedRect(ctx, map.x, map.y, map.w, map.h, 3);
+      ctx.strokeStyle = 'rgba(190,170,105,.5)';
+      ctx.lineWidth = 1.6;
       ctx.stroke();
     }
 
