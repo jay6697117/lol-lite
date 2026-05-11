@@ -1,0 +1,23 @@
+{
+  "method": "codex-gateway-imagegen",
+  "prompt_path": "run/effects/prompts/effect-sheet.txt",
+  "source_path": "run/effects/source/effect-sheet-raw.png",
+  "final_path": "run/effects/final/effect-sheet-clean.png",
+  "runtime_path": "assets/effects/moba-effect-sheet.png",
+  "cell": 64,
+  "columns": 6,
+  "rows": 6,
+  "row_order": [
+    "slash",
+    "shield ring",
+    "dash trail",
+    "ultimate shockwave",
+    "tower projectile",
+    "hit spark"
+  ],
+  "qa": {
+    "validation": "run/effects/qa/effect-sheet-validation.json",
+    "motion": "run/effects/qa/effect-sheet-motion.json",
+    "visual_review": "run/effects/qa/visual-review.json"
+  }
+}

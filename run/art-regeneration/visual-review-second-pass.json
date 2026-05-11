@@ -1,0 +1,20 @@
+{
+  "accepted": true,
+  "scope": "second-pass runtime validation after adding rift fighter enemy hero, minion animation sheet, and effect animation sheet",
+  "checks": {
+    "syntax": "node --check src/game.js passed with no output.",
+    "network": "All required assets loaded successfully. New runtime assets assets/sprites/minion-animation-sheet.png, assets/effects/moba-effect-sheet.png, and run/rift-fighter/64/final/*-sheet-clean.png returned HTTP 200.",
+    "console": "No console messages before or after interaction.",
+    "interaction": "Canvas click movement and Q/W/E/R key events were dispatched successfully; game continued rendering with no runtime errors.",
+    "visual": "Browser screenshots show the regenerated lane background, blue/red towers, animated minions, red-purple rift fighter enemy hero, skill VFX, minimap, HUD icons, and health bars in the expected 2.5D MOBA style."
+  },
+  "screenshots": [
+    "run/art-regeneration/browser-check-second-pass.png",
+    "run/art-regeneration/browser-check-second-pass-interaction.png"
+  ],
+  "qa_inputs": [
+    "run/rift-fighter/64/qa/visual-review.json",
+    "run/minions/qa/visual-review.json",
+    "run/effects/qa/visual-review.json"
+  ]
+}

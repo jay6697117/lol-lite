@@ -1,0 +1,29 @@
+{
+  "method": "codex-gateway-imagegen",
+  "prompt_path": "run/minions/prompts/minion-animation-sheet.txt",
+  "source_path": "run/minions/source/minion-animation-sheet-raw.png",
+  "final_path": "run/minions/final/minion-animation-sheet-clean.png",
+  "runtime_path": "assets/sprites/minion-animation-sheet.png",
+  "cell": 64,
+  "columns": 6,
+  "rows": 12,
+  "row_order": [
+    "blue melee move south",
+    "blue melee attack south",
+    "blue ranged move south",
+    "blue ranged attack south",
+    "blue siege move south",
+    "blue siege attack south",
+    "red melee move south",
+    "red melee attack south",
+    "red ranged move south",
+    "red ranged attack south",
+    "red siege move south",
+    "red siege attack south"
+  ],
+  "qa": {
+    "validation": "run/minions/qa/minion-animation-validation.json",
+    "motion": "run/minions/qa/minion-animation-motion.json",
+    "visual_review": "run/minions/qa/visual-review.json"
+  }
+}

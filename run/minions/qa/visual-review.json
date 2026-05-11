@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "source": "run/minions/source/minion-animation-sheet-raw.png",
+  "runtime_asset": "assets/sprites/minion-animation-sheet.png",
+  "final_sheet": "run/minions/final/minion-animation-sheet-clean.png",
+  "contact_sheet": "run/minions/qa/minion-animation-contact-sheet.png",
+  "checks": {
+    "layout": "6 columns x 12 rows, exported as 384x768 with 64x64 runtime cells.",
+    "identity": "blue team teal crystal minions and red team rift-purple minions are visually distinct.",
+    "unit_types": "melee, ranged, and siege silhouettes are readable at runtime size.",
+    "actions": "move and attack rows have frame-to-frame changes suitable for looping in drawMinion.",
+    "validation": "validate_sheet and audit_sprite_motion both returned ok with zero warnings."
+  }
+}

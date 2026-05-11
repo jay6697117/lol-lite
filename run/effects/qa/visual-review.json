@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "source": "run/effects/source/effect-sheet-raw.png",
+  "runtime_asset": "assets/effects/moba-effect-sheet.png",
+  "final_sheet": "run/effects/final/effect-sheet-clean.png",
+  "contact_sheet": "run/effects/qa/effect-sheet-contact-sheet.png",
+  "checks": {
+    "layout": "6 columns x 6 rows, exported as 384x384 with 64x64 runtime cells.",
+    "rows": "slash, shield ring, dash trail, ultimate shockwave, tower projectile, and hit spark rows are all readable.",
+    "background": "chroma residue is zero after retinting green energy away from pure #00ff00.",
+    "warnings": "remaining validation warnings are expected for expanding VFX touching cell edges and sparse fade-out frames.",
+    "validation": "validate_sheet and audit_sprite_motion both returned ok."
+  }
+}

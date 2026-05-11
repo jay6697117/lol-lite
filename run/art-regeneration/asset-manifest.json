@@ -7,7 +7,8 @@
       "original 2.5D isometric single-lane MOBA battlefield",
       "blue-teal allied faction and red-magenta enemy faction",
       "fantasy rune/crystal towers, minions, core structures, HUD icons",
-      "no direct copying of commercial MOBA characters, icons, or map details"
+      "red-purple rift fighter enemy hero with original armor silhouette",
+      "no direct copying of commercial MOBA characters, icons, effects, or map details"
     ]
   },
   "scope": {
@@ -20,12 +21,25 @@
     "ui_icon_sheets": [
       "assets/ui/moba-icon-sheet.png"
     ],
-    "existing_codex_character_sheets_reused": [
+    "player_character_sheets": [
       "run/64/final/idle-sheet-clean.png",
       "run/64/final/move-sheet-clean.png",
       "run/64/final/attack-sheet-clean.png",
       "run/64/final/hit-sheet-clean.png",
       "run/64/final/death-sheet-clean.png"
+    ],
+    "enemy_character_sheets": [
+      "run/rift-fighter/64/final/idle-sheet-clean.png",
+      "run/rift-fighter/64/final/move-sheet-clean.png",
+      "run/rift-fighter/64/final/attack-sheet-clean.png",
+      "run/rift-fighter/64/final/hit-sheet-clean.png",
+      "run/rift-fighter/64/final/death-sheet-clean.png"
+    ],
+    "minion_animation_sheets": [
+      "assets/sprites/minion-animation-sheet.png"
+    ],
+    "effect_animation_sheets": [
+      "assets/effects/moba-effect-sheet.png"
     ]
   },
   "generation": {
@@ -35,13 +49,20 @@
     "imagegen_output_paths": [
       "assets/backgrounds/moba-lane-bg-regenerated.png",
       "run/art-regeneration/source/moba-object-sheet-raw.png",
-      "run/art-regeneration/source/moba-icon-sheet-raw.png"
+      "run/art-regeneration/source/moba-icon-sheet-raw.png",
+      "run/rift-fighter/source/64-base-south.png",
+      "run/rift-fighter/source/64-*-*.png",
+      "run/minions/source/minion-animation-sheet-raw.png",
+      "run/effects/source/effect-sheet-raw.png"
     ]
   },
   "prompts": [
     "run/art-regeneration/prompts/background.txt",
     "run/art-regeneration/prompts/object-sheet.txt",
-    "run/art-regeneration/prompts/icon-sheet.txt"
+    "run/art-regeneration/prompts/icon-sheet.txt",
+    "run/rift-fighter/64/prompts/*.txt",
+    "run/minions/prompts/minion-animation-sheet.txt",
+    "run/effects/prompts/effect-sheet.txt"
   ],
   "processed_outputs": [
     {
@@ -51,6 +72,26 @@
     {
       "path": "assets/ui/moba-icon-sheet.png",
       "cleanup": "game-character-sprites/scripts/pixel_snap.py chroma-key #00ff00"
+    },
+    {
+      "path": "assets/sprites/minion-animation-sheet.png",
+      "cleanup": "cropped 6x12 source sheet into 64x64 transparent runtime cells"
+    },
+    {
+      "path": "assets/effects/moba-effect-sheet.png",
+      "cleanup": "cropped 6x6 source sheet into 64x64 transparent runtime cells and retinted visible green energy away from chroma-key #00ff00"
     }
-  ]
+  ],
+  "qa": {
+    "first_pass_visual_review": "run/art-regeneration/visual-review.json",
+    "second_pass_visual_review": "run/art-regeneration/visual-review-second-pass.json",
+    "rift_fighter_visual_review": "run/rift-fighter/64/qa/visual-review.json",
+    "rift_fighter_validation_summary": "run/rift-fighter/64/qa/validation-summary.json",
+    "minion_visual_review": "run/minions/qa/visual-review.json",
+    "minion_validation": "run/minions/qa/minion-animation-validation.json",
+    "minion_motion": "run/minions/qa/minion-animation-motion.json",
+    "effect_visual_review": "run/effects/qa/visual-review.json",
+    "effect_validation": "run/effects/qa/effect-sheet-validation.json",
+    "effect_motion": "run/effects/qa/effect-sheet-motion.json"
+  }
 }

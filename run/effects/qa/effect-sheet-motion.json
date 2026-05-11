@@ -1,0 +1,596 @@
+{
+  "ok": true,
+  "file": "/Users/zhangjinhui/Desktop/lol-lite/assets/effects/moba-effect-sheet.png",
+  "width": 384,
+  "height": 384,
+  "errors": [],
+  "warnings": [
+    "row slash col 3: sprite touches edge (13 pixels)",
+    "row blast col 3: sprite touches edge (22 pixels)",
+    "row blast col 4: sprite touches edge (30 pixels)"
+  ],
+  "rows": [
+    {
+      "row": 0,
+      "row_name": "slash",
+      "cells": [
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 0,
+          "nontransparent_pixels": 475,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            15,
+            63,
+            57
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 1,
+          "nontransparent_pixels": 734,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            15,
+            58,
+            61
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 2,
+          "nontransparent_pixels": 1040,
+          "edge_pixels": 2,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            8,
+            64,
+            63
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 3,
+          "nontransparent_pixels": 674,
+          "edge_pixels": 13,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            10,
+            64,
+            64
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 4,
+          "nontransparent_pixels": 290,
+          "edge_pixels": 8,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            0,
+            22,
+            64,
+            64
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "slash",
+          "column": 5,
+          "nontransparent_pixels": 94,
+          "edge_pixels": 2,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            29,
+            26,
+            57,
+            64
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.08683,
+        0.0903,
+        0.14264,
+        0.08996,
+        0.03969
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "ring",
+      "cells": [
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 0,
+          "nontransparent_pixels": 440,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            13,
+            58,
+            60
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 1,
+          "nontransparent_pixels": 907,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            13,
+            58,
+            61
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 2,
+          "nontransparent_pixels": 1612,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            12,
+            58,
+            63
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 3,
+          "nontransparent_pixels": 1900,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            12,
+            63,
+            63
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 4,
+          "nontransparent_pixels": 855,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            13,
+            62,
+            62
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "ring",
+          "column": 5,
+          "nontransparent_pixels": 298,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            14,
+            18,
+            55,
+            61
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.12457,
+        0.17009,
+        0.11401,
+        0.22844,
+        0.11735
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "dash",
+      "cells": [
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 0,
+          "nontransparent_pixels": 621,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            9,
+            57,
+            54
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 1,
+          "nontransparent_pixels": 843,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            10,
+            61,
+            56
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 2,
+          "nontransparent_pixels": 931,
+          "edge_pixels": 2,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            11,
+            64,
+            57
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 3,
+          "nontransparent_pixels": 533,
+          "edge_pixels": 1,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            0,
+            14,
+            63,
+            57
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 4,
+          "nontransparent_pixels": 270,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            14,
+            63,
+            54
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "dash",
+          "column": 5,
+          "nontransparent_pixels": 76,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            18,
+            20,
+            54,
+            52
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.09003,
+        0.10762,
+        0.1328,
+        0.07736,
+        0.03708
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blast",
+      "cells": [
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 0,
+          "nontransparent_pixels": 470,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            17,
+            49,
+            45
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 1,
+          "nontransparent_pixels": 1385,
+          "edge_pixels": 1,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            0,
+            15,
+            62,
+            53
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 2,
+          "nontransparent_pixels": 1655,
+          "edge_pixels": 6,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            9,
+            64,
+            54
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 3,
+          "nontransparent_pixels": 985,
+          "edge_pixels": 22,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            13,
+            64,
+            55
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 4,
+          "nontransparent_pixels": 447,
+          "edge_pixels": 30,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            0,
+            13,
+            64,
+            54
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blast",
+          "column": 5,
+          "nontransparent_pixels": 95,
+          "edge_pixels": 11,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            0,
+            17,
+            57,
+            48
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.1713,
+        0.09707,
+        0.21116,
+        0.14125,
+        0.06386
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "projectile",
+      "cells": [
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 0,
+          "nontransparent_pixels": 825,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            8,
+            54,
+            47
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 1,
+          "nontransparent_pixels": 1439,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            3,
+            60,
+            50
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 2,
+          "nontransparent_pixels": 1375,
+          "edge_pixels": 3,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            3,
+            64,
+            51
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 3,
+          "nontransparent_pixels": 833,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            6,
+            63,
+            46
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 4,
+          "nontransparent_pixels": 455,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            10,
+            56,
+            43
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "projectile",
+          "column": 5,
+          "nontransparent_pixels": 172,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            15,
+            43,
+            40
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.14114,
+        0.10474,
+        0.11744,
+        0.07337,
+        0.04977
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "spark",
+      "cells": [
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 0,
+          "nontransparent_pixels": 838,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            4,
+            50,
+            51
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 1,
+          "nontransparent_pixels": 1164,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            1,
+            57,
+            53
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 2,
+          "nontransparent_pixels": 857,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            6,
+            58,
+            50
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 3,
+          "nontransparent_pixels": 481,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            9,
+            47,
+            48
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 4,
+          "nontransparent_pixels": 184,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            15,
+            12,
+            50,
+            46
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "spark",
+          "column": 5,
+          "nontransparent_pixels": 64,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            16,
+            15,
+            44,
+            45
+          ]
+        }
+      ],
+      "frame_diffs": [
+        0.13181,
+        0.12431,
+        0.09835,
+        0.06881,
+        0.02525
+      ]
+    }
+  ]
+}
