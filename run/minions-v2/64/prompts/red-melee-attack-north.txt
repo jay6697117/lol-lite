@@ -1,0 +1,8 @@
+Create one original 2.5D pixel-art MOBA minion animation strip as a clean local game asset. Output exactly one horizontal row of six separated animation frames, intended frame cell size 64x64 pixels, with enough empty green gap between frames for component extraction. Pure flat chroma-key background #00ff00 only: no gradient, no floor, no baked shadow, no frame border, no UI, no labels, no text, no numbers.
+
+Character: red team melee minion, dark iron armor, red-purple rift crystal core, short jagged rune blade, squat readable silhouette. Original fantasy arcane ruins faction design only; do not copy any commercial MOBA minion.
+Action: attack. Motion requirement: clear 6-frame melee attack: anticipation, wind-up, slash/contact, recoil, recover, return; weapon stays fully inside every frame.
+Direction: north. Direction lock: back-facing away from camera, back of head/body visible, no front face.
+Style: readable 64px hard-edge pixel art, limited palette, dark MOBA battlefield tone, high silhouette readability on grass and broken-stone lane, centered in each intended cell with 2-4 px margin. Maintain consistent size and identity across all six frames and across the existing minion v2 set.
+
+Use reference images only for project camera angle, pixel-art scale, red/blue faction color mood, and current prototype readability. Do not copy reference characters, UI, logos, text, or commercial designs.
