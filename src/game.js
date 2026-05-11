@@ -35,6 +35,7 @@
   const OBJECT_SHEET_PATH = 'assets/sprites/moba-object-sheet.png';
   const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet-v2.png';
   const MINION_SHEET_PATH = 'assets/sprites/minion-animation-sheet.png';
+  const MINION_DIRECTION_SHEET_PATH = 'assets/sprites/minion-animation-sheet-v2.png';
   const EFFECT_SHEET_PATH = 'assets/effects/moba-effect-sheet.png';
   const ART_CELL = 256;
   const ART_COLUMNS = 4;
@@ -88,6 +89,28 @@
       melee: { move: 6, attack: 7 },
       ranged: { move: 8, attack: 9 },
       siege: { move: 10, attack: 11 },
+    },
+  };
+  const MINION_DIRECTION_ROWS = {
+    'south-east': {
+      blue: {
+        melee: { move: 0, attack: 1 },
+        ranged: { move: 2, attack: 3 },
+      },
+      red: {
+        melee: { move: 4, attack: 5 },
+        ranged: { move: 6, attack: 7 },
+      },
+    },
+    'north-west': {
+      blue: {
+        melee: { move: 8, attack: 9 },
+        ranged: { move: 10, attack: 11 },
+      },
+      red: {
+        melee: { move: 12, attack: 13 },
+        ranged: { move: 14, attack: 15 },
+      },
     },
   };
   const EFFECT_ROWS = {
@@ -179,6 +202,13 @@
       { x: -0.7, y: 0.7 },
     ];
     return vectors[row] || vectors[0];
+  }
+
+  function minionDirectionKey(row) {
+    const v = rowVector(row);
+    if (v.x > 0.15) return 'south-east';
+    if (v.x < -0.15) return 'north-west';
+    return null;
   }
 
   function pointOnPath(t, path = LANE_PATH) {
@@ -809,6 +839,7 @@
         ['objects', OBJECT_SHEET_PATH],
         ['icons', ICON_SHEET_PATH],
         ['minions', MINION_SHEET_PATH],
+        ['minionDirections', MINION_DIRECTION_SHEET_PATH],
         ['effects', EFFECT_SHEET_PATH],
         ...Object.entries(SPRITE_PATHS),
         ...Object.entries(ENEMY_SPRITE_PATHS).map(([key, src]) => [`enemy-${key}`, src]),
@@ -2142,13 +2173,22 @@
       ctx.stroke();
       ctx.globalAlpha = minion.dead ? 0.42 : 1;
       const attacking = !minion.dead && minion.target && distance(minion, minion.target) <= minion.attackRange + minion.target.radius + 4;
+      const action = attacking ? 'attack' : 'move';
+      const frame = Math.floor((this.time * (attacking ? 10 : 7.5)) + minion.id) % ANIM_COLUMNS;
+      const box = minion.type === 'siege'
+        ? { y: -74, w: 94, h: 84 }
+        : { y: -64, w: 74, h: 74 };
+      const directionKey = minion.type === 'siege' ? null : minionDirectionKey(minion.direction);
+      const directionRow = directionKey ? MINION_DIRECTION_ROWS[directionKey]?.[minion.team]?.[minion.type]?.[action] : undefined;
+      if (this.assets.minionDirections && directionRow !== undefined) {
+        this.drawAnimCell(ctx, this.assets.minionDirections, directionRow, frame, -box.w / 2, box.y, box.w, box.h);
+        ctx.restore();
+        if (!minion.dead) this.drawSmallHealth(ctx, minion, minion.type === 'siege' ? 48 : 42);
+        return;
+      }
       const minionRows = MINION_ROWS[minion.team] && MINION_ROWS[minion.team][minion.type];
-      const minionRow = minionRows && minionRows[attacking ? 'attack' : 'move'];
+      const minionRow = minionRows && minionRows[action];
       if (this.assets.minions && minionRow !== undefined) {
-        const frame = Math.floor((this.time * (attacking ? 10 : 7.5)) + minion.id) % ANIM_COLUMNS;
-        const box = minion.type === 'siege'
-          ? { y: -74, w: 94, h: 84 }
-          : { y: -64, w: 74, h: 74 };
         if (v.x < -0.15) ctx.scale(-1, 1);
         this.drawAnimCell(ctx, this.assets.minions, minionRow, frame, -box.w / 2, box.y, box.w, box.h);
         ctx.restore();

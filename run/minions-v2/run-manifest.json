@@ -1,6 +1,6 @@
 {
   "reference": {
-    "source_type": "project_style_and_existing_generated_reference",
+    "source_type": "file",
     "source": "moba_25d_interface.png plus run/minions/source/minion-animation-sheet-raw.png for camera/style/scale only",
     "used_for_generation": true,
     "identity_notes": [
@@ -58,9 +58,12 @@
   },
   "generation": {
     "method": "codex-gateway-imagegen",
+    "imagegen_output_path": "source/64-blue-melee-move-south-east.png",
     "procedural": false,
     "text_only": false,
-    "imported_contact_sheet": false
+    "imported_contact_sheet": false,
+    "final_path": "64/final/minion-direction-test-sheet.png",
+    "metadata_path": "64/final/minion-direction-test-metadata.json"
   },
   "strips": [
     {

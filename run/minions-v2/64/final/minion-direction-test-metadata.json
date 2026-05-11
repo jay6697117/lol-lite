@@ -1,0 +1,25 @@
+{
+  "cell": 64,
+  "columns": 6,
+  "rows": 16,
+  "row_order": [
+    "blue-melee-move-south-east",
+    "blue-melee-attack-south-east",
+    "blue-ranged-move-south-east",
+    "blue-ranged-attack-south-east",
+    "red-melee-move-south-east",
+    "red-melee-attack-south-east",
+    "red-ranged-move-south-east",
+    "red-ranged-attack-south-east",
+    "blue-melee-move-north-west",
+    "blue-melee-attack-north-west",
+    "blue-ranged-move-north-west",
+    "blue-ranged-attack-north-west",
+    "red-melee-move-north-west",
+    "red-melee-attack-north-west",
+    "red-ranged-move-north-west",
+    "red-ranged-attack-north-west"
+  ],
+  "atlas": "64/final/minion-direction-test-sheet.png",
+  "contact_sheet": "64/qa/minion-direction-test-contact-sheet.png"
+}

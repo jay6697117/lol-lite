@@ -1,0 +1,2924 @@
+{
+  "ok": true,
+  "file": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/64/final/minion-direction-test-sheet.png",
+  "width": 384,
+  "height": 1024,
+  "errors": [],
+  "warnings": [],
+  "cells": [
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1651,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1408,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        11,
+        2,
+        52,
+        62
+      ]
+    },
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1784,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1267,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        14,
+        2,
+        49,
+        62
+      ]
+    },
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1749,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1313,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        13,
+        2,
+        51,
+        62
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1747,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 2045,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1122,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        10,
+        62,
+        54
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1498,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        5,
+        62,
+        58
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1714,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1730,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1741,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1789,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1732,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1537,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1674,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1605,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 2213,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1554,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1170,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        12,
+        62,
+        52
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1436,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        8,
+        62,
+        56
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 2377,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        62,
+        62
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 2213,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1635,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1617,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1360,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        13,
+        2,
+        51,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1418,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1417,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        13,
+        2,
+        50,
+        62
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1561,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1680,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        4,
+        62,
+        60
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1351,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1332,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        8,
+        62,
+        56
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1513,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        4,
+        62,
+        60
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1904,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        62,
+        61
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1687,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        4,
+        62,
+        60
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1627,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1865,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 2,
+      "nontransparent_pixels": 1629,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1558,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1652,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1647,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 0,
+      "nontransparent_pixels": 1785,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 1,
+      "nontransparent_pixels": 1563,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 2,
+      "nontransparent_pixels": 856,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        15,
+        62,
+        49
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 3,
+      "nontransparent_pixels": 1499,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        6,
+        62,
+        57
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 4,
+      "nontransparent_pixels": 1745,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "column": 5,
+      "nontransparent_pixels": 1855,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1530,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1856,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1398,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1308,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        12,
+        2,
+        52,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1499,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1642,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1515,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1294,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1250,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        2,
+        9,
+        62,
+        55
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1639,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1473,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1509,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1390,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1386,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1439,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1533,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1366,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        11,
+        2,
+        53,
+        62
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1474,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1660,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1198,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        12,
+        2,
+        52,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1080,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1454,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1621,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1638,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1451,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        10,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1371,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1427,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        55,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1409,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        9,
+        2,
+        54,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1491,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1424,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        11,
+        2,
+        52,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1555,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1709,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1491,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        61,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1791,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1726,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1566,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        8,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1406,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 1,
+      "nontransparent_pixels": 1512,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1564,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        4,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1448,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1415,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1397,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        6,
+        2,
+        57,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 0,
+      "nontransparent_pixels": 1792,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        58,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 1,
+      "nontransparent_pixels": 943,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        14,
+        2,
+        50,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 2,
+      "nontransparent_pixels": 1072,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        3,
+        2,
+        60,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 3,
+      "nontransparent_pixels": 1425,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        7,
+        2,
+        56,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 4,
+      "nontransparent_pixels": 1899,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "column": 5,
+      "nontransparent_pixels": 1898,
+      "edge_pixels": 0,
+      "chroma_residue_pixels": 0,
+      "bbox": [
+        5,
+        2,
+        59,
+        62
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "row": 0,
+      "row_name": "blue-melee-move-south-east",
+      "frame_diffs": [
+        0.16746,
+        0.1453,
+        0.13749,
+        0.16332,
+        0.17227
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1651,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1408,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            2,
+            52,
+            62
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1784,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1267,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            14,
+            2,
+            49,
+            62
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1749,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 0,
+          "row_name": "blue-melee-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1313,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            2,
+            51,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "row_name": "blue-melee-attack-south-east",
+      "frame_diffs": [
+        0.18805,
+        0.21407,
+        0.18689,
+        0.18263,
+        0.04253
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1747,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 2045,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1122,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            10,
+            62,
+            54
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1498,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            5,
+            62,
+            58
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1714,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 1,
+          "row_name": "blue-melee-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1730,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "row_name": "blue-ranged-move-south-east",
+      "frame_diffs": [
+        0.11763,
+        0.12111,
+        0.10844,
+        0.0802,
+        0.09193
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1741,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1789,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1732,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1537,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1674,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 2,
+          "row_name": "blue-ranged-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1605,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "row_name": "blue-ranged-attack-south-east",
+      "frame_diffs": [
+        0.21038,
+        0.22387,
+        0.17954,
+        0.19789,
+        0.10694
+      ],
+      "bbox_shift": 0.0,
+      "cells": [
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 2213,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1554,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1170,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            12,
+            62,
+            52
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1436,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            8,
+            62,
+            56
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 2377,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            62,
+            62
+          ]
+        },
+        {
+          "row": 3,
+          "row_name": "blue-ranged-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 2213,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 4,
+      "row_name": "red-melee-move-south-east",
+      "frame_diffs": [
+        0.09761,
+        0.15417,
+        0.13073,
+        0.13106,
+        0.10324
+      ],
+      "bbox_shift": 1.0,
+      "cells": [
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1635,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1617,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1360,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            2,
+            51,
+            62
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1418,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1417,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            13,
+            2,
+            50,
+            62
+          ]
+        },
+        {
+          "row": 4,
+          "row_name": "red-melee-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1561,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 5,
+      "row_name": "red-melee-attack-south-east",
+      "frame_diffs": [
+        0.16922,
+        0.17826,
+        0.18797,
+        0.16775,
+        0.0987
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1680,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            4,
+            62,
+            60
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1351,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1332,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            8,
+            62,
+            56
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1513,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            4,
+            62,
+            60
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1904,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            62,
+            61
+          ]
+        },
+        {
+          "row": 5,
+          "row_name": "red-melee-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1687,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            4,
+            62,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "row": 6,
+      "row_name": "red-ranged-move-south-east",
+      "frame_diffs": [
+        0.13734,
+        0.09303,
+        0.12771,
+        0.05712,
+        0.13257
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1627,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1865,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 2,
+          "nontransparent_pixels": 1629,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1558,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1652,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 6,
+          "row_name": "red-ranged-move-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1647,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            59,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 7,
+      "row_name": "red-ranged-attack-south-east",
+      "frame_diffs": [
+        0.18814,
+        0.1963,
+        0.12598,
+        0.12542,
+        0.0939
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 0,
+          "nontransparent_pixels": 1785,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 1,
+          "nontransparent_pixels": 1563,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 2,
+          "nontransparent_pixels": 856,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            15,
+            62,
+            49
+          ]
+        },
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 3,
+          "nontransparent_pixels": 1499,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            6,
+            62,
+            57
+          ]
+        },
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 4,
+          "nontransparent_pixels": 1745,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 7,
+          "row_name": "red-ranged-attack-south-east",
+          "column": 5,
+          "nontransparent_pixels": 1855,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 8,
+      "row_name": "blue-melee-move-north-west",
+      "frame_diffs": [
+        0.12568,
+        0.14084,
+        0.07579,
+        0.09679,
+        0.1031
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1530,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1856,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1398,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1308,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            12,
+            2,
+            52,
+            62
+          ]
+        },
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1499,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 8,
+          "row_name": "blue-melee-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1642,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 9,
+      "row_name": "blue-melee-attack-north-west",
+      "frame_diffs": [
+        0.14356,
+        0.16445,
+        0.15841,
+        0.11546,
+        0.03235
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1515,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1294,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1250,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            2,
+            9,
+            62,
+            55
+          ]
+        },
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1639,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1473,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 9,
+          "row_name": "blue-melee-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1509,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 10,
+      "row_name": "blue-ranged-move-north-west",
+      "frame_diffs": [
+        0.05989,
+        0.06431,
+        0.05577,
+        0.07545,
+        0.07638
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1390,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1386,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1439,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1533,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1366,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            2,
+            53,
+            62
+          ]
+        },
+        {
+          "row": 10,
+          "row_name": "blue-ranged-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1474,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            54,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 11,
+      "row_name": "blue-ranged-attack-north-west",
+      "frame_diffs": [
+        0.11729,
+        0.13575,
+        0.13184,
+        0.08293,
+        0.02948
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1660,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1198,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            12,
+            2,
+            52,
+            62
+          ]
+        },
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1080,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1454,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1621,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 11,
+          "row_name": "blue-ranged-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1638,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            55,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 12,
+      "row_name": "red-melee-move-north-west",
+      "frame_diffs": [
+        0.08684,
+        0.06612,
+        0.06912,
+        0.09274,
+        0.08938
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1451,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            10,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1371,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1427,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            55,
+            62
+          ]
+        },
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1409,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            9,
+            2,
+            54,
+            62
+          ]
+        },
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1491,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 12,
+          "row_name": "red-melee-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1424,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            11,
+            2,
+            52,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 13,
+      "row_name": "red-melee-attack-north-west",
+      "frame_diffs": [
+        0.17389,
+        0.20982,
+        0.17161,
+        0.09995,
+        0.05624
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1555,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1709,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1491,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            61,
+            62
+          ]
+        },
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1791,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1726,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 13,
+          "row_name": "red-melee-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1566,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            8,
+            2,
+            56,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 14,
+      "row_name": "red-ranged-move-north-west",
+      "frame_diffs": [
+        0.07856,
+        0.06609,
+        0.07798,
+        0.05736,
+        0.02858
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1406,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 1,
+          "nontransparent_pixels": 1512,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1564,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            4,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1448,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1415,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        },
+        {
+          "row": 14,
+          "row_name": "red-ranged-move-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1397,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            6,
+            2,
+            57,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "row": 15,
+      "row_name": "red-ranged-attack-north-west",
+      "frame_diffs": [
+        0.13649,
+        0.12873,
+        0.13704,
+        0.1157,
+        0.025
+      ],
+      "bbox_shift": 0.5,
+      "cells": [
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 0,
+          "nontransparent_pixels": 1792,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            58,
+            62
+          ]
+        },
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 1,
+          "nontransparent_pixels": 943,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            14,
+            2,
+            50,
+            62
+          ]
+        },
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 2,
+          "nontransparent_pixels": 1072,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            3,
+            2,
+            60,
+            62
+          ]
+        },
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 3,
+          "nontransparent_pixels": 1425,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            7,
+            2,
+            56,
+            62
+          ]
+        },
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 4,
+          "nontransparent_pixels": 1899,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        },
+        {
+          "row": 15,
+          "row_name": "red-ranged-attack-north-west",
+          "column": 5,
+          "nontransparent_pixels": 1898,
+          "edge_pixels": 0,
+          "chroma_residue_pixels": 0,
+          "bbox": [
+            5,
+            2,
+            59,
+            62
+          ]
+        }
+      ]
+    }
+  ]
+}

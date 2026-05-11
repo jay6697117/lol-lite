@@ -1,0 +1,25 @@
+{
+  "accepted": true,
+  "reviewer_notes": [
+    "Contact sheet shows 16 generated 64px strips with six readable frames per row.",
+    "Blue and red melee/ranged identities are visually distinct and match the requested dark MOBA faction palette.",
+    "South-east rows face diagonally toward screen-right/front; north-west rows face diagonally toward screen-left/back for the two-direction test.",
+    "This pass intentionally excludes siege minions; game integration should keep siege on the existing fallback rows."
+  ],
+  "checks": {
+    "reference_identity": true,
+    "direction": true,
+    "animation_readable": true,
+    "frame_separation": true,
+    "not_procedural": true
+  },
+  "artifacts": {
+    "atlas": "64/final/minion-direction-test-sheet.png",
+    "contact_sheet": "64/qa/minion-direction-test-contact-sheet.png",
+    "validation": "64/qa/minion-direction-test-validation.json",
+    "motion": "64/qa/minion-direction-test-motion.json",
+    "previews": "64/qa/previews",
+    "in_game_screenshot": "64/qa/minion-v2-in-game.png"
+  }
+}
+
