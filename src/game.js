@@ -31,7 +31,7 @@
       text: '#ffd4de',
     },
   };
-  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-v2-dark.png';
+  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg.png';
   const OBJECT_SHEET_PATH = 'assets/sprites/moba-object-sheet.png';
   const BUILDING_SHEET_PATH = 'assets/sprites/moba-building-sheet-v2.png';
   const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet-v2.png';
@@ -45,18 +45,18 @@
   const ANIM_CELL = 64;
   const ANIM_COLUMNS = 6;
   const SPRITE_PATHS = {
-    idle: 'run/64/final/idle-sheet-clean.png',
-    move: 'run/64/final/move-sheet-clean.png',
-    attack: 'run/64/final/attack-sheet-clean.png',
-    hit: 'run/64/final/hit-sheet-clean.png',
-    death: 'run/64/final/death-sheet-clean.png',
+    idle: 'run/hero-rework-v1/ezreal/64/final/idle-sheet-clean.png',
+    move: 'run/hero-rework-v1/ezreal/64/final/move-sheet-clean.png',
+    attack: 'run/hero-rework-v1/ezreal/64/final/attack-sheet-clean.png',
+    hit: 'run/hero-rework-v1/ezreal/64/final/hit-sheet-clean.png',
+    death: 'run/hero-rework-v1/ezreal/64/final/death-sheet-clean.png',
   };
   const ENEMY_SPRITE_PATHS = {
-    idle: 'run/rift-fighter/64/final/idle-sheet-clean.png',
-    move: 'run/rift-fighter/64/final/move-sheet-clean.png',
-    attack: 'run/rift-fighter/64/final/attack-sheet-clean.png',
-    hit: 'run/rift-fighter/64/final/hit-sheet-clean.png',
-    death: 'run/rift-fighter/64/final/death-sheet-clean.png',
+    idle: 'run/hero-rework-v1/ashe/64/final/idle-sheet-clean.png',
+    move: 'run/hero-rework-v1/ashe/64/final/move-sheet-clean.png',
+    attack: 'run/hero-rework-v1/ashe/64/final/attack-sheet-clean.png',
+    hit: 'run/hero-rework-v1/ashe/64/final/hit-sheet-clean.png',
+    death: 'run/hero-rework-v1/ashe/64/final/death-sheet-clean.png',
   };
   const OBJECT_CELLS = {
     minion: {
@@ -75,7 +75,7 @@
   };
   const ICON_CELLS = {
     skills: { q: 0, w: 1, e: 2, r: 3 },
-    items: [4, 5, 6, 7],
+    items: [4, 5, 6, 7, 4, 5, 6, 7],
     summoners: [8, 9],
   };
   const BUILDING_CELLS = {
@@ -118,11 +118,63 @@
     projectile: 4,
     spark: 5,
   };
+  const CHAMPIONS = {
+    ezreal: {
+      name: '探险家·伊泽瑞尔',
+      subtitle: '奥术探险射手',
+      stats: {
+        maxHp: 600,
+        maxMp: 375,
+        attackDamage: 60,
+        attackRange: 186,
+        attackInterval: 0.82,
+        speed: 168,
+        spellPower: 0,
+        hpGrowth: 102,
+        mpGrowth: 70,
+        attackDamageGrowth: 3.1,
+        mpRegen: 8.6,
+      },
+      skills: {
+        q: { key: 'Q', name: '秘术射击', level: 1, max: 5, cost: [28, 31, 34, 37, 40], cooldowns: [5.5, 5.1, 4.7, 4.3, 3.9] },
+        w: { key: 'W', name: '精华跃动', level: 0, max: 5, cost: [50, 55, 60, 65, 70], cooldowns: [10, 9.2, 8.4, 7.6, 6.8] },
+        e: { key: 'E', name: '奥术跃迁', level: 0, max: 5, cost: [70, 75, 80, 85, 90], cooldowns: [17, 15.6, 14.2, 12.8, 11.4] },
+        r: { key: 'R', name: '精准弹幕', level: 0, max: 3, cost: [100, 100, 100], cooldowns: [46, 40, 34] },
+      },
+    },
+    ashe: {
+      name: '寒冰射手·艾希',
+      subtitle: '寒霜控制射手',
+      stats: {
+        maxHp: 640,
+        maxMp: 280,
+        attackDamage: 59,
+        attackRange: 196,
+        attackInterval: 0.78,
+        speed: 160,
+        spellPower: 0,
+        hpGrowth: 101,
+        mpGrowth: 35,
+        attackDamageGrowth: 2.95,
+        mpRegen: 6.8,
+      },
+      skills: {
+        q: { key: 'Q', name: '射手专注', level: 1, max: 5, cost: [45, 45, 45, 45, 45], cooldowns: [9, 8.3, 7.6, 6.9, 6.2] },
+        w: { key: 'W', name: '万箭齐发', level: 0, max: 5, cost: [65, 65, 65, 65, 65], cooldowns: [14, 12.5, 11, 9.5, 8] },
+        e: { key: 'E', name: '鹰击长空', level: 0, max: 5, cost: [35, 35, 35, 35, 35], cooldowns: [18, 16, 14, 12, 10] },
+        r: { key: 'R', name: '魔法水晶箭', level: 0, max: 3, cost: [100, 100, 100], cooldowns: [50, 43, 36] },
+      },
+    },
+  };
   const ITEMS = [
-    { key: '1', name: '裂纹长刃', cost: 300, stat: '+14 攻击', apply: hero => { hero.attackDamage += 14; } },
-    { key: '2', name: '辉石护符', cost: 280, stat: '+160 生命', apply: hero => { hero.maxHp += 160; hero.hp += 160; } },
-    { key: '3', name: '巡林者靴', cost: 260, stat: '+24 移速', apply: hero => { hero.speed += 24; } },
-    { key: '4', name: '星火法杖', cost: 360, stat: '+技能伤害', apply: hero => { hero.spellPower += 24; hero.maxMp += 80; hero.mp += 80; } },
+    { key: '1', name: '多兰之刃', cost: 450, stat: '+8攻击 +80生命', apply: hero => { hero.attackDamage += 8; hero.maxHp += 80; hero.hp += 80; } },
+    { key: '2', name: '长剑', cost: 350, stat: '+10攻击', apply: hero => { hero.attackDamage += 10; } },
+    { key: '3', name: '女神之泪', cost: 400, stat: '+240法力 +回蓝', apply: hero => { hero.maxMp += 240; hero.mp += 240; hero.mpRegen += 2.4; } },
+    { key: '4', name: '狂战士胫甲', cost: 550, stat: '+35移速 +攻速', apply: hero => { hero.speed += 35; hero.attackInterval = Math.max(0.48, hero.attackInterval * 0.88); } },
+    { key: '5', name: '耀光', cost: 700, stat: '+18攻击 +120法力 +20法强', apply: hero => { hero.attackDamage += 18; hero.maxMp += 120; hero.mp += 120; hero.spellPower += 20; } },
+    { key: '6', name: '正午箭袋', cost: 900, stat: '+22攻击 +攻速', apply: hero => { hero.attackDamage += 22; hero.attackInterval = Math.max(0.46, hero.attackInterval * 0.84); } },
+    { key: '7', name: '暴风大剑', cost: 1300, stat: '+35攻击', apply: hero => { hero.attackDamage += 35; } },
+    { key: '8', name: '冰霜长弓', cost: 1000, stat: '+20攻击 +减速强化', apply: hero => { hero.attackDamage += 20; hero.frostPower += 0.12; } },
   ];
 
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
@@ -131,6 +183,19 @@
   const hpRatio = entity => clamp(entity.hp / entity.maxHp, 0, 1);
   const manaRatio = entity => clamp(entity.mp / entity.maxMp, 0, 1);
   const otherTeam = team => (team === BLUE ? RED : BLUE);
+
+  function levelValue(values, level) {
+    if (Array.isArray(values)) return values[clamp(level - 1, 0, values.length - 1)];
+    return values;
+  }
+
+  function createChampionSkills(champion) {
+    return Object.fromEntries(Object.entries(champion.skills).map(([key, skill]) => [key, {
+      ...skill,
+      cooldown: 0,
+      lastCooldown: levelValue(skill.cooldowns, Math.max(1, skill.level || 1)),
+    }]));
+  }
 
   function roundedRect(ctx, x, y, width, height, radius) {
     const r = Math.min(radius, width / 2, height / 2);
@@ -402,9 +467,18 @@
       this.deathTimer = 0;
       this.attackCooldown = 0;
       this.hitTimer = 0;
+      this.stunTimer = 0;
+      this.slowTimer = 0;
+      this.slowMultiplier = 1;
       this.direction = this.team === BLUE ? 3 : 7;
       this.moving = false;
       this.target = null;
+    }
+
+    updateStatus(dt) {
+      this.stunTimer = Math.max(0, this.stunTimer - dt);
+      this.slowTimer = Math.max(0, this.slowTimer - dt);
+      if (this.slowTimer <= 0) this.slowMultiplier = 1;
     }
 
     takeDamage(amount, source) {
@@ -441,6 +515,10 @@
     }
 
     moveToward(point, speed, dt) {
+      if (this.stunTimer > 0) {
+        this.moving = false;
+        return false;
+      }
       const dx = point.x - this.x;
       const dy = point.y - this.y;
       const dist = Math.hypot(dx, dy) || 1;
@@ -448,7 +526,8 @@
         this.moving = false;
         return true;
       }
-      const step = Math.min(dist, speed * dt);
+      const actualSpeed = speed * (this.slowTimer > 0 ? this.slowMultiplier : 1);
+      const step = Math.min(dist, actualSpeed * dt);
       this.x += dx / dist * step;
       this.y += dy / dist * step;
       this.direction = directionRow(dx, dy);
@@ -459,26 +538,28 @@
 
   class Hero extends Unit {
     constructor(game, options) {
+      const champion = CHAMPIONS[options.champion] || CHAMPIONS.ezreal;
       super(game, {
         kind: 'hero',
         radius: 26,
-        maxHp: options.team === BLUE ? 920 : 840,
-        maxMp: 380,
-        attackDamage: options.team === BLUE ? 62 : 54,
-        attackRange: 78,
-        attackInterval: 0.82,
-        speed: options.team === BLUE ? 164 : 152,
-        spellPower: 0,
+        ...champion.stats,
+        name: champion.name,
         ...options,
       });
+      this.champion = options.champion || 'ezreal';
+      this.subtitle = champion.subtitle;
+      this.hpGrowth = champion.stats.hpGrowth;
+      this.mpGrowth = champion.stats.mpGrowth;
+      this.attackDamageGrowth = champion.stats.attackDamageGrowth;
+      this.mpRegen = champion.stats.mpRegen;
       this.mp = this.maxMp;
       this.level = 1;
       this.xp = 0;
       this.xpNeeded = 120;
-      this.gold = options.team === BLUE ? 420 : 300;
+      this.gold = options.team === BLUE ? 500 : 500;
       this.cs = 0;
       this.skillPoints = 0;
-      this.inventory = [null, null, null, null];
+      this.inventory = Array(ITEMS.length).fill(null);
       this.moveTarget = null;
       this.attackTarget = null;
       this.attackMove = false;
@@ -491,12 +572,12 @@
       this.shieldTimer = 0;
       this.recallTimer = 0;
       this.empoweredTimer = 0;
-      this.skills = {
-        q: { key: 'Q', name: '裂弧斩', level: 1, max: 5, cooldown: 0, lastCooldown: 5.2, cost: 42, base: 5.2 },
-        w: { key: 'W', name: '辉光护盾', level: 1, max: 5, cooldown: 0, lastCooldown: 9, cost: 48, base: 9 },
-        e: { key: 'E', name: '踏星突进', level: 1, max: 5, cooldown: 0, lastCooldown: 8.2, cost: 44, base: 8.2 },
-        r: { key: 'R', name: '秘源震荡', level: 0, max: 3, cooldown: 0, lastCooldown: 28, cost: 100, base: 28 },
-      };
+      this.attackSpeedTimer = 0;
+      this.attackSpeedMultiplier = 1;
+      this.speedBuffTimer = 0;
+      this.speedBuffAmount = 0;
+      this.frostPower = 0;
+      this.skills = createChampionSkills(champion);
     }
 
     update(dt) {
@@ -508,11 +589,21 @@
         return;
       }
 
-      this.mp = Math.min(this.maxMp, this.mp + dt * 7);
+      this.updateStatus(dt);
+      this.mp = Math.min(this.maxMp, this.mp + dt * this.mpRegen);
       this.attackCooldown = Math.max(0, this.attackCooldown - dt);
       this.hitTimer = Math.max(0, this.hitTimer - dt);
       this.actionLock = Math.max(0, this.actionLock - dt);
       this.empoweredTimer = Math.max(0, this.empoweredTimer - dt);
+      this.attackSpeedTimer = Math.max(0, this.attackSpeedTimer - dt);
+      if (this.attackSpeedTimer <= 0) this.attackSpeedMultiplier = 1;
+      if (this.speedBuffTimer > 0) {
+        this.speedBuffTimer -= dt;
+        if (this.speedBuffTimer <= 0) {
+          this.speed -= this.speedBuffAmount;
+          this.speedBuffAmount = 0;
+        }
+      }
       if (this.shieldTimer > 0) {
         this.shieldTimer -= dt;
         if (this.shieldTimer <= 0) this.shield = 0;
@@ -554,23 +645,31 @@
     }
 
     updateAI(dt) {
+      this.autoUpgradeSkills();
       const player = this.game.player;
+      if (this.stunTimer > 0) {
+        this.action = 'idle';
+        this.moving = false;
+        return;
+      }
       const safe = this.game.getSafePoint(this.team);
       if (hpRatio(this) < 0.34 && distance(this, safe) > 80) {
         this.attackTarget = null;
+        this.game.tryCastAISkill(this, player, true);
         this.moveToward(safe, this.speed * 1.08, dt);
         this.action = 'move';
         return;
       }
 
       const lowMinion = this.game.minions
-        .filter(m => !m.dead && m.team !== this.team && distance(this, m) < 335 && m.hp < this.attackDamage + 24)
+        .filter(m => !m.dead && m.team !== this.team && distance(this, m) < 360 && m.hp < this.attackDamage + 28)
         .sort((a, b) => a.hp - b.hp)[0];
-      const canTrade = this.game.isAlive(player) && distance(this, player) < 230 && hpRatio(this) > 0.48 && hpRatio(player) < 0.78;
+      const canTrade = this.game.isAlive(player) && distance(this, player) < this.attackRange + 92 && hpRatio(this) > 0.42 && hpRatio(player) < 0.86;
       const nearestMinion = this.game.minions
         .filter(m => !m.dead && m.team !== this.team)
         .sort((a, b) => distance(this, a) - distance(this, b))[0];
 
+      if (canTrade) this.game.tryCastAISkill(this, player, false);
       if (lowMinion) this.attackTarget = lowMinion;
       else if (canTrade) this.attackTarget = player;
       else if (!this.attackTarget || !this.game.isAttackable(this, this.attackTarget)) this.attackTarget = nearestMinion || this.game.getPrimaryBuildingTarget(this.team);
@@ -599,18 +698,35 @@
 
     basicAttack(target) {
       if (!this.game.isAttackable(this, target)) return;
-      this.attackCooldown = this.attackInterval;
+      this.attackCooldown = this.attackInterval * (this.attackSpeedTimer > 0 ? this.attackSpeedMultiplier : 1);
       this.action = 'attack';
       this.actionLock = 0.34;
       this.faceToward(target);
       let damage = this.attackDamage;
-      if (this.empoweredTimer > 0) {
+      if (this.champion === 'ashe') {
+        this.game.applySlow(target, Math.max(0.5, 0.72 - this.frostPower), 1.45);
+        if (this.empoweredTimer > 0) damage += 8 + this.level * 4 + this.attackDamage * 0.16;
+      } else if (this.empoweredTimer > 0) {
         damage += 44 + this.level * 8;
         this.empoweredTimer = 0;
         this.game.effects.push(new Effect({ type: 'spark', x: target.x, y: target.y - 20, color: TEAM_STYLE[this.team].main, radius: 42, life: 0.38 }));
       }
       this.game.effects.push(new Effect({ type: 'slash', x: target.x, y: target.y - 18, angle: Math.atan2(target.y - this.y, target.x - this.x), color: TEAM_STYLE[this.team].main, radius: 38, life: 0.22 }));
       this.game.applyDamage(target, damage, this, { sourceKind: 'attack' });
+    }
+
+    autoUpgradeSkills() {
+      const priority = ['r', 'w', 'q', 'e'];
+      while (this.skillPoints > 0) {
+        const key = priority.find(candidate => {
+          const skill = this.skills[candidate];
+          return skill && skill.level < skill.max && (candidate !== 'r' || this.level >= 6);
+        });
+        if (!key) return;
+        this.skills[key].level += 1;
+        this.skills[key].lastCooldown = levelValue(this.skills[key].cooldowns, this.skills[key].level);
+        this.skillPoints -= 1;
+      }
     }
 
     addXp(amount) {
@@ -621,12 +737,12 @@
         this.level += 1;
         this.skillPoints += 1;
         this.xpNeeded = Math.floor(105 + this.level * 82);
-        this.maxHp += 76;
-        this.hp += 76;
-        this.maxMp += 32;
-        this.mp += 32;
-        this.attackDamage += 5;
-        this.game.pushMessage(`等级提升到 ${this.level}，获得 1 个技能点。`, '#ffe599');
+        this.maxHp += this.hpGrowth;
+        this.hp += this.hpGrowth;
+        this.maxMp += this.mpGrowth;
+        this.mp += this.mpGrowth;
+        this.attackDamage += this.attackDamageGrowth;
+        if (this.isPlayer) this.game.pushMessage(`等级提升到 ${this.level}，获得 1 个技能点。`, '#ffe599');
         this.game.effects.push(new Effect({ type: 'ring', x: this.x, y: this.y, color: '#ffe599', radius: 92, life: 0.8 }));
       }
     }
@@ -673,9 +789,9 @@
   class Minion extends Unit {
     constructor(game, options) {
       const stats = {
-        melee: { maxHp: 190, attackDamage: 18, attackRange: 34, speed: 48, reward: 24, xp: 28, radius: 16, attackInterval: 1.05 },
-        ranged: { maxHp: 118, attackDamage: 14, attackRange: 158, speed: 43, reward: 18, xp: 23, radius: 14, attackInterval: 1.2 },
-        siege: { maxHp: 330, attackDamage: 38, attackRange: 176, speed: 34, reward: 48, xp: 48, radius: 20, attackInterval: 1.55 },
+        melee: { maxHp: 190, attackDamage: 18, attackRange: 34, speed: 48, reward: 21, xp: 29, radius: 16, attackInterval: 1.05 },
+        ranged: { maxHp: 118, attackDamage: 14, attackRange: 158, speed: 43, reward: 14, xp: 22, radius: 14, attackInterval: 1.2 },
+        siege: { maxHp: 350, attackDamage: 40, attackRange: 176, speed: 34, reward: 60, xp: 60, radius: 20, attackInterval: 1.55 },
       }[options.type];
       super(game, {
         kind: 'minion',
@@ -692,8 +808,13 @@
         this.deathTimer -= dt;
         return;
       }
+      this.updateStatus(dt);
       this.attackCooldown = Math.max(0, this.attackCooldown - dt);
       this.hitTimer = Math.max(0, this.hitTimer - dt);
+      if (this.stunTimer > 0) {
+        this.moving = false;
+        return;
+      }
       if (!this.target || !this.game.isAttackable(this, this.target) || distance(this, this.target) > this.attackRange + this.target.radius + 26) {
         this.target = this.chooseTarget();
       }
@@ -807,6 +928,8 @@
       this.ctx = canvas.getContext('2d');
       this.ctx.imageSmoothingEnabled = false;
       this.mouse = { x: WIDTH / 2, y: HEIGHT / 2 };
+      this.cameraZoom = 1;
+      this.cameraCenter = { x: WIDTH / 2, y: HUD_Y / 2 };
       this.assets = {};
       this.assetsReady = false;
       this.ready = false;
@@ -863,14 +986,16 @@
       const enemyStart = pointOnPath(0.67);
       this.player = new Hero(this, {
         team: BLUE,
-        name: '秘源守卫',
+        champion: 'ezreal',
+        name: CHAMPIONS.ezreal.name,
         x: playerStart.x - playerStart.nx * 38,
         y: playerStart.y - playerStart.ny * 38,
         isPlayer: true,
       });
       this.enemy = new Hero(this, {
         team: RED,
-        name: '裂隙斗士',
+        champion: 'ashe',
+        name: CHAMPIONS.ashe.name,
         x: enemyStart.x + enemyStart.nx * 42,
         y: enemyStart.y + enemyStart.ny * 42,
         isPlayer: false,
@@ -887,8 +1012,8 @@
       this.seedOpeningSkirmish();
       this.player.attackMove = true;
       this.enemy.attackTarget = this.minions.find(minion => minion.team === BLUE) || this.player;
-      this.pushMessage('目标：补刀发育，跟随小兵推塔，摧毁敌方秘源核心。', '#d9fff6');
-      this.pushMessage('按 Ctrl+Q/W/E/R 消耗技能点升级技能；靠近己方基地按 1-4 买装备。', '#ffe599');
+      this.pushMessage('当前对战：探险家·伊泽瑞尔 vs 寒冰射手·艾希。', '#d9fff6');
+      this.pushMessage('补最后一刀才给金币；靠近己方基地按 1-8 购买装备。滚轮缩放地图。', '#ffe599');
     }
 
     createDecor() {
@@ -934,7 +1059,8 @@
       this.naturalGoldTimer += dt;
       if (this.naturalGoldTimer >= 1) {
         this.naturalGoldTimer -= 1;
-        this.player.gold += 1;
+        this.player.gold += 2;
+        this.enemy.gold += 2;
       }
       if (this.waveTimer <= 0) {
         this.spawnWave();
@@ -942,6 +1068,7 @@
       }
 
       this.heroes.forEach(hero => hero.update(dt));
+      this.updateCamera(dt);
       this.minions.forEach(minion => minion.update(dt));
       this.buildings.forEach(building => building.update(dt));
       this.projectiles.forEach(projectile => projectile.update(dt));
@@ -959,18 +1086,27 @@
     bindInput() {
       this.canvas.addEventListener('contextmenu', event => event.preventDefault());
       this.canvas.addEventListener('mousemove', event => {
-        this.mouse = this.toCanvasPoint(event);
+        const point = this.toCanvasPoint(event);
+        this.mouse = point.y <= HUD_Y ? this.screenToWorld(point) : point;
       });
       this.canvas.addEventListener('mousedown', event => {
         const point = this.toCanvasPoint(event);
-        this.mouse = point;
+        const worldPoint = point.y <= HUD_Y ? this.screenToWorld(point) : point;
+        this.mouse = worldPoint;
         if (event.button === 2) {
           event.preventDefault();
-          this.handleRightClick(point);
+          this.handleRightClick(worldPoint, point);
         } else if (event.button === 0) {
-          this.handleLeftClick(point);
+          this.handleLeftClick(point, worldPoint);
         }
       });
+      this.canvas.addEventListener('wheel', event => {
+        if (event.shiftKey || event.metaKey || event.ctrlKey || event.altKey) return;
+        event.preventDefault();
+        const oldZoom = this.cameraZoom;
+        this.cameraZoom = clamp(this.cameraZoom + (event.deltaY < 0 ? 0.08 : -0.08), 1, 1.48);
+        if (this.cameraZoom !== oldZoom) this.pushMessage(`地图缩放 ${(this.cameraZoom * 100).toFixed(0)}%`, '#d9fff6');
+      }, { passive: false });
       window.addEventListener('keydown', event => this.handleKeyDown(event));
     }
 
@@ -982,8 +1118,46 @@
       };
     }
 
-    handleRightClick(point) {
-      if (this.gameOver || this.player.dead || point.y > HUD_Y) return;
+    cameraView() {
+      const viewW = WIDTH / this.cameraZoom;
+      const viewH = HUD_Y / this.cameraZoom;
+      const centerX = clamp(this.cameraCenter.x, viewW / 2, WIDTH - viewW / 2);
+      const centerY = clamp(this.cameraCenter.y, viewH / 2, HUD_Y - viewH / 2);
+      return {
+        x: centerX - viewW / 2,
+        y: centerY - viewH / 2,
+        w: viewW,
+        h: viewH,
+        offsetX: WIDTH / 2 - centerX * this.cameraZoom,
+        offsetY: HUD_Y / 2 - centerY * this.cameraZoom,
+      };
+    }
+
+    applyCamera(ctx) {
+      const view = this.cameraView();
+      ctx.translate(view.offsetX, view.offsetY);
+      ctx.scale(this.cameraZoom, this.cameraZoom);
+    }
+
+    screenToWorld(point) {
+      if (point.y > HUD_Y) return point;
+      const view = this.cameraView();
+      return {
+        x: (point.x - view.offsetX) / this.cameraZoom,
+        y: (point.y - view.offsetY) / this.cameraZoom,
+      };
+    }
+
+    updateCamera(dt) {
+      if (!this.player) return;
+      const focus = this.player.dead ? this.getSpawnPoint(BLUE) : this.player;
+      const follow = clamp(dt * 7, 0, 1);
+      this.cameraCenter.x = lerp(this.cameraCenter.x, focus.x, follow);
+      this.cameraCenter.y = lerp(this.cameraCenter.y, focus.y - 8, follow);
+    }
+
+    handleRightClick(point, screenPoint = point) {
+      if (this.gameOver || this.player.dead || screenPoint.y > HUD_Y) return;
       const target = this.getEnemyAt(point);
       if (target) {
         this.player.attackTarget = target;
@@ -995,7 +1169,7 @@
       this.orderMove(point, false);
     }
 
-    handleLeftClick(point) {
+    handleLeftClick(point, worldPoint = this.screenToWorld(point)) {
       if (this.gameOver) {
         this.reset();
         return;
@@ -1006,6 +1180,7 @@
       }
       const itemIndex = this.itemSlotAt(point);
       if (itemIndex >= 0) this.buyItem(itemIndex);
+      else if (point.y <= HUD_Y) this.mouse = worldPoint;
     }
 
     handleKeyDown(event) {
@@ -1026,7 +1201,7 @@
         else this.castSkill(key);
         return;
       }
-      if (['1', '2', '3', '4'].includes(key)) {
+      if (/^[1-8]$/.test(key)) {
         event.preventDefault();
         this.buyItem(Number(key) - 1);
         return;
@@ -1047,7 +1222,9 @@
         this.startRecall();
       } else if (key === ' ') {
         event.preventDefault();
-        this.pushMessage('镜头已锁定玩家英雄。当前原型为单屏战场。', '#d9fff6');
+        this.cameraZoom = 1;
+        this.cameraCenter = { x: this.player.x, y: this.player.y };
+        this.pushMessage('镜头已回到 100% 缩放并锁定玩家英雄。', '#d9fff6');
       }
     }
 
@@ -1062,87 +1239,181 @@
       this.effects.push(new Effect({ type: 'ring', x, y, color: attackMove ? '#ffe599' : TEAM_STYLE.blue.main, radius: 34, life: 0.42 }));
     }
 
+    skillCost(skill) {
+      return levelValue(skill.cost, Math.max(1, skill.level));
+    }
+
+    skillCooldown(skill) {
+      return levelValue(skill.cooldowns, Math.max(1, skill.level));
+    }
+
     castSkill(key) {
       const hero = this.player;
-      if (hero.dead) return;
+      const targetPoint = hero.attackTarget && this.isAlive(hero.attackTarget) ? hero.attackTarget : this.mouse;
+      this.castHeroSkill(hero, key, targetPoint, false);
+    }
+
+    castHeroSkill(hero, key, targetPoint, silent = false) {
+      if (hero.dead) return false;
       const skill = hero.skills[key];
       if (!skill || skill.level <= 0) {
-        this.pushMessage(key === 'r' ? 'R 需要 6 级后用技能点解锁。' : '该技能尚未学习。', '#ffb0bd');
-        return;
+        if (!silent && hero.isPlayer) this.pushMessage(key === 'r' ? 'R 需要 6 级后用技能点解锁。' : '该技能尚未学习。', '#ffb0bd');
+        return false;
       }
-      if (skill.cooldown > 0) {
-        this.pushMessage(`${skill.name} 还在冷却：${skill.cooldown.toFixed(1)} 秒。`, '#ffb0bd');
-        return;
+      if (skill.cooldown > 0.05) {
+        if (!silent && hero.isPlayer) this.pushMessage(`${skill.name} 还在冷却：${skill.cooldown.toFixed(1)} 秒。`, '#ffb0bd');
+        return false;
       }
-      if (hero.mp < skill.cost) {
-        this.pushMessage('法力不足。', '#ffb0bd');
-        return;
+      skill.cooldown = 0;
+      const cost = this.skillCost(skill);
+      if (hero.mp < cost) {
+        if (!silent && hero.isPlayer) this.pushMessage('法力不足。', '#ffb0bd');
+        return false;
       }
-      hero.mp -= skill.cost;
-      const cd = Math.max(1.2, skill.base - (skill.level - 1) * 0.45);
+      hero.mp -= cost;
+      const cd = this.skillCooldown(skill);
       skill.cooldown = cd;
       skill.lastCooldown = cd;
       hero.action = 'attack';
       hero.actionLock = 0.42;
       hero.recallTimer = 0;
-      const targetPoint = hero.attackTarget && this.isAlive(hero.attackTarget) ? hero.attackTarget : this.mouse;
       hero.direction = directionRow(targetPoint.x - hero.x, targetPoint.y - hero.y);
 
-      if (key === 'q') this.castQ(hero, skill, targetPoint);
-      if (key === 'w') this.castW(hero, skill);
-      if (key === 'e') this.castE(hero, skill, targetPoint);
-      if (key === 'r') this.castR(hero, skill, targetPoint);
+      if (key === 'q') this.castQ(hero, skill, targetPoint, silent);
+      if (key === 'w') this.castW(hero, skill, targetPoint, silent);
+      if (key === 'e') this.castE(hero, skill, targetPoint, silent);
+      if (key === 'r') this.castR(hero, skill, targetPoint, silent);
+      return true;
     }
 
-    castQ(hero, skill, targetPoint) {
+    tryCastAISkill(hero, target, retreating) {
+      if (!this.isAlive(hero) || !this.isAlive(target)) return false;
+      const dist = distance(hero, target);
+      const order = retreating ? ['e', 'w', 'q'] : ['r', 'w', 'q'];
+      for (const key of order) {
+        const skill = hero.skills[key];
+        if (!skill || skill.level <= 0 || skill.cooldown > 0.05 || hero.mp < this.skillCost(skill)) continue;
+        if (key === 'r' && (dist > 680 || hpRatio(target) > 0.58 && hpRatio(hero) > 0.5)) continue;
+        if (key === 'w' && dist > 360) continue;
+        if (key === 'q' && dist > hero.attackRange + 120) continue;
+        if (key === 'e' && !retreating) continue;
+        return this.castHeroSkill(hero, key, target, true);
+      }
+      return false;
+    }
+
+    lineTargets(hero, targetPoint, range, width, includeBuildings = true) {
+      const dir = this.normalized(hero, targetPoint);
+      return this.getEnemyUnits(hero.team)
+        .filter(entity => includeBuildings || entity.kind !== 'building')
+        .map(entity => {
+          const dx = entity.x - hero.x;
+          const dy = entity.y - hero.y;
+          const projection = dx * dir.x + dy * dir.y;
+          const cross = Math.abs(dx * dir.y - dy * dir.x);
+          return { entity, projection, cross };
+        })
+        .filter(item => item.projection > 0 && item.projection <= range + item.entity.radius && item.cross <= width + item.entity.radius)
+        .sort((a, b) => a.projection - b.projection);
+    }
+
+    castQ(hero, skill, targetPoint, silent = false) {
+      const color = hero.champion === 'ashe' ? '#bfe9ff' : '#8fffe9';
+      if (hero.champion === 'ashe') {
+        const duration = 4.2 + skill.level * 0.35;
+        hero.empoweredTimer = duration;
+        hero.attackSpeedTimer = duration;
+        hero.attackSpeedMultiplier = Math.max(0.52, 0.82 - skill.level * 0.045);
+        this.effects.push(new Effect({ type: 'ring', x: hero.x, y: hero.y, color, radius: 76, life: 0.55 }));
+        if (!silent || hero.isPlayer) this.pushMessage(`${hero.name}：射手专注，普攻进入寒霜连射。`, color);
+        return;
+      }
       const dir = this.normalized(hero, targetPoint);
       const angle = Math.atan2(dir.y, dir.x);
-      const damage = 64 + skill.level * 26 + hero.spellPower * 0.6;
-      const enemies = this.getEnemyUnits(hero.team).filter(entity => distance(hero, entity) < 158 + entity.radius);
-      let hits = 0;
-      enemies.forEach(entity => {
-        const dx = entity.x - hero.x;
-        const dy = entity.y - hero.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const dot = (dx / len) * dir.x + (dy / len) * dir.y;
-        if (dot > 0.35) {
-          hits += 1;
+      const target = this.lineTargets(hero, targetPoint, 370 + skill.level * 14, 18, true)[0]?.entity;
+      const damage = 18 + skill.level * 28 + hero.attackDamage * 1.08 + hero.spellPower * 0.35;
+      if (target) {
+        this.applyDamage(target, damage, hero, { sourceKind: 'skill' });
+        Object.values(hero.skills).forEach(other => { other.cooldown = Math.max(0, other.cooldown - 0.8); });
+      }
+      this.effects.push(new Effect({ type: 'slash', x: hero.x + dir.x * 138, y: hero.y + dir.y * 80, angle, color, radius: 168, life: 0.32 }));
+      if (!silent || hero.isPlayer) this.pushMessage(`秘术射击${target ? `命中 ${target.name || '目标'}` : '未命中'}。`, color);
+    }
+
+    castW(hero, skill, targetPoint, silent = false) {
+      if (hero.champion === 'ashe') {
+        const color = '#bfe9ff';
+        const hits = this.lineTargets(hero, targetPoint, 320 + skill.level * 12, 94, false).slice(0, 5);
+        const damage = 18 + skill.level * 24 + hero.attackDamage * 0.68 + hero.spellPower * 0.25;
+        hits.forEach(({ entity }) => {
           this.applyDamage(entity, damage, hero, { sourceKind: 'skill' });
-        }
-      });
-      this.effects.push(new Effect({ type: 'slash', x: hero.x + dir.x * 72, y: hero.y + dir.y * 44, angle, color: '#8fffe9', radius: 118, life: 0.34 }));
-      this.pushMessage(`裂弧斩命中 ${hits} 个目标。`, '#8fffe9');
+          this.applySlow(entity, Math.max(0.42, 0.58 - hero.frostPower), 2.15);
+        });
+        const dir = this.normalized(hero, targetPoint);
+        this.effects.push(new Effect({ type: 'slash', x: hero.x + dir.x * 112, y: hero.y + dir.y * 64, angle: Math.atan2(dir.y, dir.x), color, radius: 156, life: 0.36 }));
+        if (!silent || hero.isPlayer) this.pushMessage(`万箭齐发命中 ${hits.length} 个目标并减速。`, color);
+        return;
+      }
+      const color = '#8fffe9';
+      const target = this.lineTargets(hero, targetPoint, 340 + skill.level * 10, 26, false)[0]?.entity;
+      if (target) {
+        const damage = 26 + skill.level * 30 + hero.attackDamage * 0.22 + hero.spellPower * 0.7;
+        this.applyDamage(target, damage, hero, { sourceKind: 'skill' });
+        hero.mp = Math.min(hero.maxMp, hero.mp + 18 + skill.level * 6);
+        hero.empoweredTimer = 4.5;
+        this.effects.push(new Effect({ type: 'spark', x: target.x, y: target.y - 22, color, radius: 56, life: 0.42 }));
+      }
+      this.effects.push(new Effect({ type: 'ring', x: hero.x, y: hero.y, color, radius: 72, life: 0.42 }));
+      if (!silent || hero.isPlayer) this.pushMessage(`精华跃动${target ? '命中并强化下一次普攻' : '没有命中目标'}。`, color);
     }
 
-    castW(hero, skill) {
-      hero.shield = 118 + skill.level * 58 + hero.spellPower;
-      hero.shieldTimer = 4.2;
-      this.effects.push(new Effect({ type: 'ring', x: hero.x, y: hero.y, color: '#8fffe9', radius: 86, life: 0.72 }));
-      this.pushMessage('辉光护盾已展开。', '#8fffe9');
-    }
-
-    castE(hero, skill, targetPoint) {
+    castE(hero, skill, targetPoint, silent = false) {
+      if (hero.champion === 'ashe') {
+        const color = '#bfe9ff';
+        if (hero.speedBuffTimer > 0) hero.speed -= hero.speedBuffAmount;
+        hero.speedBuffAmount = 24 + skill.level * 4;
+        hero.speed += hero.speedBuffAmount;
+        hero.speedBuffTimer = 4.8;
+        if (hero.isPlayer) hero.gold += 8 + skill.level * 4;
+        this.effects.push(new Effect({ type: 'ring', x: targetPoint.x, y: targetPoint.y, color, radius: 120 + skill.level * 12, life: 0.7 }));
+        if (!silent || hero.isPlayer) this.pushMessage('鹰击长空：获得短暂移速，并侦察战场节奏。', color);
+        return;
+      }
+      const color = '#ffe599';
       const dir = this.normalized(hero, targetPoint);
-      hero.x = clamp(hero.x + dir.x * (126 + skill.level * 9), 70, 1210);
-      hero.y = clamp(hero.y + dir.y * (96 + skill.level * 6), 70, HUD_Y - 30);
+      hero.x = clamp(hero.x + dir.x * (126 + skill.level * 10), 70, 1210);
+      hero.y = clamp(hero.y + dir.y * (96 + skill.level * 7), 70, HUD_Y - 30);
       hero.empoweredTimer = 4.5;
-      this.effects.push(new Effect({ type: 'dash', x: hero.x - dir.x * 36, y: hero.y - dir.y * 24, angle: Math.atan2(dir.y, dir.x), color: '#ffe599', radius: 74, life: 0.48 }));
-      this.pushMessage('踏星突进完成，下一次普攻强化。', '#ffe599');
+      const target = this.findNearestEnemy(hero, 220);
+      if (target) this.applyDamage(target, 38 + skill.level * 30 + hero.attackDamage * 0.4 + hero.spellPower * 0.65, hero, { sourceKind: 'skill' });
+      this.effects.push(new Effect({ type: 'dash', x: hero.x - dir.x * 36, y: hero.y - dir.y * 24, angle: Math.atan2(dir.y, dir.x), color, radius: 74, life: 0.48 }));
+      if (!silent || hero.isPlayer) this.pushMessage('奥术跃迁完成，下一次普攻强化。', color);
     }
 
-    castR(hero, skill, targetPoint) {
-      const radius = 118 + skill.level * 12;
-      const damage = 185 + skill.level * 82 + hero.spellPower;
-      const impact = { x: clamp(targetPoint.x, 90, 1190), y: clamp(targetPoint.y, 76, HUD_Y - 36) };
-      let hits = 0;
-      this.getEnemyUnits(hero.team).forEach(entity => {
-        if (distance(impact, entity) <= radius + entity.radius) {
-          hits += 1;
-          this.applyDamage(entity, damage, hero, { sourceKind: 'ultimate' });
+    castR(hero, skill, targetPoint, silent = false) {
+      const dir = this.normalized(hero, targetPoint);
+      const angle = Math.atan2(dir.y, dir.x);
+      if (hero.champion === 'ashe') {
+        const color = '#bfe9ff';
+        const target = this.lineTargets(hero, targetPoint, 780, 32, false)[0]?.entity;
+        if (target) {
+          const damage = 115 + skill.level * 92 + hero.spellPower * 0.95;
+          this.applyDamage(target, damage, hero, { sourceKind: 'ultimate' });
+          target.stunTimer = Math.max(target.stunTimer || 0, 1 + skill.level * 0.28);
+          this.applySlow(target, 0.38, 2.8);
+          this.effects.push(new Effect({ type: 'blast', x: target.x, y: target.y, color, radius: 108, life: 0.78 }));
         }
-      });
-      this.effects.push(new Effect({ type: 'blast', x: impact.x, y: impact.y, color: '#ffe599', radius, life: 0.78 }));
-      this.pushMessage(`秘源震荡命中 ${hits} 个目标。`, '#ffe599');
+        this.effects.push(new Effect({ type: 'slash', x: hero.x + dir.x * 238, y: hero.y + dir.y * 138, angle, color, radius: 260, life: 0.46 }));
+        this.pushMessage(target ? `${hero.name} 的魔法水晶箭命中 ${target.name || '目标'}。` : `${hero.name} 的魔法水晶箭射空。`, color);
+        return;
+      }
+      const color = '#ffe599';
+      const hits = this.lineTargets(hero, targetPoint, 920, 42, true);
+      const damage = 110 + skill.level * 95 + hero.attackDamage * 0.85 + hero.spellPower * 0.9;
+      hits.forEach(({ entity }, index) => this.applyDamage(entity, damage * (index === 0 ? 1 : 0.82), hero, { sourceKind: 'ultimate' }));
+      this.effects.push(new Effect({ type: 'slash', x: hero.x + dir.x * 260, y: hero.y + dir.y * 150, angle, color, radius: 310, life: 0.52 }));
+      this.effects.push(new Effect({ type: 'blast', x: clamp(targetPoint.x, 90, 1190), y: clamp(targetPoint.y, 76, HUD_Y - 36), color, radius: 128, life: 0.78 }));
+      this.pushMessage(`精准弹幕穿透命中 ${hits.length} 个目标。`, color);
     }
 
     upgradeSkill(key) {
@@ -1162,6 +1433,7 @@
         return;
       }
       skill.level += 1;
+      skill.lastCooldown = this.skillCooldown(skill);
       hero.skillPoints -= 1;
       this.pushMessage(`${skill.name} 升级到 ${skill.level} 级。`, '#ffe599');
     }
@@ -1273,27 +1545,39 @@
       target.takeDamage(finalAmount, source);
     }
 
+    applySlow(target, multiplier, duration) {
+      if (!this.isAlive(target) || target.kind === 'building') return;
+      target.slowMultiplier = Math.min(target.slowMultiplier || 1, multiplier);
+      target.slowTimer = Math.max(target.slowTimer || 0, duration);
+    }
+
     handleDeath(victim, source) {
       const killerTeam = source?.team;
       this.effects.push(new Effect({ type: 'spark', x: victim.x, y: victim.y - 20, color: '#ffffff', radius: 52, life: 0.45 }));
       if (victim.kind === 'minion') {
         if (victim.team === RED && distance(this.player, victim) < 430 && !this.player.dead) this.player.addXp(victim.xp);
+        if (victim.team === BLUE && distance(this.enemy, victim) < 430 && !this.enemy.dead) this.enemy.addXp(victim.xp);
         if (source === this.player) {
           this.player.gold += victim.reward;
           this.player.cs += 1;
           this.pushMessage(`补刀 +${victim.reward} 金币。`, '#ffe599');
         }
-        if (source === this.enemy) this.enemy.gold += victim.reward;
+        if (source === this.enemy) {
+          this.enemy.gold += victim.reward;
+          this.enemy.cs += 1;
+        }
         return;
       }
       if (victim.kind === 'hero') {
         if (killerTeam === BLUE) {
           this.score.blueKills += 1;
-          this.player.gold += victim === this.enemy ? 260 : 0;
-          this.player.addXp(victim === this.enemy ? 150 : 0);
-          this.pushMessage('击败敌方英雄，获得 260 金币。', '#ffe599');
+          this.player.gold += victim === this.enemy ? 300 : 0;
+          this.player.addXp(victim === this.enemy ? 180 : 0);
+          this.pushMessage('击败敌方英雄，获得 300 金币。', '#ffe599');
         } else if (killerTeam === RED) {
           this.score.redKills += 1;
+          this.enemy.gold += victim === this.player ? 300 : 0;
+          this.enemy.addXp(victim === this.player ? 180 : 0);
           this.pushMessage('你已阵亡，等待复活倒计时。', '#ffb0bd');
         }
         return;
@@ -1303,8 +1587,8 @@
         if (victim.type === 'tower') {
           this.pushMessage(`${teamName}防御塔已被摧毁。`, victim.team === RED ? '#ffe599' : '#ffb0bd');
           if (victim.team === RED && killerTeam === BLUE) {
-            this.player.gold += 320;
-            this.player.addXp(120);
+            this.player.gold += 300;
+            this.player.addXp(160);
           }
         } else {
           this.gameOver = victim.team === RED ? 'victory' : 'defeat';
@@ -1393,12 +1677,21 @@
       };
     }
 
+    itemSlotRect(index) {
+      const startX = 748;
+      const startY = 616;
+      return {
+        x: startX + (index % 4) * 46,
+        y: startY + Math.floor(index / 4) * 39,
+        w: 42,
+        h: 34,
+      };
+    }
+
     itemSlotAt(point) {
-      const startX = 760;
-      const y = 646;
-      for (let i = 0; i < 4; i += 1) {
-        const x = startX + i * 48;
-        if (point.x >= x && point.x <= x + 42 && point.y >= y && point.y <= y + 42) return i;
+      for (let i = 0; i < ITEMS.length; i += 1) {
+        const rect = this.itemSlotRect(i);
+        if (point.x >= rect.x && point.x <= rect.x + rect.w && point.y >= rect.y && point.y <= rect.y + rect.h) return i;
       }
       return -1;
     }
@@ -1471,10 +1764,16 @@
     render() {
       const ctx = this.ctx;
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0, 0, WIDTH, HUD_Y);
+      ctx.clip();
+      this.applyCamera(ctx);
       this.drawWorld(ctx);
+      this.combatTexts.forEach(text => text.draw(ctx));
+      ctx.restore();
       this.drawSceneGrade(ctx);
       this.drawHUD(ctx);
-      this.combatTexts.forEach(text => text.draw(ctx));
       if (this.paused) this.drawCenterOverlay(ctx, '暂停', '按 Esc 继续游戏');
       if (this.gameOver) this.drawCenterOverlay(ctx, this.gameOver === 'victory' ? '胜利' : '失败', '按 Enter 或点击画面重新开始');
     }
@@ -2598,7 +2897,8 @@
       ctx.strokeStyle = 'rgba(198, 171, 98, .72)';
       ctx.stroke();
       drawText(ctx, hero.level, 118, 681, 13, '#ffe599', 'center', '900');
-      drawText(ctx, '秘源守卫', 204, 620, 15, '#f0efe2', 'left', '900');
+      drawText(ctx, hero.name, 204, 620, 15, '#f0efe2', 'left', '900');
+      drawText(ctx, `${hero.subtitle} · 缩放 ${(this.cameraZoom * 100).toFixed(0)}%`, 204, 628, 9, 'rgba(217,255,246,.7)', 'left', '700');
       drawText(ctx, `CS ${hero.cs}   ${Math.floor(hero.gold)}g   波次 ${this.waveNumber}`, 204, 690, 12, '#e3c36f', 'left', '900');
 
       drawBar(ctx, 204, 636, 170, 16, hpRatio(hero), TEAM_STYLE.blue.bar, 'rgba(0,0,0,.7)', 'rgba(221,202,132,.34)');
@@ -2736,37 +3036,34 @@
     }
 
     drawInventory(ctx, hero) {
-      const startX = 760;
       ITEMS.forEach((item, index) => {
-        const x = startX + index * 48;
-        const y = 646;
-        roundedRect(ctx, x, y, 42, 42, 3);
-        ctx.fillStyle = hero.inventory[index] ? 'rgba(221, 174, 70, .28)' : 'rgba(255,255,255,.055)';
+        const rect = this.itemSlotRect(index);
+        const { x, y, w, h } = rect;
+        roundedRect(ctx, x, y, w, h, 3);
+        ctx.fillStyle = hero.inventory[index] ? 'rgba(221, 174, 70, .28)' : hero.gold >= item.cost ? 'rgba(91, 128, 72, .16)' : 'rgba(255,255,255,.055)';
         ctx.fill();
-        ctx.strokeStyle = hero.inventory[index] ? '#dcae46' : 'rgba(185,163,105,.24)';
+        ctx.strokeStyle = hero.inventory[index] ? '#dcae46' : hero.gold >= item.cost ? 'rgba(174,214,112,.48)' : 'rgba(185,163,105,.24)';
         ctx.stroke();
         const iconCell = ICON_CELLS.items[index];
         if (this.assets.icons && iconCell !== undefined) {
           ctx.save();
-          ctx.globalAlpha = hero.inventory[index] ? 1 : 0.56;
-          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 5, y + 4, 32, 32);
+          ctx.globalAlpha = hero.inventory[index] ? 1 : 0.54;
+          this.drawSheetCell(ctx, this.assets.icons, iconCell, x + 8, y + 4, 26, 26);
           ctx.restore();
         } else {
           ctx.fillStyle = hero.inventory[index] ? '#dcae46' : 'rgba(160,170,150,.58)';
           ctx.beginPath();
-          ctx.moveTo(x + 21, y + 8);
-          ctx.lineTo(x + 32, y + 19);
-          ctx.lineTo(x + 21, y + 34);
-          ctx.lineTo(x + 10, y + 19);
+          ctx.moveTo(x + 21, y + 6);
+          ctx.lineTo(x + 32, y + 16);
+          ctx.lineTo(x + 21, y + 28);
+          ctx.lineTo(x + 10, y + 16);
           ctx.closePath();
           ctx.fill();
-          ctx.fillStyle = 'rgba(0,0,0,.38)';
-          ctx.fillRect(x + 14, y + 18, 16, 5);
         }
-        drawText(ctx, item.key, x + 7, y + 8, 10, '#ffffff', 'center', '900');
-        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + 21, y + 37, 9, hero.inventory[index] ? '#cda65a' : '#c8c4a8', 'center', '700');
+        drawText(ctx, item.key, x + 7, y + 8, 9, '#ffffff', 'center', '900');
+        drawText(ctx, hero.inventory[index] ? '已购' : item.cost, x + w - 5, y + h - 5, 8, hero.inventory[index] ? '#cda65a' : '#c8c4a8', 'right', '700');
       });
-      drawText(ctx, '装备栏', startX + 100, 626, 12, '#d8d3b6', 'center', '900');
+      drawText(ctx, '商店 1-8', 830, 607, 11, '#d8d3b6', 'center', '900');
     }
 
     drawMessages(ctx) {
@@ -2913,12 +3210,14 @@
         ctx.fill();
         ctx.stroke();
       });
-      const playerMini = this.worldToMini(this.player);
+      const view = this.cameraView();
+      const viewA = this.worldToMini({ x: view.x, y: view.y });
+      const viewB = this.worldToMini({ x: view.x + view.w, y: view.y + view.h });
       ctx.globalAlpha = 1;
       ctx.strokeStyle = 'rgba(255,255,255,.78)';
       ctx.lineWidth = 1.2;
       ctx.setLineDash([4, 3]);
-      ctx.strokeRect(clamp(playerMini.x - 32, map.x + 4, map.x + map.w - 68), clamp(playerMini.y - 22, map.y + 4, map.y + map.h - 48), 64, 42);
+      ctx.strokeRect(clamp(viewA.x, map.x + 4, map.x + map.w - 8), clamp(viewA.y, map.y + 4, map.y + map.h - 8), clamp(viewB.x - viewA.x, 8, map.w - 8), clamp(viewB.y - viewA.y, 8, map.h - 8));
       ctx.setLineDash([]);
       ctx.restore();
       ctx.globalAlpha = 1;

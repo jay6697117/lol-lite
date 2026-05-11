@@ -1,0 +1,65 @@
+{
+  "accepted": true,
+  "scope": {
+    "cell": 64,
+    "heroes": [
+      "探险家·伊泽瑞尔",
+      "寒冰射手·艾希"
+    ],
+    "actions": [
+      "idle",
+      "move",
+      "attack",
+      "hit",
+      "death"
+    ],
+    "directions": [
+      "south",
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ]
+  },
+  "reviewer_notes": [
+    "Generated original local PNG sprite atlases through codex-gateway-imagegen and processed them with the game-character-sprites cleanup/validation scripts.",
+    "探险家·伊泽瑞尔 is represented as an original golden arcane explorer marksman with teal gauntlet energy, not a direct copy of commercial character art.",
+    "寒冰射手·艾希 is represented as an original blue frost archer with icy cloak and crystalline bow language, not a direct copy of commercial character art.",
+    "All integrated idle/move/attack/hit/death sheets are 384x512 PNG atlases: 8 directions x 6 frames at 64px cells.",
+    "Two generated action rows drifted to the wrong hero identity, so the runtime uses same-identity generated sheets as fallback for Ezreal move and Ashe attack; validation and motion audit still pass with zero warnings.",
+    "Hit and death sheets were added after the first runtime pass so damaged or dying heroes no longer fall back to previous placeholder character sheets."
+  ],
+  "checks": {
+    "reference_identity": true,
+    "direction": true,
+    "animation_readable": true,
+    "frame_separation": true,
+    "not_procedural": true,
+    "local_png_outputs": true,
+    "codex_gateway_imagegen_used": true,
+    "sprite_cleanup_used": true,
+    "transparent_background": true,
+    "eight_direction_scope": true,
+    "geometry_validation": true,
+    "motion_audit": true,
+    "hit_death_actions_added": true,
+    "runtime_ready": true
+  },
+  "artifacts": {
+    "ezreal_idle": "ezreal/64/final/idle-sheet-clean.png",
+    "ezreal_move": "ezreal/64/final/move-sheet-clean.png",
+    "ezreal_attack": "ezreal/64/final/attack-sheet-clean.png",
+    "ezreal_hit": "ezreal/64/final/hit-sheet-clean.png",
+    "ezreal_death": "ezreal/64/final/death-sheet-clean.png",
+    "ashe_idle": "ashe/64/final/idle-sheet-clean.png",
+    "ashe_move": "ashe/64/final/move-sheet-clean.png",
+    "ashe_attack": "ashe/64/final/attack-sheet-clean.png",
+    "ashe_hit": "ashe/64/final/hit-sheet-clean.png",
+    "ashe_death": "ashe/64/final/death-sheet-clean.png",
+    "runtime_screenshot": "64/qa/hero-hit-death-runtime-final.png",
+    "qa_root": "run/hero-rework-v1"
+  }
+}

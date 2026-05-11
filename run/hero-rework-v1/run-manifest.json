@@ -1,0 +1,844 @@
+{
+  "reference": {
+    "source_type": "file",
+    "source": "source/ezreal-idle-atlas-raw.png; source/ashe-idle-atlas-raw.png",
+    "used_for_generation": true,
+    "identity_notes": [
+      "original golden arcane explorer marksman with teal gauntlet energy",
+      "original blue frost archer with icy cloak and crystalline bow",
+      "avoid direct commercial costume, icon, logo, face, or weapon copying"
+    ]
+  },
+  "scope": {
+    "sizes": [
+      64
+    ],
+    "actions": [
+      "idle",
+      "move",
+      "attack",
+      "hit",
+      "death"
+    ],
+    "directions": [
+      "south",
+      "south-east",
+      "east",
+      "north-east",
+      "north",
+      "north-west",
+      "west",
+      "south-west"
+    ],
+    "frames": 6,
+    "heroes": [
+      "ezreal",
+      "ashe"
+    ]
+  },
+  "generation": {
+    "method": "codex-gateway-imagegen",
+    "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+    "procedural": false,
+    "text_only": false,
+    "imported_contact_sheet": true,
+    "note": "Source images were generated locally with codex-gateway-imagegen, then cropped from 128px cell atlases to runtime 64px cell sheets and cleaned with game-character-sprites scripts."
+  },
+  "strips": [
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png",
+      "source_path": "ezreal/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png",
+      "source_path": "ashe/64/final/idle-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/move-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png",
+      "source_path": "ashe/64/final/attack-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png",
+      "source_path": "ashe/64/final/hit-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "south",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "north-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "north",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "direction": "south-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png",
+      "source_path": "ashe/64/final/death-sheet-clean.png"
+    }
+  ],
+  "sheet_artifacts": [
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "idle",
+      "source_path": "ezreal/64/final/idle-sheet-clean.png",
+      "imagegen_output_path": "source/ezreal-idle-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "move",
+      "source_path": "ezreal/64/final/move-sheet-clean.png",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "attack",
+      "source_path": "ezreal/64/final/attack-sheet-clean.png",
+      "imagegen_output_path": "source/ezreal-attack-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "hit",
+      "source_path": "ezreal/64/final/hit-sheet-clean.png",
+      "imagegen_output_path": "source/ezreal-hit-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ezreal",
+      "action": "death",
+      "source_path": "ezreal/64/final/death-sheet-clean.png",
+      "imagegen_output_path": "source/ezreal-death-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "idle",
+      "source_path": "ashe/64/final/idle-sheet-clean.png",
+      "imagegen_output_path": "source/ashe-idle-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "move",
+      "source_path": "ashe/64/final/move-sheet-clean.png",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "attack",
+      "source_path": "ashe/64/final/attack-sheet-clean.png",
+      "imagegen_output_path": "source/ashe-move-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "hit",
+      "source_path": "ashe/64/final/hit-sheet-clean.png",
+      "imagegen_output_path": "source/ashe-hit-atlas-raw.png"
+    },
+    {
+      "cell": 64,
+      "hero": "ashe",
+      "action": "death",
+      "source_path": "ashe/64/final/death-sheet-clean.png",
+      "imagegen_output_path": "source/ashe-death-atlas-raw.png"
+    }
+  ],
+  "visual_review": {
+    "path": "visual-review.json"
+  }
+}
