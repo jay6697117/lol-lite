@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "files": [
+    {
+      "file": "/Users/zhangjinhui/Desktop/lol-lite/run/buildings-v2/256/final/building-sheet-clean.png",
+      "width": 1024,
+      "height": 256,
+      "transparent_pixels": 155090,
+      "nontransparent_pixels": 107054,
+      "green_residue_pixels": 0
+    },
+    {
+      "file": "/Users/zhangjinhui/Desktop/lol-lite/run/buildings-v2/256/generated/blue-tower.png",
+      "width": 256,
+      "height": 256,
+      "transparent_pixels": 47735,
+      "nontransparent_pixels": 17801,
+      "green_residue_pixels": 0
+    },
+    {
+      "file": "/Users/zhangjinhui/Desktop/lol-lite/run/buildings-v2/256/generated/red-tower.png",
+      "width": 256,
+      "height": 256,
+      "transparent_pixels": 49234,
+      "nontransparent_pixels": 16302,
+      "green_residue_pixels": 0
+    },
+    {
+      "file": "/Users/zhangjinhui/Desktop/lol-lite/run/buildings-v2/256/generated/blue-core.png",
+      "width": 256,
+      "height": 256,
+      "transparent_pixels": 27119,
+      "nontransparent_pixels": 38417,
+      "green_residue_pixels": 0
+    },
+    {
+      "file": "/Users/zhangjinhui/Desktop/lol-lite/run/buildings-v2/256/generated/red-core.png",
+      "width": 256,
+      "height": 256,
+      "transparent_pixels": 31002,
+      "nontransparent_pixels": 34534,
+      "green_residue_pixels": 0
+    }
+  ]
+}

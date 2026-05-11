@@ -33,12 +33,15 @@
   };
   const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-v2-dark.png';
   const OBJECT_SHEET_PATH = 'assets/sprites/moba-object-sheet.png';
+  const BUILDING_SHEET_PATH = 'assets/sprites/moba-building-sheet-v2.png';
   const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet-v2.png';
   const MINION_SHEET_PATH = 'assets/sprites/minion-animation-sheet.png';
   const MINION_DIRECTION_SHEET_PATH = 'assets/sprites/minion-animation-sheet-v2.png';
   const EFFECT_SHEET_PATH = 'assets/effects/moba-effect-sheet.png';
   const ART_CELL = 256;
   const ART_COLUMNS = 4;
+  const BUILDING_CELL = 256;
+  const BUILDING_COLUMNS = 4;
   const ANIM_CELL = 64;
   const ANIM_COLUMNS = 6;
   const SPRITE_PATHS = {
@@ -60,10 +63,6 @@
       blue: { melee: 0, ranged: 1, siege: 2 },
       red: { melee: 4, ranged: 5, siege: 6 },
     },
-    building: {
-      blue: { tower: 3, core: 8 },
-      red: { tower: 7, core: 9 },
-    },
     decor: {
       tree: 10,
       brush: 11,
@@ -78,6 +77,10 @@
     skills: { q: 0, w: 1, e: 2, r: 3 },
     items: [4, 5, 6, 7],
     summoners: [8, 9],
+  };
+  const BUILDING_CELLS = {
+    blue: { tower: 0, core: 2 },
+    red: { tower: 1, core: 3 },
   };
   const MINION_ROWS = {
     blue: {
@@ -841,6 +844,7 @@
       const entries = [
         ['background', BACKGROUND_PATH],
         ['objects', OBJECT_SHEET_PATH],
+        ['buildings', BUILDING_SHEET_PATH],
         ['icons', ICON_SHEET_PATH],
         ['minions', MINION_SHEET_PATH],
         ['minionDirections', MINION_DIRECTION_SHEET_PATH],
@@ -1439,6 +1443,25 @@
       return true;
     }
 
+    drawBuildingSheetCell(ctx, image, cell, x, y, width, height) {
+      if (!image || cell === undefined) return false;
+      const smoothing = ctx.imageSmoothingEnabled;
+      ctx.imageSmoothingEnabled = true;
+      ctx.drawImage(
+        image,
+        (cell % BUILDING_COLUMNS) * BUILDING_CELL,
+        Math.floor(cell / BUILDING_COLUMNS) * BUILDING_CELL,
+        BUILDING_CELL,
+        BUILDING_CELL,
+        x,
+        y,
+        width,
+        height,
+      );
+      ctx.imageSmoothingEnabled = smoothing;
+      return true;
+    }
+
     drawAnimCell(ctx, image, row, frame, x, y, width, height) {
       if (!image || row === undefined) return false;
       const smoothing = ctx.imageSmoothingEnabled;
@@ -2007,13 +2030,13 @@
       ctx.ellipse(0, 24, building.radius * 1.52, building.radius * 0.46, 0, 0, Math.PI * 2);
       ctx.fill();
 
-      const buildingCells = OBJECT_CELLS.building[building.team];
+      const buildingCells = BUILDING_CELLS[building.team];
       const buildingCell = buildingCells && buildingCells[building.type];
-      if (this.assets.objects && buildingCell !== undefined) {
+      if (this.assets.buildings && buildingCell !== undefined) {
         const box = building.type === 'tower'
-          ? { x: -76, y: -162, w: 152, h: 184 }
-          : { x: -68, y: -118, w: 136, h: 142 };
-        this.drawSheetCell(ctx, this.assets.objects, buildingCell, box.x, box.y, box.w, box.h);
+          ? { x: -84, y: -178, w: 168, h: 202 }
+          : { x: -86, y: -134, w: 172, h: 158 };
+        this.drawBuildingSheetCell(ctx, this.assets.buildings, buildingCell, box.x, box.y, box.w, box.h);
         ctx.restore();
         if (!building.dead) this.drawNameplate(ctx, building, building.name, building.type === 'tower' ? -166 : -126, building.type === 'tower' ? 106 : 118);
         return;

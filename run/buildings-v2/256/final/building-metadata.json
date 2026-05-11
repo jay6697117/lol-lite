@@ -1,0 +1,13 @@
+{
+  "cell": 256,
+  "columns": 4,
+  "rows": 1,
+  "cell_order": [
+    "blue-tower",
+    "red-tower",
+    "blue-core",
+    "red-core"
+  ],
+  "final_path": "256/final/building-sheet-clean.png",
+  "contact_sheet": "256/qa/building-contact-sheet.png"
+}

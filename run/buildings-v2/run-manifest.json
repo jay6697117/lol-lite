@@ -1,0 +1,67 @@
+{
+  "reference": {
+    "source_type": "file",
+    "source": "assets/sprites/moba-object-sheet.png plus moba_25d_interface.png for scale/camera/style only",
+    "used_for_generation": true,
+    "identity_notes": [
+      "original dark 2.5D MOBA buildings, not commercial MOBA copies",
+      "blue buildings use teal-blue arcane crystal energy",
+      "red buildings use red-purple rift energy",
+      "final runtime sheet uses transparent 256x256 cells with no black card background"
+    ]
+  },
+  "scope": {
+    "size": 256,
+    "columns": 4,
+    "rows": 1,
+    "assets": [
+      "blue-tower",
+      "red-tower",
+      "blue-core",
+      "red-core"
+    ],
+    "cell_order": [
+      "blue-tower",
+      "red-tower",
+      "blue-core",
+      "red-core"
+    ]
+  },
+  "generation": {
+    "method": "codex-gateway-imagegen",
+    "procedural": false,
+    "text_only": false,
+    "imported_contact_sheet": false,
+    "final_path": "256/final/building-sheet-clean.png"
+  },
+  "items": [
+    {
+      "slug": "blue-tower",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/256-blue-tower.png",
+      "source_path": "256/generated/blue-tower.png",
+      "prompt_path": "256/prompts/blue-tower.txt"
+    },
+    {
+      "slug": "red-tower",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/256-red-tower.png",
+      "source_path": "256/generated/red-tower.png",
+      "prompt_path": "256/prompts/red-tower.txt"
+    },
+    {
+      "slug": "blue-core",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/256-blue-core.png",
+      "source_path": "256/generated/blue-core.png",
+      "prompt_path": "256/prompts/blue-core.txt"
+    },
+    {
+      "slug": "red-core",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/256-red-core.png",
+      "source_path": "256/generated/red-core.png",
+      "prompt_path": "256/prompts/red-core.txt"
+    }
+  ]
+}

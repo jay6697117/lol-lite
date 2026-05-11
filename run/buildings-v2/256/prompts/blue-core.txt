@@ -1,0 +1,8 @@
+Create one original 2.5D pixel-art MOBA building asset as a clean local game sprite.
+
+Subject: blue team base core; low broad arcane nexus core, dark stone base with teal-blue floating crystal heart, circular energy rings, compact base objective silhouette.
+Output: one centered building only, intended for a 256x256 fixed cell. Pure flat chroma-key background #00ff00 only, no gradient, no black/gray card, no checkerboard, no floor tile, no baked shadow, no UI, no text, no labels, no border. The background must be removable by chroma key.
+
+Style: dark fantasy arcane ruins, readable 2.5D isometric/slanted MOBA camera, hard pixel-art edges, limited palette, high silhouette readability on a dark grass/stone lane. Keep all parts inside frame with 8-16 px margin. Add faction glow only on crystals/energy, not in the background. Do not copy any commercial MOBA building design.
+
+Use references only for project camera angle, approximate scale, and red/blue faction mood. Do not copy reference UI, logos, text, or commercial designs.

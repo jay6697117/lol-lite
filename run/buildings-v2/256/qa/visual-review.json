@@ -1,0 +1,22 @@
+{
+  "accepted": true,
+  "reviewer_notes": [
+    "Building v2 sheet contains blue/red towers and blue/red cores in four 256x256 transparent cells.",
+    "The cleaned assets have no black card background and are suitable for direct Canvas compositing.",
+    "Faction colors are distinct: teal-blue arcane crystal energy for blue, red-purple rift crystal energy for red.",
+    "Tower silhouettes are vertical and compact; core silhouettes are wider base objectives."
+  ],
+  "checks": {
+    "reference_identity": true,
+    "transparent_background": true,
+    "no_black_card": true,
+    "frame_separation": true,
+    "not_procedural": true
+  },
+  "artifacts": {
+    "sheet": "256/final/building-sheet-clean.png",
+    "contact_sheet": "256/qa/building-contact-sheet.png",
+    "validation": "256/qa/building-validation.json",
+    "in_game_screenshot": "256/qa/building-v2-in-game.png"
+  }
+}
