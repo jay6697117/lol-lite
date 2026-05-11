@@ -31,9 +31,9 @@
       text: '#ffd4de',
     },
   };
-  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-regenerated.png';
+  const BACKGROUND_PATH = 'assets/backgrounds/moba-lane-bg-v2-dark.png';
   const OBJECT_SHEET_PATH = 'assets/sprites/moba-object-sheet.png';
-  const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet.png';
+  const ICON_SHEET_PATH = 'assets/ui/moba-icon-sheet-v2.png';
   const MINION_SHEET_PATH = 'assets/sprites/minion-animation-sheet.png';
   const EFFECT_SHEET_PATH = 'assets/effects/moba-effect-sheet.png';
   const ART_CELL = 256;

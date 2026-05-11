@@ -1,0 +1,249 @@
+{
+  "reference": {
+    "source_type": "project_style_and_existing_generated_reference",
+    "source": "moba_25d_interface.png plus run/minions/source/minion-animation-sheet-raw.png for camera/style/scale only",
+    "used_for_generation": true,
+    "identity_notes": [
+      "original dark 2.5D MOBA minions, not commercial MOBA copies",
+      "blue minions use teal-blue arcane crystal energy",
+      "red minions use red-purple rift energy",
+      "64x64 pixel-art cells, two test directions: south-east and north-west",
+      "scope excludes siege minion redraw in this pass"
+    ]
+  },
+  "scope": {
+    "sizes": [
+      64
+    ],
+    "teams": [
+      "blue",
+      "red"
+    ],
+    "types": [
+      "melee",
+      "ranged"
+    ],
+    "actions": [
+      "move",
+      "attack"
+    ],
+    "directions": [
+      "south-east",
+      "north-west"
+    ],
+    "frames": {
+      "move": 6,
+      "attack": 6
+    },
+    "columns": 6,
+    "rows": 16,
+    "row_order": [
+      "blue melee move south east",
+      "blue melee attack south east",
+      "blue ranged move south east",
+      "blue ranged attack south east",
+      "red melee move south east",
+      "red melee attack south east",
+      "red ranged move south east",
+      "red ranged attack south east",
+      "blue melee move north west",
+      "blue melee attack north west",
+      "blue ranged move north west",
+      "blue ranged attack north west",
+      "red melee move north west",
+      "red melee attack north west",
+      "red ranged move north west",
+      "red ranged attack north west"
+    ]
+  },
+  "generation": {
+    "method": "codex-gateway-imagegen",
+    "procedural": false,
+    "text_only": false,
+    "imported_contact_sheet": false
+  },
+  "strips": [
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "melee",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-melee-move-south-east.png",
+      "source_path": "64/generated/blue-melee-move-south-east.png",
+      "prompt_path": "64/prompts/blue-melee-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "melee",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-melee-attack-south-east.png",
+      "source_path": "64/generated/blue-melee-attack-south-east.png",
+      "prompt_path": "64/prompts/blue-melee-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "ranged",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-ranged-move-south-east.png",
+      "source_path": "64/generated/blue-ranged-move-south-east.png",
+      "prompt_path": "64/prompts/blue-ranged-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "ranged",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-ranged-attack-south-east.png",
+      "source_path": "64/generated/blue-ranged-attack-south-east.png",
+      "prompt_path": "64/prompts/blue-ranged-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "melee",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-melee-move-south-east.png",
+      "source_path": "64/generated/red-melee-move-south-east.png",
+      "prompt_path": "64/prompts/red-melee-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "melee",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-melee-attack-south-east.png",
+      "source_path": "64/generated/red-melee-attack-south-east.png",
+      "prompt_path": "64/prompts/red-melee-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "ranged",
+      "action": "move",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-ranged-move-south-east.png",
+      "source_path": "64/generated/red-ranged-move-south-east.png",
+      "prompt_path": "64/prompts/red-ranged-move-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "ranged",
+      "action": "attack",
+      "direction": "south-east",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-ranged-attack-south-east.png",
+      "source_path": "64/generated/red-ranged-attack-south-east.png",
+      "prompt_path": "64/prompts/red-ranged-attack-south-east.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "melee",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-melee-move-north-west.png",
+      "source_path": "64/generated/blue-melee-move-north-west.png",
+      "prompt_path": "64/prompts/blue-melee-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "melee",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-melee-attack-north-west.png",
+      "source_path": "64/generated/blue-melee-attack-north-west.png",
+      "prompt_path": "64/prompts/blue-melee-attack-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "ranged",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-ranged-move-north-west.png",
+      "source_path": "64/generated/blue-ranged-move-north-west.png",
+      "prompt_path": "64/prompts/blue-ranged-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "blue",
+      "type": "ranged",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-blue-ranged-attack-north-west.png",
+      "source_path": "64/generated/blue-ranged-attack-north-west.png",
+      "prompt_path": "64/prompts/blue-ranged-attack-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "melee",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-melee-move-north-west.png",
+      "source_path": "64/generated/red-melee-move-north-west.png",
+      "prompt_path": "64/prompts/red-melee-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "melee",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-melee-attack-north-west.png",
+      "source_path": "64/generated/red-melee-attack-north-west.png",
+      "prompt_path": "64/prompts/red-melee-attack-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "ranged",
+      "action": "move",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-ranged-move-north-west.png",
+      "source_path": "64/generated/red-ranged-move-north-west.png",
+      "prompt_path": "64/prompts/red-ranged-move-north-west.txt"
+    },
+    {
+      "cell": 64,
+      "team": "red",
+      "type": "ranged",
+      "action": "attack",
+      "direction": "north-west",
+      "method": "codex-gateway-imagegen",
+      "imagegen_output_path": "source/64-red-ranged-attack-north-west.png",
+      "source_path": "64/generated/red-ranged-attack-north-west.png",
+      "prompt_path": "64/prompts/red-ranged-attack-north-west.txt"
+    }
+  ],
+  "runtime": {
+    "planned_path": "assets/sprites/minion-animation-sheet-v2.png"
+  },
+  "visual_review": {
+    "path": "64/qa/visual-review.json"
+  }
+}
