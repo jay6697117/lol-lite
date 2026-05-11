@@ -1,2 +1,242 @@
 === start 2026-05-11 17:55:09 ===
 [1/96] generate 64-blue-melee-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-move-south.png", "bytes": 961506}
+OK blue-melee-move-south
+[2/96] generate 64-blue-melee-attack-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-melee-attack-south.png", "bytes": 955434}
+OK blue-melee-attack-south
+[3/96] generate 64-blue-ranged-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-ranged-move-south.png", "bytes": 984097}
+OK blue-ranged-move-south
+[4/96] generate 64-blue-ranged-attack-south.png
+{"error": "runtime_error", "message": "No image_generation_call result returned"}
+FAILED blue-ranged-attack-south
+[5/96] generate 64-blue-siege-move-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-south
+[6/96] generate 64-blue-siege-attack-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-south
+[7/96] generate 64-red-melee-move-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-south
+[8/96] generate 64-red-melee-attack-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-south
+[9/96] generate 64-red-ranged-move-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-south
+[10/96] generate 64-red-ranged-attack-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-south
+[11/96] generate 64-red-siege-move-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-south
+[12/96] generate 64-red-siege-attack-south.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-south
+[13/96] skip 64-blue-melee-move-south-east.png
+[14/96] skip 64-blue-melee-attack-south-east.png
+[15/96] skip 64-blue-ranged-move-south-east.png
+[16/96] skip 64-blue-ranged-attack-south-east.png
+[17/96] skip 64-blue-siege-move-south-east.png
+[18/96] skip 64-blue-siege-attack-south-east.png
+[19/96] skip 64-red-melee-move-south-east.png
+[20/96] skip 64-red-melee-attack-south-east.png
+[21/96] skip 64-red-ranged-move-south-east.png
+[22/96] skip 64-red-ranged-attack-south-east.png
+[23/96] skip 64-red-siege-move-south-east.png
+[24/96] skip 64-red-siege-attack-south-east.png
+[25/96] generate 64-blue-melee-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-move-east
+[26/96] generate 64-blue-melee-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-attack-east
+[27/96] generate 64-blue-ranged-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-move-east
+[28/96] generate 64-blue-ranged-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-attack-east
+[29/96] generate 64-blue-siege-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-east
+[30/96] generate 64-blue-siege-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-east
+[31/96] generate 64-red-melee-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-east
+[32/96] generate 64-red-melee-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-east
+[33/96] generate 64-red-ranged-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-east
+[34/96] generate 64-red-ranged-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-east
+[35/96] generate 64-red-siege-move-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-east
+[36/96] generate 64-red-siege-attack-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-east
+[37/96] generate 64-blue-melee-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-move-north-east
+[38/96] generate 64-blue-melee-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-attack-north-east
+[39/96] generate 64-blue-ranged-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-move-north-east
+[40/96] generate 64-blue-ranged-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-attack-north-east
+[41/96] generate 64-blue-siege-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-north-east
+[42/96] generate 64-blue-siege-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-north-east
+[43/96] generate 64-red-melee-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-north-east
+[44/96] generate 64-red-melee-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-north-east
+[45/96] generate 64-red-ranged-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-north-east
+[46/96] generate 64-red-ranged-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-north-east
+[47/96] generate 64-red-siege-move-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-north-east
+[48/96] generate 64-red-siege-attack-north-east.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-north-east
+[49/96] generate 64-blue-melee-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-move-north
+[50/96] generate 64-blue-melee-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-attack-north
+[51/96] generate 64-blue-ranged-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-move-north
+[52/96] generate 64-blue-ranged-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-attack-north
+[53/96] generate 64-blue-siege-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-north
+[54/96] generate 64-blue-siege-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-north
+[55/96] generate 64-red-melee-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-north
+[56/96] generate 64-red-melee-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-north
+[57/96] generate 64-red-ranged-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-north
+[58/96] generate 64-red-ranged-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-north
+[59/96] generate 64-red-siege-move-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-north
+[60/96] generate 64-red-siege-attack-north.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-north
+[61/96] skip 64-blue-melee-move-north-west.png
+[62/96] skip 64-blue-melee-attack-north-west.png
+[63/96] skip 64-blue-ranged-move-north-west.png
+[64/96] skip 64-blue-ranged-attack-north-west.png
+[65/96] skip 64-blue-siege-move-north-west.png
+[66/96] skip 64-blue-siege-attack-north-west.png
+[67/96] skip 64-red-melee-move-north-west.png
+[68/96] skip 64-red-melee-attack-north-west.png
+[69/96] skip 64-red-ranged-move-north-west.png
+[70/96] skip 64-red-ranged-attack-north-west.png
+[71/96] skip 64-red-siege-move-north-west.png
+[72/96] skip 64-red-siege-attack-north-west.png
+[73/96] generate 64-blue-melee-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-move-west
+[74/96] generate 64-blue-melee-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-attack-west
+[75/96] generate 64-blue-ranged-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-move-west
+[76/96] generate 64-blue-ranged-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-attack-west
+[77/96] generate 64-blue-siege-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-west
+[78/96] generate 64-blue-siege-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-west
+[79/96] generate 64-red-melee-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-west
+[80/96] generate 64-red-melee-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-west
+[81/96] generate 64-red-ranged-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-west
+[82/96] generate 64-red-ranged-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-west
+[83/96] generate 64-red-siege-move-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-west
+[84/96] generate 64-red-siege-attack-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-west
+[85/96] generate 64-blue-melee-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-move-south-west
+[86/96] generate 64-blue-melee-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-melee-attack-south-west
+[87/96] generate 64-blue-ranged-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-move-south-west
+[88/96] generate 64-blue-ranged-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-ranged-attack-south-west
+[89/96] generate 64-blue-siege-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-move-south-west
+[90/96] generate 64-blue-siege-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED blue-siege-attack-south-west
+[91/96] generate 64-red-melee-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-move-south-west
+[92/96] generate 64-red-melee-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-melee-attack-south-west
+[93/96] generate 64-red-ranged-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-move-south-west
+[94/96] generate 64-red-ranged-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-ranged-attack-south-west
+[95/96] generate 64-red-siege-move-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-move-south-west
+[96/96] generate 64-red-siege-attack-south-west.png
+{"error": "network_error", "message": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"}
+FAILED red-siege-attack-south-west
+=== done 2026-05-11 18:01:26 failures=69 ===

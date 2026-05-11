@@ -1,0 +1,8 @@
+=== retry start 2026-05-11 20:27:56 ===
+[5/96] attempt 1 generate 64-blue-siege-move-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-move-south.png", "bytes": 974121}
+OK blue-siege-move-south
+[6/96] attempt 1 generate 64-blue-siege-attack-south.png
+{"saved": "/Users/zhangjinhui/Desktop/lol-lite/run/minions-v2/source/64-blue-siege-attack-south.png", "bytes": 973767}
+OK blue-siege-attack-south
+[7/96] attempt 1 generate 64-red-melee-move-south.png

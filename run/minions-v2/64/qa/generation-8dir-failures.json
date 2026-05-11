@@ -1,0 +1,416 @@
+[
+  {
+    "slug": "blue-ranged-attack-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"runtime_error\", \"message\": \"No image_generation_call result returned\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-south",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-north-east",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-north",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-melee-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-ranged-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "blue-siege-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-melee-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-ranged-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-move-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  },
+  {
+    "slug": "red-siege-attack-south-west",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"network_error\", \"message\": \"<urlopen error [Errno 8] nodename nor servname provided, or not known>\"}\n"
+  }
+]
